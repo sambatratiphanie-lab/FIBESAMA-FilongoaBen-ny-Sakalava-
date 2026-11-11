@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="mg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FIBESAMA Sakalava</title>
+<meta name="description" content="FIBESAMA, Filongoaben'ny Sakalava eto Madagasikara: ny tantara, ny vakoka ary ny fomban-drazana sakalava.">
+<meta name="theme-color" content="#7a1f1f">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta property="og:title" content="FIBESAMA · Filongoaben'ny Sakalava eto Madagasikara">
+<meta property="og:description" content="Tantara, vakoka ary fomban-drazana sakalava. Firaisankina sy fandrosoana.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mena:#8c1d18; --mena-maizina:#5e120f; --volamena:#d9a441; --tany:#b5652b;
+  --ranomasina:#0f4c5c; --fasika:#f6eedf;
+  --bg:#fbf7f0; --bg2:#f3eadb; --card:#ffffff; --text:#2a1a14; --muted:#6d5a4f;
+  --line:#e6d8c3; --accent:var(--mena); --accent-text:#fff; --chip:#f6e4c8;
+  --shadow:0 10px 30px -12px rgba(60,20,10,.25);
+  --radius:18px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#160f0c; --bg2:#1f1511; --card:#261a15; --text:#f4e9dc; --muted:#c2ab98;
+    --line:#3b2a22; --accent:#e0573f; --chip:#3a261b; --shadow:0 10px 30px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#160f0c; --bg2:#1f1511; --card:#261a15; --text:#f4e9dc; --muted:#c2ab98;
+  --line:#3b2a22; --accent:#e0573f; --chip:#3a261b; --shadow:0 10px 30px -12px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0 0 .5em}
+h2{font-size:clamp(1.9rem,4vw,2.8rem)}
+h3{font-size:1.3rem}
+p{margin:0 0 1em}
+a{color:var(--accent)}
+img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.fenoina{background:repeating-linear-gradient(135deg,rgba(217,164,65,.28) 0 6px,rgba(217,164,65,.14) 6px 12px);border-bottom:2px dashed var(--volamena);padding:0 .25em;border-radius:4px;white-space:nowrap}
+.eyebrow{display:inline-block;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--tany);margin-bottom:.8em}
+:root[data-theme="dark"] .eyebrow{color:var(--volamena)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .eyebrow{color:var(--volamena)}}
+
+/* Lamba pattern band */
+.lamba{height:14px;background:
+  linear-gradient(135deg,var(--mena) 25%,transparent 25%) -7px 0/14px 14px,
+  linear-gradient(225deg,var(--mena) 25%,transparent 25%) -7px 0/14px 14px,
+  linear-gradient(315deg,var(--volamena) 25%,transparent 25%) 0 0/14px 14px,
+  linear-gradient(45deg,var(--volamena) 25%,var(--mena-maizina) 25%) 0 0/14px 14px}
+
+/* NAV */
+header.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s,backdrop-filter .3s}
+header.nav.solid{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:16px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-family:Fraunces,serif;font-weight:800;font-size:1.25rem;letter-spacing:.04em}
+.nav.solid .brand{color:var(--text)}
+.brand svg{width:34px;height:34px;flex:none}
+.links{margin-left:auto;display:flex;gap:4px;align-items:center}
+.links a{color:#fff;text-decoration:none;font-weight:500;font-size:.93rem;padding:8px 12px;border-radius:999px;transition:background .2s}
+.nav.solid .links a{color:var(--text)}
+.links a:hover{background:rgba(255,255,255,.15)}
+.nav.solid .links a:hover{background:var(--chip)}
+.iconbtn{background:none;border:0;color:#fff;cursor:pointer;width:40px;height:40px;border-radius:50%;display:grid;place-items:center}
+.nav.solid .iconbtn{color:var(--text)}
+.iconbtn:hover{background:rgba(127,127,127,.15)}
+#menuBtn{display:none}
+@media (max-width:920px){
+  #menuBtn{display:grid}
+  #themeBtn{margin-left:auto}
+  .links{position:fixed;top:64px;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--bg);padding:12px 16px 20px;gap:2px;box-shadow:var(--shadow);transform:translateY(-130%);transition:transform .3s;margin:0}
+  .links.open{transform:none}
+  .links a,.nav .links a{color:var(--text);padding:12px 14px}
+}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.hero .scene{position:absolute;inset:0;z-index:-2;width:100%;height:100%}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,8,5,.15) 0%,rgba(20,8,5,.05) 40%,rgba(20,8,5,.75) 100%)}
+.hero .wrap{padding-bottom:clamp(56px,10vh,110px);padding-top:120px}
+.hero h1{font-size:clamp(2.6rem,8vw,5.6rem);font-weight:800;letter-spacing:-.01em;margin-bottom:.15em;text-shadow:0 4px 30px rgba(0,0,0,.35)}
+.hero .full{font-family:Fraunces,serif;font-size:clamp(1.05rem,2.4vw,1.5rem);opacity:.95;margin-bottom:1em}
+.hero .tag{max-width:620px;font-size:1.06rem;opacity:.92}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-size:.98rem;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--volamena);color:#2a1a0a;box-shadow:0 10px 24px -10px rgba(217,164,65,.8)}
+.btn.ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(6px)}
+.btn.solid{background:var(--accent);color:var(--accent-text)}
+.scroll-hint{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);opacity:.7;animation:bob 2s infinite}
+@keyframes bob{50%{transform:translate(-50%,6px)}}
+
+section{padding:clamp(64px,10vw,110px) 0}
+.alt{background:var(--bg2)}
+.lead{font-size:1.1rem;color:var(--muted);max-width:760px}
+
+/* About */
+.grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+@media (max-width:860px){.grid2{grid-template-columns:1fr;gap:28px}}
+.facts{display:grid;gap:12px}
+.fact{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.fact .ic{flex:none;width:42px;height:42px;border-radius:12px;background:var(--chip);display:grid;place-items:center;font-size:1.3rem}
+.fact small{display:block;color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+.fact b{font-size:1.05rem}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:linear-gradient(160deg,var(--mena),var(--mena-maizina));color:#fff;border-radius:var(--radius);padding:24px 20px;position:relative;overflow:hidden}
+.stat::after{content:"";position:absolute;right:-20px;bottom:-20px;width:90px;height:90px;border-radius:50%;border:14px solid rgba(217,164,65,.25)}
+.stat .n{font-family:Fraunces,serif;font-size:2.4rem;font-weight:800;line-height:1}
+.stat .n .fenoina{font-size:1rem;font-family:Inter,sans-serif;font-weight:600;color:#fff;border-color:var(--volamena)}
+.stat .l{opacity:.85;font-size:.9rem;margin-top:6px}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:36px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);transition:transform .25s}
+.card:hover{transform:translateY(-4px)}
+.cards.three{grid-template-columns:repeat(3,1fr)}
+@media (max-width:860px){.cards.three{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:540px){.cards.three{grid-template-columns:1fr}}
+.card .ic{font-size:1.8rem;margin-bottom:10px}
+.card p{color:var(--muted);margin:0}
+.card ul{margin:.4em 0 0;padding-left:1.1em;color:var(--muted)}
+.card ul li{margin-bottom:.35em}
+
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--text);padding:10px 18px;border-radius:999px;font-weight:600;cursor:pointer;font:inherit;font-weight:600}
+.tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.panel{display:none;margin-top:22px}
+.panel.on{display:block;animation:fade .35s}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}}
+
+/* Timeline */
+.timeline{position:relative;margin-top:40px;padding-left:34px}
+.timeline::before{content:"";position:absolute;left:11px;top:4px;bottom:4px;width:3px;background:linear-gradient(var(--volamena),var(--mena));border-radius:3px}
+.ev{position:relative;margin-bottom:28px}
+.ev::before{content:"";position:absolute;left:-30px;top:6px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:4px solid var(--mena)}
+.alt .ev::before{background:var(--bg2)}
+.ev .when{font-weight:700;color:var(--tany);font-size:.9rem;letter-spacing:.04em}
+:root[data-theme="dark"] .ev .when{color:var(--volamena)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .ev .when{color:var(--volamena)}}
+.ev h3{margin:.15em 0 .3em}
+.ev p{color:var(--muted);margin:0;max-width:760px}
+.note{font-size:.88rem;color:var(--muted);border-left:3px solid var(--volamena);padding:8px 14px;background:var(--card);border-radius:0 10px 10px 0;margin-top:24px;max-width:820px}
+
+/* Regions */
+.regions{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:30px}
+.region{border-radius:16px;padding:20px;color:#fff;min-height:150px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+.region h4{font-size:1.2rem;margin:0 0 .2em}
+.region p{margin:0;font-size:.88rem;opacity:.9}
+.region span{position:absolute;top:14px;right:16px;font-size:.75rem;font-weight:700;letter-spacing:.1em;opacity:.8}
+
+/* Boeny feature */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);background:var(--card);border:1px solid var(--line)}
+.feature .art{min-height:360px;background:var(--ranomasina)}
+.feature .art svg{width:100%;height:100%;display:block}
+.feature .txt{padding:clamp(24px,4vw,48px)}
+@media (max-width:860px){.feature{grid-template-columns:1fr}.feature .art{min-height:240px}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{background:var(--chip);padding:6px 12px;border-radius:999px;font-size:.85rem;font-weight:500}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:12px;margin-top:34px}
+.gallery figure{margin:0;border-radius:16px;overflow:hidden;position:relative;background:var(--chip)}
+.gallery figure.big{grid-column:span 2;grid-row:span 2}
+.gallery figure.wide{grid-column:span 2}
+.gallery svg,.gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.gallery figure:hover svg,.gallery figure:hover img{transform:scale(1.05)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;color:#fff;font-size:.85rem;font-weight:600;background:linear-gradient(transparent,rgba(0,0,0,.7))}
+@media (max-width:760px){.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}}
+
+/* Pub */
+.pubs{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px;margin-top:30px}
+@media (max-width:760px){.pubs{grid-template-columns:1fr}}
+.pub{border:2px dashed var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;justify-content:center;min-height:170px;background:var(--card)}
+.pub.main{background:linear-gradient(135deg,var(--ranomasina),#163c45);color:#fff;border:0}
+.pub.main p{opacity:.85}
+.pub small{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.72rem;opacity:.7}
+
+.socials{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.social{display:flex;align-items:center;gap:10px;padding:12px 18px;border-radius:14px;background:var(--card);border:1px solid var(--line);text-decoration:none;color:var(--text);font-weight:600}
+.social:hover{border-color:var(--accent)}
+.social svg{width:22px;height:22px}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+@media (max-width:760px){.contact{grid-template-columns:1fr}}
+form{display:grid;gap:12px}
+label{font-size:.85rem;font-weight:600;color:var(--muted)}
+input,textarea{width:100%;font:inherit;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--text)}
+textarea{min-height:120px;resize:vertical}
+input:focus,textarea:focus{outline:2px solid var(--volamena);outline-offset:1px}
+
+footer{background:#1b0f0b;color:#e8d9c8;padding:48px 0 30px;font-size:.92rem}
+footer a{color:var(--volamena)}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+@media (max-width:760px){footer .cols{grid-template-columns:1fr}}
+footer h4{color:#fff;font-size:1.05rem}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:6px}
+.sources{font-size:.82rem;opacity:.75;margin-top:28px;border-top:1px solid rgba(255,255,255,.12);padding-top:18px}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.scroll-hint{animation:none}}
+
+#installBar{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;max-width:520px;margin:0 auto;background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;display:none;align-items:center;gap:12px}
+#installBar.show{display:flex}
+#installBar p{margin:0;font-size:.92rem;flex:1}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="FIBESAMA">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#8c1d18"/><circle cx="32" cy="32" r="25" fill="none" stroke="#d9a441" stroke-width="2.5"/><path d="M32 12c-3 6-3 12 0 18 3-6 3-12 0-18z" fill="#d9a441"/><path d="M29 30h6v18h-6z" fill="#d9a441"/><path d="M20 26c4 0 8 2 12 5 4-3 8-5 12-5-3 3-7 5-12 6-5-1-9-3-12-6z" fill="#d9a441"/><path d="M18 50h28" stroke="#d9a441" stroke-width="3" stroke-linecap="round"/></svg>
+      FIBESAMA
+    </a>
+    <nav class="links" id="links">
+      <a href="#momba">Momba anay</a>
+      <a href="#tantara">Tantara</a>
+      <a href="#boeny">Boeny</a>
+      <a href="#vakoka">Vakoka</a>
+      <a href="#mpitondra">Mpitondra</a>
+      <a href="#sary">Sary</a>
+      <a href="#fifandraisana">Fifandraisana</a>
+    </nav>
+    <button class="iconbtn" id="themeBtn" aria-label="Ovay ny loko (maizina/mazava)">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <button class="iconbtn" id="menuBtn" aria-label="Menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" style="padding:0">
+  <svg class="scene" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2b0f22"/><stop offset=".38" stop-color="#8c2a1d"/><stop offset=".62" stop-color="#e07a2c"/><stop offset=".78" stop-color="#f6c26b"/>
+      </linearGradient>
+      <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c96a2e"/><stop offset=".25" stop-color="#5b3b3c"/><stop offset="1" stop-color="#14262c"/></linearGradient>
+      <radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff3c4"/><stop offset=".5" stop-color="#ffd27a"/><stop offset="1" stop-color="#ffb347" stop-opacity="0"/></radialGradient>
+    </defs>
+    <rect width="1600" height="1000" fill="url(#sky)"/>
+    <circle cx="1060" cy="640" r="210" fill="url(#sun)"/>
+    <circle cx="1060" cy="640" r="70" fill="#fff0c0"/>
+    <rect y="660" width="1600" height="340" fill="url(#sea)"/>
+    <g fill="#ffd89a" opacity=".55">
+      <rect x="980" y="680" width="160" height="4" rx="2"/><rect x="1010" y="702" width="100" height="3" rx="2"/><rect x="960" y="726" width="200" height="3" rx="2"/><rect x="1030" y="752" width="60" height="3" rx="2"/>
+    </g>
+    <!-- lakana / dhow -->
+    <g transform="translate(1210 672)" fill="#1a0c09">
+      <path d="M-70 0 Q0 22 80 0 L64 14 Q0 26 -58 14z"/>
+      <path d="M0 -4 L4 -150 L6 -4z"/>
+      <path d="M8 -146 Q70 -90 74 -10 L8 -10z"/>
+    </g>
+    <!-- ground -->
+    <path d="M0 700 Q300 660 620 690 T1600 700 V1000 H0z" fill="#1a0c09" opacity=".0"/>
+    <path d="M0 735 Q260 700 520 720 Q760 738 900 760 L900 1000 H0z" fill="#1d0e0a"/>
+    <path d="M700 1000 Q1000 820 1600 860 V1000z" fill="#160a07"/>
+    <!-- baobabs -->
+    <g fill="#1d0e0a">
+      <path d="M150 730 C160 600 152 520 160 430 L196 430 C204 520 196 600 210 730z"/>
+      <path d="M160 440 C130 400 110 405 92 380 M178 432 C176 395 182 372 170 345 M192 436 C222 400 238 402 262 378 M186 440 C204 410 222 400 218 370" stroke="#1d0e0a" stroke-width="10" stroke-linecap="round" fill="none"/>
+      <g><circle cx="92" cy="376" r="16"/><circle cx="170" cy="340" r="16"/><circle cx="262" cy="374" r="16"/><circle cx="218" cy="364" r="13"/><circle cx="120" cy="392" r="10"/></g>
+      <path d="M380 740 C392 560 384 470 392 360 L440 360 C448 470 440 560 452 740z"/>
+      <path d="M396 372 C356 330 330 336 306 300 M416 362 C412 320 422 294 406 262 M436 368 C476 324 500 328 530 296 M428 372 C452 336 474 324 470 290" stroke="#1d0e0a" stroke-width="13" stroke-linecap="round" fill="none"/>
+      <g><circle cx="306" cy="296" r="20"/><circle cx="406" cy="256" r="22"/><circle cx="530" cy="290" r="20"/><circle cx="470" cy="284" r="17"/><circle cx="350" cy="318" r="12"/><circle cx="440" cy="300" r="12"/></g>
+      <path d="M610 740 C618 640 612 590 618 520 L646 520 C652 590 646 640 654 740z"/>
+      <path d="M622 528 C600 500 584 504 572 484 M634 522 C632 498 638 482 628 462 M644 528 C664 504 680 506 694 488" stroke="#1d0e0a" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <g><circle cx="572" cy="482" r="11"/><circle cx="628" cy="458" r="12"/><circle cx="694" cy="484" r="11"/></g>
+    </g>
+    <!-- birds -->
+    <g fill="none" stroke="#2b120d" stroke-width="3" stroke-linecap="round" opacity=".7">
+      <path d="M820 300 q12 -10 24 0 q12 -10 24 0"/><path d="M890 260 q9 -8 18 0 q9 -8 18 0"/><path d="M760 340 q8 -7 16 0 q8 -7 16 0"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--volamena)">Fikambanana sosialy</span>
+    <h1>FIBESAMA</h1>
+    <div class="full">Filongoaben'ny Sakalava eto Madagasikara</div>
+    <p class="tag">Mitahiry ny tantara, ny vakoka ary ny fomban-drazana sakalava, sady manamafy ny firaisankina sy ny fifanampiana eo amin'ny taranaka sakalava manerana an'i Madagasikara sy any ivelany.</p>
+    <div class="btns">
+      <a class="btn primary" href="#momba">Fantaro ny FIBESAMA</a>
+      <a class="btn ghost" href="#tantara">Tantara sakalava</a>
+    </div>
+  </div>
+  <svg class="scroll-hint" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+</section>
+<div class="lamba"></div>
+
+<!-- ============ MOMBA ============ -->
+<section id="momba">
+  <div class="wrap">
+    <div class="grid2">
+      <div class="reveal">
+        <span class="eyebrow">Momba ny FIBESAMA</span>
+        <h2>Fikambanana iray, foko iray, fo iray</h2>
+        <p class="lead">Ny FIBESAMA (<b>FI</b>longoa<b>BE</b>n'ny <b>SA</b>kalava eto <b>MA</b>dagasikara) dia fikambanana sosialy mampivondrona ny Sakalava sy ireo tia ny kolontsaina sakalava, na aiza na aiza misy azy.</p>
+        <p>Natsangana izy mba ho toerana iraisana ifanampiana, ifampizarana ary itahirizana ny maha-Sakalava: ny fiteny, ny fanajana ny ampanjaka sy ny razana, ny fombafomba ary ny fihavanana. Mikatsaka ny fampandrosoana ny mpikambana sy ny faritra misy azy koa izy, amin'ny alalan'ny fanabeazana, ny asa sosialy ary ny fiaraha-miasa.</p>
+      </div>
+      <div class="facts reveal">
+        <div class="fact"><div class="ic">📅</div><div><small>Daty nananganana</small><b data-k="fananganana"></b></div></div>
+        <div class="fact"><div class="ic">👤</div><div><small>Filoha amin'izao fotoana</small><b data-k="filoha"></b></div></div>
+        <div class="fact"><div class="ic">📍</div><div><small>Foibe</small><b data-k="foibe"></b></div></div>
+        <div class="fact"><div class="ic">📜</div><div><small>Fahazoan-dalana / Récépissé</small><b data-k="recepisse"></b></div></div>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><div class="n" data-k="mpikambana"></div><div class="l">Mpikambana voasoratra</div></div>
+      <div class="stat"><div class="n" data-k="sampana"></div><div class="l">Sampana / faritra</div></div>
+      <div class="stat"><div class="n" data-k="taona"></div><div class="l">Taona niasana</div></div>
+      <div class="stat"><div class="n" data-k="hetsika"></div><div class="l">Hetsika natao</div></div>
+    </div>
+
+    <div class="tabs reveal" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-p="p-tanjona">🎯 Tanjona</button>
+      <button class="tab" role="tab" aria-selected="false" data-p="p-hery">💪 Hery</button>
+      <button class="tab" role="tab" aria-selected="false" data-p="p-fanamby">⚖️ Fanamby (lesoka)</button>
+    </div>
+    <div class="panel on" id="p-tanjona">
+      <div class="cards">
+        <div class="card"><div class="ic">🤝</div><h3>Firaisankina</h3><p>Mampivondrona ny Sakalava rehetra, na Menabe na Boeny na Avaratra, ho fianakaviana iray tsy mizarazara.</p></div>
+        <div class="card"><div class="ic">🏺</div><h3>Fitahirizana vakoka</h3><p>Miaro sy mampita amin'ny taranaka ny fiteny, ny tantara, ny fomban-drazana ary ny toerana masina.</p></div>
+        <div class="card"><div class="ic">🎓</div><h3>Fanabeazana</h3><p>Manohana ny tanora amin'ny fianarana sy ny fanofanana, ary mampahafantatra azy ireo ny fiaviany.</p></div>
+        <div class="card"><div class="ic">🌱</div><h3>Fampandrosoana</h3><p>Mitarika tetikasa sosialy sy ara-toekarena ho an'ny mpikambana sy ny faritra sakalava.</p></div>
+      </div>
+    </div>
+    <div class="panel" id="p-hery">
+      <div class="cards">
+        <div class="card"><div class="ic">🌍</div><h3>Tambajotra midadasika</h3><p>Mpikambana miely manerana ny Nosy sy any ivelany, mifandray amin'ny tambajotra sosialy.</p></div>
+        <div class="card"><div class="ic">👑</div><h3>Fototra ara-kolontsaina matanjaka</h3><p>Kolontsaina velona sy hajaina: ny ampanjaka, ny doany ary ny lanonana lehibe mbola mitohy hatramin'izao.</p></div>
+        <div class="card"><div class="ic">🔥</div><h3>Fahavononana</h3><p>Mpikambana mazoto sy tanora maro te-handray anjara amin'ny fampandrosoana.</p></div>
+        <div class="card"><div class="ic">🗂️</div><h3>Fandaminana maoderina</h3><p>Fitantanana mpikambana amin'ny fomba nomerika sy voaaro tsara.</p></div>
+      </div>
+    </div>
+    <div class="panel" id="p-fanamby">
+      <div class="cards">
+        <div class="card"><div class="ic">💰</div><h3>Loharanom-bola</h3><p>Mbola voafetra ny vola miditra, ka ilaina ny fandraisana anjaran'ny mpikambana sy ny mpiara-miasa.</p></div>
+        <div class="card"><div class="ic">🧭</div><h3>Elanelana ara-jeografika</h3><p>Miparitaka lavitra ny mpikambana, ka sarotra indraindray ny fihaonana sy ny fifandraisana.</p></div>
+        <div class="card"><div class="ic">🗣️</div><h3>Fampitana amin'ny tanora</h3><p>Tandindomin-doza ny fiteny sy ny fomba sasany raha tsy ampitaina tsara amin'ny taranaka vaovao.</p></div>
+        <div class="card"><div class="ic">📣</div><h3>Fahafantarana</h3><p>Mbola tsy fantatry ny besinimaro tsara ny asa ataon'ny fikambanana; izany no anton'ity tranonkala ity.</p></div>
+      </div>
+      <p class="note">Ireo hery sy fanamby ireo dia ohatra voalohany. Afaka ovain'ny birao araka ny zava-misy marina ao amin'ny FIBESAMA.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TANTARA ============ -->
+<section id="tantara" class="alt">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Tantara sakalava</span>
+      <h2>Avy aiza ny Sakalava?</h2>
+      <p class="lead">Ny Sakalava dia anisan'ny vondrom-bahoaka lehibe indrindra eto Madagasikara, miaina amin'ny morontsiraka andrefana, manomboka eo amin'ny manodidina ny Onilahy any atsimo ka hatrany Nosy Be any avaratra. Fanjakana sakalava matanjaka no niorina tamin'ity faritra ity tamin'ny taonjato faha-17 sy faha-18.</p>
+    </div>
+    <div class="timeline">
+      <div class="ev reveal"><div class="when">Fiandohana · taonjato faha-16 – 17</div><h3>Ny taranaka Maroserana</h3><p>Ny fanjakana sakalava dia naorin'ny taranaka mpanjaka Maroserana (na Volamena), izay nipoitra tany amin'ny faritra atsimo-andrefana. Nitarika vahoaka samihafa izy ireo ka nanangana fanjakana iray niitatra nianavaratra.</p></div>
+      <div class="ev reveal"><div class="when">Tokony ho taonjato faha-17</div><h3>Fanjakana Menabe</h3><p>Andriandahifotsy no heverina ho mpanjaka nampiray sy nanamafy ny fanjakana Menabe, any amin'ny manodidina ny Morondava sy Tsiribihina. Ny anarana hoe "Sakalava" dia lasa nampiasaina ho an'ny vahoaka teo ambany fitondran'izy ireo.</p></div>
+      <div class="ev reveal"><div class="when">Fiandohan'ny taonjato faha-18</div><h3>Fiitarana nianavaratra: Boeny</h3><p>Andriamandisoarivo, avy amin'ny fianakaviana mpanjaka, no nitarika ny fiitarana nianavaratra ka nanorina ny fanjakana Boeny. Lasa seranana ara-barotra manan-danja eo amin'ny Lakandranon'i Mozambika i Mahajanga.</p></div>
+      <div class="ev reveal"><div class="when">Taonjato faha-18</div><h3>Vanim-potoana nahery</h3><p>Ny fanjakana sakalava no anisan'ny nanana faritany midadasika indrindra teto Madagasikara. Nanana fifandraisana ara-barotra tamin'ny mpivarotra Swahili, Arabo, Indiana ary Eoropeana ny Boeny. Nalaza ny Mpanjakavavy Ravahiny tamin'ny faran'io taonjato io.</p></div>
+      <div class="ev reveal"><div class="when">1824 – 1840 eo ho eo</div><h3>Fifandonana sy fifindrana</h3><p>Nobodoin'ny tafika merina tamin'ny andron'i Radama I i Mahajanga tamin'ny 1824. Nifindra nianavaratra ny ampahany tamin'ny fianakaviana mpanjaka Boeny, nankany amin'ny faritra Analalava sy Nosy Be, ary nifandray tamin'ny Frantsay ny mpanjakavavy Tsiomeko tamin'ny 1840 teo ho eo.</p></div>
+      <div class="ev reveal"><div class="when">1896 – 1960</div><h3>Fanjanahantany</h3><p>Nandritra ny fanjanahantany frantsay dia very fahefana ara-politika ny ampanjaka, saingy nitohy ny fanajana azy sy ny fomba masina, toy ny fanompoana ny dady (fitahirizana masina an'ny mpanjaka teo aloha).</p></div>
+      <div class="ev reveal"><div class="when">Ankehitriny</div><h3>Kolontsaina velona</h3><p>Mbola misy ampanjaka sakalava hajaina ao amin'ny faritra maro, ary mbola atao ny lanonana lehibe toy ny Fanompoambe any Mahajanga sy ny Fitampoha any Menabe. Ny fikambanana toy ny FIBESAMA no manohy ny fampiraisana sy ny fitahirizana izany.</p></div>
+    </div>
+    <p class="note reveal">📚 Fanamarihana: ny daty sy ny filaharan'ny mpanjaka sasany dia mbola iadian-kevitry ny mpahay tantara, ary samy manana ny lovantsofiny ny faritra tsirairay. Raisina ho fanazavana ankapobeny ireto, ary azon'ny zokiolona sy ny mpahay tantara sakalava atao tsara kokoa.</p>
+
+    <div class="reveal" style="margin-top:60px">
+      <span class="eyebrow">Fiitarana</span>
+      <h3 style="font-size:1.7rem">Ny tanin'ny Sakalava, avy atsimo ka hatrany avaratra</h3>
+    </div>
+    <div class="regions reveal">
+      <div class="region" style="background:linear-gradient(160deg,#b5652b,#6b2a12)"><span>ATSIMO</span><h4>Fiherenana · Onilahy</h4><p>Faritra niaviana voalohany araka ny lovantsofina.</p></div>
+      <div class="region" style="background:linear-gradient(160deg,#8c1d18,#4a0d0a)"><span>ANDREFANA</span><h4>Menabe</h4><p>Morondava, Belo-sur-Tsiribihina. Tanin'ny Fitampoha sy ny baobab.</p></div>
+      <div class="region" style="background:linear-gradient(160deg,#7a4a1c,#3b220c)"><span>ANDREFANA</span><h4>Melaky · Ambongo</h4><p>Maintirano sy ny morontsiraka afovoany.</p></div>
+      <div class="region" style="background:linear-gradient(160deg,#0f4c5c,#082a33)"><span>AVARATRA ANDREFANA</span><h4>Boeny</h4><p>Mahajanga, Marovoay. Foiben'ny fanjakana Boeny.</p></div>
+      <div class="region" style="background:linear-gradient(160deg,#2c5f4a,#123326)"><span>AVARATRA</span><h4>Analalava · Ambanja · Nosy Be</h4><p>Bemihisatra sy Bemazava, taranaka mpanjaka nifindra avaratra.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOENY ============ -->
+<section id="boeny">
+  <div class="wrap">
+    <div class="feature reveal">
+      <div class="art">
+        <svg viewBox="0 0 600 480" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><linearGradient id="bsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3b45a"/><stop offset="1" stop-color="#e8875a"/></linearGradient></defs>
+          <rect width="600" height="480" fill="url(#bsky)"/>
+          <circle cx="440" cy="150" r="56" fill="#fff1c6"/>
+          <rect y="300" width="600" height="180" fill="#0f4c5c"/>
+          <g fill="#fbe2b2" opacity=".5"><rect x="380" y="318" width="120" height="3"/><rect x="400" y="334" width="80" height="3"/></g>
+          <!-- Mahajanga baobab (big one) -->
+          <path d="M110 330 C100 250 112 200 106 150 L178 150 C172 200 184 250 174 330z" fill="#5a2a14"/>
+          <g stroke="#5a2a14" stroke-width="14" stroke-linecap="round" fill="none"><path d="M118 160 C80 120 60 130 40 100"/><path d="M140 150 C136 110 148 90 136 60"/><path d="M164 158 C200 118 224 124 250 96"/></g>
+          <ellipse cx="142" cy="100" rx="110" ry="30" fill="#2f5a2a"/>
+          <ellipse cx="80" cy="90" rx="44" ry="18" fill="#3c6d34"/><ellipse cx="212" cy="88" rx="50" ry="18" fill="#3c6d34"/>
+          <!-- shore -->
+          <path d="M0 330 Q150 310 300 322 Q420 332 600 318 V350 H0z" fill="#e9c58f"/>
+          <!-- boats -->
+          <g fill="#3b1a10"><path d="M320 360 Q360 372 400 360 L392 370 Q360 378 328 370z"/><path d="M358 360 L360 270 L362 360z"/><path d="M364 274 Q400 310 404 352 L364 352z" fill="#f6eedf"/></g>
+          <g fill="#3b1a10" transform="translate(140 40) scale(.6)"><path d="M520 560 Q560 572 600 560 L592 570 Q560 578 528 570z"/><path d="M558 560 L560 470 L562 560z"/><path d="M564 474 Q600 510 604 552 L564 552z" fill="#f6eedf"/></g>
+          <!-- doany roof -->
+          <g transform="translate(470 230)"><path d="M-60 70 L0 20 L60 70z" fill="#8c1d18"/><rect x="-48" y="70" width="96" height="40" fill="#f6eedf"/><rect x="-10" y="82" width="20" height="28" fill="#5e120f"/><path d="M0 20 L0 4" stroke="#d9a441" stroke-width="4"/><circle cx="0" cy="2" r="5" fill="#d9a441"/></g>
+        </svg>
+      </div>
+      <div class="txt">
+        <span class="eyebrow">Ny Sakalava Boeny</span>
+        <h2>Boeny, tanin'ny Doany sy ny ranomasina</h2>
+        <p>Ny Boeny no fanjakana sakalava avaratra-andrefana, niorina teo amin'ny manodidina ny helodranon'i Bombetoka sy ny reniranon'i Betsiboka. Lasa toerana fihaonan'ny kolontsaina maro i Mahajanga noho ny varotra an-dranomasina.</p>
+        <p>Any Mahajanga no misy ny <b>Doany Miadana</b>, toerana masina itahirizana ny <b>dady</b> an'ireo mpanjaka Boeny teo aloha, fantatra amin'ny anarana hoe <b>Ndramisara Efadahy</b>. Isan-taona, matetika amin'ny volana Jolay, no atao ny <b>Fanompoambe</b>: fandroana ireo fitahirizana masina, izay mahasarika olona an'arivony avy amin'ny faritra maro.</p>
+        <div class="chips">
+          <span class="chip">Mahajanga</span><span class="chip">Marovoay</span><span class="chip">Doany Miadana</span><span class="chip">Fanompoambe</span><span class="chip">Betsiboka</span><span class="chip">Baobab Mahajanga</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VAKOKA ============ -->
+<section id="vakoka" class="alt">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Vakoka sy fomban-drazana</span>
+      <h2>Ny harena tsy mety lany</h2>
+      <p class="lead">Ny kolontsaina sakalava dia mifototra amin'ny fanajana ny razana sy ny ampanjaka, ny fifandraisana amin'ny tontolo masina ary ny fihavanana.</p>
+    </div>
+    <div class="cards three">
+      <div class="card reveal"><div class="ic">👑</div><h3>Ampanjaka sy Doany</h3><p>Ny ampanjaka no tandindon'ny firaisankina. Ny doany no toeram-ponenany sy toerana masina, voafehin'ny fady maro.</p></div>
+      <div class="card reveal"><div class="ic">🏺</div><h3>Dady</h3><p>Fitahirizana masina an'ireo mpanjaka efa nodimandry, heverina ho mitondra ny hasin'izy ireo. Hajaina sy tsaboina amin'ny fombafomba manokana.</p></div>
+      <div class="card reveal"><div class="ic">💧</div><h3>Fanompoambe sy Fitampoha</h3><p>Lanonana lehibe fandroana ny dady: ny Fanompoambe any Boeny, ary ny Fitampoha any Menabe izay tsy atao afa-tsy isaky ny taona maromaro.</p></div>
+      <div class="card reveal"><div class="ic">🌀</div><h3>Tromba</h3><p>Fomba ivelomin'ny fanahin'ireo mpanjaka teo aloha amin'ny olona velona, ahafahany manome torohevitra sy fitahiana. Anisan'ny tena maha-izy azy ny kolontsaina sakalava.</p></div>
+      <div class="card reveal"><div class="ic">🚫</div><h3>Fady</h3><p>Ireo fady mifandray amin'ny ampanjaka, ny doany ary ny andro masina no mitahiry ny filaminana sy ny fanajana eo amin'ny fiarahamonina.</p></div>
+      <div class="card reveal"><div class="ic">🟥</div><h3>Ny loko mena</h3><p>Ny mena no loko mifandray amin'ny fanjakana sy ny ampanjaka. Hita amin'ny lamba, ny saina ary ny haingo amin'ny lanonana.</p></div>
+      <div class="card reveal"><div class="ic">🌼</div><h3>Masonjoany</h3><p>Fanosotra tarehy vita amin'ny hazo totoina, ampiasain'ny vehivavy any avaratra-andrefana mba hiarovana ny hoditra sy ho haingo.</p></div>
+      <div class="card reveal"><div class="ic">🥁</div><h3>Mozika sy dihy</h3><p>Ny salegy any avaratra sy ny kilalaky any Menabe no mampiaiky volana manerana ny Nosy. Ankoatra izay, misy ihany koa ny hira sy dihy masina amin'ny lanonana.</p></div>
+      <div class="card reveal"><div class="ic">🗣️</div><h3>Fiteny sakalava</h3><p>Fitenim-paritra malagasy manana ny voambolany sy ny feony manokana, samy hafa kely eo amin'ny Menabe, Boeny ary avaratra.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MPITONDRA ============ -->
+<section id="mpitondra">
+  <div class="wrap">
+    <div class="grid2">
+      <div class="reveal">
+        <span class="eyebrow">Fifandraisana amin'ny mpitondra</span>
+        <h2>Ampanjaka, foko ary fikambanana</h2>
+        <p><b>Taloha</b>, ny ampanjaka no nitondra ny fanjakana: izy no nitsara, nampiray ny vahoaka ary nifampiraharaha tamin'ny fanjakana hafa sy ny mpivarotra vahiny. Nisy fifanarahana sy fifandonana teo amin'ny fanjakana sakalava sy ny fanjakana merina, ary taty aoriana tamin'ny Frantsay.</p>
+        <p><b>Ankehitriny</b>, ny ampanjaka sakalava dia mitazona anjara toerana ara-kolontsaina sy ara-pitondrantena. Izy no mpiambina ny fomba sy ny toerana masina, ary manan-danja amin'ny fampihavanana sy ny fifampiresahana amin'ny fanjakana sy ny fiarahamonina.</p>
+        <p>Ny FIBESAMA dia mikatsaka fifandraisana feno fanajana amin'ny ampanjaka sy ny raiamandreny sakalava, ary miara-miasa amin'ny manampahefana sy ny fikambanana hafa ho tombontsoan'ny foko.</p>
+      </div>
+      <div class="reveal">
+        <div class="card" style="padding:28px">
+          <h3>Ireo mpiara-miasa amin'ny FIBESAMA</h3>
+          <ul>
+            <li><span class="fenoina">Anaran'ny ampanjaka na doany</span></li>
+            <li><span class="fenoina">Raiamandreny / Zokiolona</span></li>
+            <li><span class="fenoina">Manampahefana eo an-toerana</span></li>
+            <li><span class="fenoina">Fikambanana mpiara-miasa</span></li>
+          </ul>
+          <p style="margin-top:14px;font-size:.88rem">Fenoy araka ny fifandraisana tena misy amin'izao fotoana.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SARY ============ -->
+<section id="sary" class="alt">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Sary</span>
+      <h2>Tontolo sakalava</h2>
+      <p class="lead">Sary fampisehoana ireto. Azo soloina sarin'ny lanonana sy ny hetsika FIBESAMA tena izy: apetraho ao amin'ny lahatahiry <code>sary/</code> ary soraty ao amin'ny lisitra eo amin'ny faran'ity rakitra ity.</p>
+    </div>
+    <div class="gallery reveal" id="gallery"></div>
+  </div>
+</section>
+
+<!-- ============ PUB ============ -->
+<section id="dokam-barotra">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Dokam-barotra sy mpiara-miasa</span>
+      <h2>Toerana ho an'ny mpanohana</h2>
+      <p class="lead">Ny orinasa sy ny mpiara-miasa manohana ny FIBESAMA dia afaka mampiseho ny dokam-barony eto, ary hiely manerana ny tambajotra sosialy sakalava.</p>
+    </div>
+    <div class="pubs reveal">
+      <div class="pub main"><small>Toerana lehibe</small><h3 style="margin:.3em 0">Ny dokam-barotrao eto</h3><p>Sary na sora-baventy (1200 × 400). Mifandraisa amin'ny birao.</p></div>
+      <div class="pub"><small>Toerana 2</small><h3 style="margin:.3em 0;font-size:1.1rem">Logo mpiara-miasa</h3><p style="margin:0;color:var(--muted)">400 × 400</p></div>
+      <div class="pub"><small>Toerana 3</small><h3 style="margin:.3em 0;font-size:1.1rem">Hetsika ho avy</h3><p style="margin:0;color:var(--muted)">Fanambarana na fanasana</p></div>
+    </div>
+    <div class="reveal" style="margin-top:44px">
+      <h3>Araho ny FIBESAMA</h3>
+      <div class="socials">
+        <a class="social" data-net="facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#1877f2"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Facebook</a>
+        <a class="social" data-net="tiktok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.8a5.7 5.7 0 1 0 4.9 5.6V9a7.3 7.3 0 0 0 4.3 1.4V7.3a4.3 4.3 0 0 1-3.2-1.5z"/></svg>TikTok</a>
+        <a class="social" data-net="youtube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#ff0000"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>YouTube</a>
+        <a class="social" data-net="whatsapp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#25d366"><path d="M12 0a12 12 0 0 0-10.4 18L0 24l6.2-1.6A12 12 0 1 0 12 0zm6.9 17c-.3.8-1.7 1.6-2.4 1.6-.6.1-1.4.1-2.2-.1a20 20 0 0 1-2-.8 15.6 15.6 0 0 1-6-5.3c-.5-.6-1.6-2.1-1.6-4s1-2.8 1.3-3.2c.4-.4.8-.5 1-.5h.8c.2 0 .5 0 .8.6l1.1 2.7c.1.2.2.5 0 .7l-.3.6-.5.6c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.8 1.5 1.3 2.8 1.7 3.2 1.9.4.2.6.2.8-.1l1.2-1.4c.3-.4.5-.3.9-.2l2.6 1.2c.4.2.6.3.7.5.1.2.1.9-.2 1.6z"/></svg>WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FIFANDRAISANA ============ -->
+<section id="fifandraisana" class="alt">
+  <div class="wrap contact">
+    <div class="reveal">
+      <span class="eyebrow">Fifandraisana</span>
+      <h2>Te hifandray aminay?</h2>
+      <p class="lead">Na te ho mpikambana ianao, na te hiara-miasa, na manana fanontaniana momba ny kolontsaina sakalava, aza misalasala.</p>
+      <div class="facts" style="margin-top:20px">
+        <div class="fact"><div class="ic">📞</div><div><small>Finday</small><b data-k="finday"></b></div></div>
+        <div class="fact"><div class="ic">✉️</div><div><small>Mailaka</small><b data-k="mailaka"></b></div></div>
+        <div class="fact"><div class="ic">📍</div><div><small>Adiresy</small><b data-k="adiresy"></b></div></div>
+      </div>
+    </div>
+    <form class="reveal" id="contactForm">
+      <div><label for="f1">Anarana</label><input id="f1" name="anarana" required></div>
+      <div><label for="f2">Finday na mailaka</label><input id="f2" name="fifandraisana" required></div>
+      <div><label for="f3">Hafatra</label><textarea id="f3" name="hafatra" required></textarea></div>
+      <button class="btn solid" type="submit" style="justify-self:start">Alefaso ny hafatra</button>
+      <p style="font-size:.82rem;color:var(--muted);margin:0">Ny hafatra dia misokatra amin'ny mailakao na WhatsApp. Tsy misy angona voatahiry ato amin'ity tranonkala ity.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>FIBESAMA</h4>
+        <p>Filongoaben'ny Sakalava eto Madagasikara. Fikambanana sosialy ho an'ny firaisankina, ny fitahirizana vakoka ary ny fampandrosoana.</p>
+        <p style="font-family:Fraunces,serif;font-size:1.1rem;color:#fff" data-k="teny_filamatra"></p>
+      </div>
+      <div>
+        <h4>Pejy</h4>
+        <ul><li><a href="#momba">Momba anay</a></li><li><a href="#tantara">Tantara</a></li><li><a href="#vakoka">Vakoka</a></li><li><a href="#fifandraisana">Fifandraisana</a></li></ul>
+      </div>
+      <div>
+        <h4>Application</h4>
+        <p>Apetraho amin'ny findainao ity tranonkala ity mba hamakiana azy na tsy misy internet aza.</p>
+        <button class="btn primary" id="installBtn2" type="button" style="padding:10px 18px">📲 Apetraho</button>
+      </div>
+    </div>
+    <div class="sources">
+      Loharano ankapobeny momba ny tantara: J. Lombard, <i>Le royaume sakalava du Menabe</i> (1988); G. Feeley-Harnik, <i>A Green Estate: Restoring Independence in Madagascar</i> (1991); ary ny lovantsofina sakalava. Ny votoaty dia mety hohatsaraina amin'ny fanampian'ny zokiolona sy mpahay tantara.<br>
+      © <span id="yr"></span> FIBESAMA. Zo rehetra voatokana.
+    </div>
+  </div>
+</footer>
+<div class="lamba"></div>
+
+<div id="installBar" role="dialog" aria-label="Apetraho ny application">
+  <span style="font-size:1.6rem">📲</span>
+  <p><b>Apetraho ny FIBESAMA</b><br>Hisokatra toy ny application ao amin'ny findainao.</p>
+  <button class="btn solid" id="installBtn" type="button" style="padding:9px 16px">Apetraho</button>
+  <button class="iconbtn" id="installClose" aria-label="Akatona" style="color:var(--text)">✕</button>
+</div>
+
+<script>
+/* =====================================================================
+   ✏️  OVAO ETO NY MOMBAMOMBA NY FIBESAMA
+   Soloy ny soratra eo anelanelan'ny "..." ary tehirizo ny rakitra.
+   Raha mbola tsy fantatra dia avelao ho null: hiseho ho "Ho fenoina".
+   ===================================================================== */
+const SITE = {
+  fananganana:   null,   // ohatra: "12 Jona 2018"
+  filoha:        null,   // ohatra: "Atoa / Ramatoa ..."
+  foibe:         null,   // ohatra: "Mahajanga"
+  recepisse:     null,   // laharana fahazoan-dalana
+  mpikambana:    null,   // ohatra: "1 250"
+  sampana:       null,   // isan'ny sampana
+  taona:         null,   // isan-taona niasana
+  hetsika:       null,   // isan'ny hetsika
+  finday:        null,   // ohatra: "+261 34 00 000 00"
+  mailaka:       null,   // ohatra: "fibesama@gmail.com"
+  adiresy:       null,
+  whatsapp:      null,   // laharana WhatsApp tsy misy "+" (ohatra 261340000000)
+  teny_filamatra: "Firaisankina · Fanajana · Fandrosoana",
+  rohy: {                // rohy tambajotra sosialy
+    facebook: null, tiktok: null, youtube: null, whatsapp: null
+  }
+};
+
+/* Sary: ampio eto ny sarinao (apetraho ao amin'ny lahatahiry sary/).
+   src: null = sary fampisehoana voaloko. size: "big" | "wide" | "" */
+const SARY = [
+  { src: null, size: "big",  title: "Baobab amin'ny hariva", art: "baobab" },
+  { src: null, size: "",     title: "Lakana eny amin'ny ranomasina", art: "lakana" },
+  { src: null, size: "",     title: "Doany", art: "doany" },
+  { src: null, size: "wide", title: "Fanompoambe, Mahajanga", art: "fanompoambe" },
+  { src: null, size: "wide", title: "Lamba mena", art: "lamba" },
+  { src: null, size: "wide", title: "Masonjoany", art: "masonjoany" },
+];
+/* ===================================================================== */
+
+const $ = s => document.querySelector(s), $$ = s => document.querySelectorAll(s);
+$$('[data-k]').forEach(el => {
+  const v = SITE[el.dataset.k];
+  if (v === null || v === undefined || v === '') { el.innerHTML = '<span class="fenoina">Ho fenoina</span>'; }
+  else el.textContent = v;
+});
+$$('[data-net]').forEach(a => {
+  const u = SITE.rohy[a.dataset.net] || (a.dataset.net === 'whatsapp' && SITE.whatsapp ? 'https://wa.me/' + SITE.whatsapp : null);
+  if (u) a.href = u; else { a.href = '#fifandraisana'; a.removeAttribute('target'); a.title = 'Rohy ho fenoina'; }
+});
+$('#yr').textContent = new Date().getFullYear();
+
+/* gallery art */
+const ART = {
+  baobab: `<rect width="400" height="400" fill="#e9874a"/><rect width="400" height="200" fill="#b4432a"/><circle cx="290" cy="230" r="60" fill="#ffd98a"/><rect y="270" width="400" height="130" fill="#3a1a10"/><path d="M150 300 C144 220 150 170 146 120 L196 120 C192 170 198 220 192 300z" fill="#2a1009"/><g stroke="#2a1009" stroke-width="10" stroke-linecap="round" fill="none"><path d="M152 128 C120 96 104 100 86 76"/><path d="M170 120 C168 92 176 74 166 52"/><path d="M190 126 C220 96 238 98 258 76"/></g><g fill="#2a1009"><circle cx="86" cy="72" r="14"/><circle cx="166" cy="48" r="15"/><circle cx="258" cy="72" r="14"/><circle cx="120" cy="96" r="9"/><circle cx="224" cy="94" r="9"/></g><path d="M40 300 C37 260 40 240 38 210 L58 210 C56 240 59 260 56 300z" fill="#2a1009"/><g fill="#2a1009"><circle cx="34" cy="204" r="7"/><circle cx="48" cy="198" r="8"/><circle cx="62" cy="204" r="7"/></g><path d="M320 300 C318 270 320 250 319 228 L335 228 C334 250 336 270 334 300z" fill="#2a1009"/><g fill="#2a1009"><circle cx="316" cy="224" r="6"/><circle cx="327" cy="218" r="7"/><circle cx="338" cy="224" r="6"/></g>`,
+  lakana: `<rect width="400" height="400" fill="#7fc3cf"/><rect y="220" width="400" height="180" fill="#0f4c5c"/><circle cx="80" cy="90" r="36" fill="#fff6d8"/><g fill="#2a1009"><path d="M110 260 Q200 290 300 260 L282 278 Q200 296 128 278z"/><path d="M196 262 L200 90 L204 262z"/></g><path d="M206 96 Q290 170 296 250 L206 250z" fill="#f6eedf"/><g fill="#bfe3ea" opacity=".6"><rect x="40" y="300" width="90" height="3"/><rect x="250" y="320" width="110" height="3"/></g>`,
+  doany: `<rect width="400" height="400" fill="#f3d9a6"/><rect y="280" width="400" height="120" fill="#c9965a"/><g transform="translate(200 160)"><path d="M-120 100 L0 0 L120 100z" fill="#8c1d18"/><rect x="-96" y="100" width="192" height="80" fill="#f6eedf"/><rect x="-18" y="122" width="36" height="58" fill="#5e120f"/><path d="M0 0 V-24" stroke="#d9a441" stroke-width="6"/><circle cx="0" cy="-28" r="8" fill="#d9a441"/></g><g fill="#8c1d18"><rect x="30" y="230" width="6" height="60"/><rect x="364" y="230" width="6" height="60"/></g><path d="M20 230 H380" stroke="#8c1d18" stroke-width="4" stroke-dasharray="2 10"/>`,
+  fanompoambe: `<rect width="800" height="400" fill="#0f4c5c"/><rect width="800" height="180" fill="#f0a24f"/><circle cx="600" cy="150" r="50" fill="#fff1c6"/><rect y="180" width="800" height="40" fill="#e9c58f"/><g fill="#8c1d18">${Array.from({length:22},(_,i)=>`<g transform="translate(${30+i*35} ${200+(i%3)*6})"><circle r="9" cy="-24" fill="#3a1a10"/><path d="M-12 0 Q0 -20 12 0 L10 30 H-10z"/></g>`).join('')}</g><g fill="#f6eedf" opacity=".5"><rect x="80" y="300" width="200" height="4"/><rect x="420" y="330" width="260" height="4"/></g>`,
+  lamba: `<defs><pattern id="lp" width="40" height="40" patternUnits="userSpaceOnUse"><rect width="40" height="40" fill="#8c1d18"/><path d="M0 20 L20 0 L40 20 L20 40z" fill="#d9a441"/><path d="M10 20 L20 10 L30 20 L20 30z" fill="#5e120f"/></pattern></defs><rect width="400" height="400" fill="url(#lp)"/><rect y="170" width="400" height="60" fill="#f6eedf"/><rect y="182" width="400" height="8" fill="#0f4c5c"/><rect y="210" width="400" height="8" fill="#0f4c5c"/>`,
+  masonjoany: `<rect width="400" height="400" fill="#5e3a2a"/><circle cx="200" cy="200" r="120" fill="#7a4a34"/><ellipse cx="200" cy="215" rx="78" ry="98" fill="#8a5a3e"/><g fill="#f3e2a6"><circle cx="160" cy="230" r="16"/><circle cx="240" cy="230" r="16"/><circle cx="200" cy="168" r="10"/><circle cx="185" cy="140" r="6"/><circle cx="215" cy="140" r="6"/><circle cx="200" cy="270" r="7"/></g><path d="M126 160 Q200 70 274 160 Q280 110 200 96 Q120 110 126 160z" fill="#2a1009"/>`
+};
+const g = $('#gallery');
+SARY.forEach(s => {
+  const f = document.createElement('figure');
+  if (s.size) f.className = s.size;
+  const vb = s.art === 'fanompoambe' ? '0 0 800 400' : '0 0 400 400';
+  f.innerHTML = (s.src ? `<img src="${s.src}" alt="${s.title}" loading="lazy">` :
+    `<svg viewBox="${vb}" preserveAspectRatio="xMidYMid slice" role="img" aria-label="${s.title}">${ART[s.art] || ART.lamba}</svg>`) +
+    `<figcaption>${s.title}</figcaption>`;
+  g.appendChild(f);
+});
+
+/* tabs */
+$$('.tab').forEach(t => t.addEventListener('click', () => {
+  $$('.tab').forEach(x => x.setAttribute('aria-selected', x === t));
+  $$('.panel').forEach(p => p.classList.toggle('on', p.id === t.dataset.p));
+}));
+
+/* nav */
+const nav = $('#nav');
+const onScroll = () => nav.classList.toggle('solid', scrollY > 40);
+addEventListener('scroll', onScroll, { passive: true }); onScroll();
+$('#menuBtn').addEventListener('click', () => { const o = $('#links').classList.toggle('open'); $('#menuBtn').setAttribute('aria-expanded', o); nav.classList.add('solid'); });
+$$('#links a').forEach(a => a.addEventListener('click', () => $('#links').classList.remove('open')));
+
+/* theme */
+const root = document.documentElement;
+try { const t = localStorage.getItem('fib-theme'); if (t) root.dataset.theme = t; } catch (e) {}
+$('#themeBtn').addEventListener('click', () => {
+  const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  root.dataset.theme = dark ? 'light' : 'dark';
+  try { localStorage.setItem('fib-theme', root.dataset.theme); } catch (e) {}
+});
+
+/* reveal */
+const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 }) : null;
+$$('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+
+/* contact: open mail or WhatsApp, nothing stored */
+$('#contactForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const d = new FormData(e.target);
+  const body = `Anarana: ${d.get('anarana')}\nFifandraisana: ${d.get('fifandraisana')}\n\n${d.get('hafatra')}`;
+  if (SITE.whatsapp) open('https://wa.me/' + SITE.whatsapp + '?text=' + encodeURIComponent(body), '_blank');
+  else if (SITE.mailaka) location.href = 'mailto:' + SITE.mailaka + '?subject=' + encodeURIComponent('Hafatra avy amin\'ny tranonkala FIBESAMA') + '&body=' + encodeURIComponent(body);
+  else alert('Mbola tsy voafetra ny mailaka na WhatsApp an\'ny FIBESAMA.');
+});
+
+/* PWA install */
+let deferred = null;
+addEventListener('beforeinstallprompt', e => {
+  e.preventDefault(); deferred = e;
+  try { if (localStorage.getItem('fib-install-off')) return; } catch (x) {}
+  setTimeout(() => $('#installBar').classList.add('show'), 4000);
+});
+const doInstall = async () => {
+  if (deferred) { deferred.prompt(); await deferred.userChoice; deferred = null; $('#installBar').classList.remove('show'); }
+  else alert(/iphone|ipad/i.test(navigator.userAgent) ? 'Tsindrio ny bokotra "Partager" (⬆️) ary safidio "Sur l\'écran d\'accueil".' : 'Ao amin\'ny menu an\'ny navigateur (⋮), safidio "Installer l\'application" na "Ajouter à l\'écran d\'accueil".');
+};
+$('#installBtn').addEventListener('click', doInstall);
+$('#installBtn2').addEventListener('click', doInstall);
+$('#installClose').addEventListener('click', () => { $('#installBar').classList.remove('show'); try { localStorage.setItem('fib-install-off', '1'); } catch (x) {} });
+if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js', { scope: './' }).catch(() => {});
+</script>
+</body>
+</html>
