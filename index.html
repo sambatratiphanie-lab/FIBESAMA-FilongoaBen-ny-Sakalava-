@@ -210,6 +210,12 @@ footer li{margin-bottom:6px}
 .sources{font-size:.82rem;opacity:.75;margin-top:28px;border-top:1px solid rgba(255,255,255,.12);padding-top:18px}
 
 /* Andriamisara article */
+.portrait{float:right;width:min(300px,40%);margin:0 0 18px 28px;border-radius:18px;overflow:hidden;background:var(--chip);box-shadow:var(--shadow)}
+.portrait img{width:100%;height:auto;display:block}
+.portrait figcaption{font-size:.8rem;color:var(--muted);padding:10px 12px;text-align:center}
+@media (max-width:700px){.portrait{float:none;width:100%;max-width:340px;margin:0 auto 22px}}
+.article .body::after{content:"";display:block;clear:both}
+
 .article{margin-top:64px;background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}
 .article .head{background:linear-gradient(135deg,var(--mena),var(--mena-maizina));color:#fff;padding:clamp(24px,4vw,44px)}
 .article .head h3{font-size:clamp(1.8rem,4vw,2.6rem);margin:.2em 0 .3em}
@@ -373,6 +379,7 @@ footer li{margin-bottom:6px}
         <p>Olona iray tena fantatry ny Sakalava rehetra Andriamisara, nefa tsy mitovy ny tantara ambara momba azy arakaraka ny faritra. Inona no fantatra momba azy, ary nahoana no mbola hajaina toy izao ny anarany?</p>
       </div>
       <div class="body">
+        <figure class="portrait"><img src="sary/andriamisara.jpg" alt="Sarin'Andriamisara araka ny lovantsofina" loading="lazy" width="480" height="640"><figcaption>Andriamisara, araka ny lovantsofina (sary vita tanana)</figcaption></figure>
         <p>Ny anarana mihitsy dia efa mitantara ny momba azy, satria ahitana teny roa:</p>
         <div class="etym">
           <div><b>Andria</b>Avy amin'ny hoe "andriana", izany hoe mpanjaka na taranaka mpanjaka.</div>
