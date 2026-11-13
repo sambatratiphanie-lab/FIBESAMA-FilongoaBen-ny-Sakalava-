@@ -223,7 +223,7 @@ footer li{margin-bottom:6px}
 .route i{color:var(--muted);font-style:normal}
 .article .credit{font-size:.82rem;color:var(--muted);margin-top:22px;border-top:1px solid var(--line);padding-top:12px}
 
-.portrait{float:right;width:min(300px,40%);margin:0 0 18px 28px;border-radius:18px;overflow:hidden;background:var(--chip);box-shadow:var(--shadow)}
+.portrait{cursor:zoom-in;float:right;width:min(300px,40%);margin:0 0 18px 28px;border-radius:18px;overflow:hidden;background:var(--chip);box-shadow:var(--shadow)}
 .portrait img{width:100%;height:auto;display:block}
 .portrait figcaption{font-size:.8rem;color:var(--muted);padding:10px 12px;text-align:center}
 @media (max-width:700px){.portrait{float:none;width:100%;max-width:340px;margin:0 auto 22px}}
@@ -309,6 +309,37 @@ h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;
 .som-list span{font-weight:800;text-transform:uppercase;letter-spacing:.02em;font-size:1.02rem}
 .som-list small{display:block;font-weight:500;text-transform:none;letter-spacing:0;color:var(--muted);font-size:.85rem}
 @media (prefers-reduced-motion:reduce){.pg>.wrap,.pg:not(.pg-in)>.wrap{opacity:1;transform:none;filter:none;transition:none}#hint{animation:none}}
+
+/* ===== Photo blocks ===== */
+.phgrid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:12px;margin-top:34px}
+.phgrid .ph{margin:0;border-radius:16px;overflow:hidden;position:relative;background:var(--chip);cursor:zoom-in}
+.phgrid .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.phgrid .ph:hover img{transform:scale(1.05)}
+.phgrid .ph figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 12px 10px;color:#fff;font-size:.82rem;font-weight:600;background:linear-gradient(transparent,rgba(0,0,0,.75))}
+.phgrid .w2{grid-column:span 2}.phgrid .h2{grid-row:span 2}
+@media (max-width:760px){.phgrid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}}
+.blk-title{margin-top:60px}
+.blk-title h3{font-family:Inter,sans-serif;font-weight:800;font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-.02em;margin:.1em 0 .2em}
+.blk-title p{color:var(--muted);max-width:760px}
+.royals{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:18px;margin-top:28px}
+@media (max-width:860px){.royals{grid-template-columns:1fr}}
+.royal{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.royal .imgs{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:4px;height:360px}
+.royal .imgs .ph{margin:0;overflow:hidden;cursor:zoom-in;position:relative}
+.royal .imgs .ph:first-child{grid-row:span 2}
+.royal .imgs.one{grid-template-columns:1fr;grid-template-rows:1fr}
+.royal .imgs img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
+.royal .imgs figcaption{display:none}
+.royal .tx{padding:18px 20px 22px;border-top:5px solid var(--sec)}
+.royal .tx small{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--sec)}
+.royal .tx h4{font-family:Inter,sans-serif;font-weight:800;font-size:1.25rem;margin:.25em 0 .3em}
+.royal .tx p{margin:0;color:var(--muted);font-size:.92rem}
+#lb{position:fixed;inset:0;z-index:100;background:rgba(10,5,3,.92);display:none;align-items:center;justify-content:center;flex-direction:column;padding:20px;gap:12px}
+#lb.on{display:flex}
+#lb img{max-width:min(1100px,100%);max-height:80vh;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+#lb p{color:#fff;margin:0;text-align:center;max-width:800px;font-size:.95rem}
+#lb button{position:absolute;top:16px;right:16px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.15);color:#fff;font-size:1.3rem;cursor:pointer}
+#lb .nv{top:50%;transform:translateY(-50%)}#lb .pv{left:16px;right:auto}#lb .nx{right:16px}
 
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
@@ -574,26 +605,7 @@ h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;
 <section id="boeny" class="pg" data-title="Boeny" data-sub="Tanin'ny Doany sy ny ranomasina" data-color="#0f4c5c">
   <div class="wrap">
     <div class="feature reveal">
-      <div class="art">
-        <svg viewBox="0 0 600 480" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <defs><linearGradient id="bsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3b45a"/><stop offset="1" stop-color="#e8875a"/></linearGradient></defs>
-          <rect width="600" height="480" fill="url(#bsky)"/>
-          <circle cx="440" cy="150" r="56" fill="#fff1c6"/>
-          <rect y="300" width="600" height="180" fill="#0f4c5c"/>
-          <g fill="#fbe2b2" opacity=".5"><rect x="380" y="318" width="120" height="3"/><rect x="400" y="334" width="80" height="3"/></g>
-          <!-- Mahajanga baobab (big one) -->
-          <path d="M110 330 C100 250 112 200 106 150 L178 150 C172 200 184 250 174 330z" fill="#5a2a14"/>
-          <g stroke="#5a2a14" stroke-width="14" stroke-linecap="round" fill="none"><path d="M118 160 C80 120 60 130 40 100"/><path d="M140 150 C136 110 148 90 136 60"/><path d="M164 158 C200 118 224 124 250 96"/></g>
-          <ellipse cx="142" cy="100" rx="110" ry="30" fill="#2f5a2a"/>
-          <ellipse cx="80" cy="90" rx="44" ry="18" fill="#3c6d34"/><ellipse cx="212" cy="88" rx="50" ry="18" fill="#3c6d34"/>
-          <!-- shore -->
-          <path d="M0 330 Q150 310 300 322 Q420 332 600 318 V350 H0z" fill="#e9c58f"/>
-          <!-- boats -->
-          <g fill="#3b1a10"><path d="M320 360 Q360 372 400 360 L392 370 Q360 378 328 370z"/><path d="M358 360 L360 270 L362 360z"/><path d="M364 274 Q400 310 404 352 L364 352z" fill="#f6eedf"/></g>
-          <g fill="#3b1a10" transform="translate(140 40) scale(.6)"><path d="M520 560 Q560 572 600 560 L592 570 Q560 578 528 570z"/><path d="M558 560 L560 470 L562 560z"/><path d="M564 474 Q600 510 604 552 L564 552z" fill="#f6eedf"/></g>
-          <!-- doany roof -->
-          <g transform="translate(470 230)"><path d="M-60 70 L0 20 L60 70z" fill="#8c1d18"/><rect x="-48" y="70" width="96" height="40" fill="#f6eedf"/><rect x="-10" y="82" width="20" height="28" fill="#5e120f"/><path d="M0 20 L0 4" stroke="#d9a441" stroke-width="4"/><circle cx="0" cy="2" r="5" fill="#d9a441"/></g>
-        </svg>
+      <div class="art"><img src="sary/doany-fefy.jpg" alt="Fefin'ny doany" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
       <div class="txt">
         <span class="eyebrow">Ny Sakalava Boeny</span>
@@ -604,6 +616,19 @@ h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;
           <span class="chip">Mahajanga</span><span class="chip">Marovoay</span><span class="chip">Doany Miadana</span><span class="chip">Fanompoambe</span><span class="chip">Betsiboka</span><span class="chip">Baobab Mahajanga</span>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="blk-title reveal"><span class="eyebrow">Sary</span><h3>Ny doany sy ny fanompoana</h3><p>Ny fefy fotsy sy mena manodidina ny doany, ny filaharana mitondra ny entana masina voafono lamba fotsy, ary ny vahoaka maro tonga manatrika.</p></div>
+    <div class="phgrid reveal">
+      <figure class="ph h2"><img src="sary/doany-fefy.jpg" alt="Fefin'ny doany: fotsy sy mena" loading="lazy"><figcaption>Fefin'ny doany: fotsy sy mena</figcaption></figure>
+      <figure class="ph w2"><img src="sary/doany-vahoaka.jpg" alt="Vahoaka maro manatrika ny lanonana eo anoloan'ny doany (sary: Moov.mg)" loading="lazy"><figcaption>Vahoaka maro manatrika ny lanonana eo anoloan'ny doany (sary: Moov.mg)</figcaption></figure>
+      <figure class="ph h2"><img src="sary/doany-entana.jpg" alt="Mitondra ny entana masina voafono lamba fotsy eo akaikin'ny doany" loading="lazy"><figcaption>Mitondra ny entana masina voafono lamba fotsy eo akaikin'ny doany</figcaption></figure>
+      <figure class="ph "><img src="sary/fanompoana-1.jpg" alt="Mitondra entana masina eo an-doha" loading="lazy"><figcaption>Mitondra entana masina eo an-doha</figcaption></figure>
+      <figure class="ph "><img src="sary/fanompoana-2.jpg" alt="Vehivavy mitondra harona eo an-doha mandritra ny filaharana" loading="lazy"><figcaption>Vehivavy mitondra harona eo an-doha mandritra ny filaharana</figcaption></figure>
+      <figure class="ph w2"><img src="sary/doany-mandeha.jpg" alt="Mandeha manaraka ny fefin'ny doany" loading="lazy"><figcaption>Mandeha manaraka ny fefin'ny doany</figcaption></figure>
+      <figure class="ph w2"><img src="sary/filaharana-1.jpg" alt="Ny filaharana lehibe mankany amin'ny toerana masina" loading="lazy"><figcaption>Ny filaharana lehibe mankany amin'ny toerana masina</figcaption></figure>
     </div>
   </div>
 </section>
@@ -626,6 +651,17 @@ h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;
       <div class="card reveal"><div class="ic">🌼</div><h3>Masonjoany</h3><p>Fanosotra tarehy vita amin'ny hazo totoina, ampiasain'ny vehivavy any avaratra-andrefana mba hiarovana ny hoditra sy ho haingo.</p></div>
       <div class="card reveal"><div class="ic">🥁</div><h3>Mozika sy dihy</h3><p>Ny salegy any avaratra sy ny kilalaky any Menabe no mampiaiky volana manerana ny Nosy. Ankoatra izay, misy ihany koa ny hira sy dihy masina amin'ny lanonana.</p></div>
       <div class="card reveal"><div class="ic">🗣️</div><h3>Fiteny sakalava</h3><p>Fitenim-paritra malagasy manana ny voambolany sy ny feony manokana, samy hafa kely eo amin'ny Menabe, Boeny ary avaratra.</p></div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="blk-title reveal"><span class="eyebrow">Sary</span><h3>Fomba sy lanonana</h3><p>Ny tromba, ny fivoriana manodidina ny ampanjaka, ny antsiva (akorandriaka atao trompetra amin'ny lanonana) ary ny haingo fotsy amin'ny tarehy.</p></div>
+    <div class="phgrid reveal">
+      <figure class="ph w2"><img src="sary/fivoriana.jpg" alt="Fivoriana sy fombafomba manodidina ny tromba" loading="lazy"><figcaption>Fivoriana sy fombafomba manodidina ny tromba</figcaption></figure>
+      <figure class="ph w2 h2"><img src="sary/ampanjaka-vavy3.jpg" alt="Lanonana manodidina ny ampanjaka: haingo fotsy amin'ny tarehy sy satroka mena" loading="lazy"><figcaption>Lanonana manodidina ny ampanjaka: haingo fotsy amin'ny tarehy sy satroka mena</figcaption></figure>
+      <figure class="ph w2"><img src="sary/antsiva.jpg" alt="Antsiva, akorandriaka ampiasaina amin'ny lanonana" loading="lazy"><figcaption>Antsiva, akorandriaka ampiasaina amin'ny lanonana</figcaption></figure>
+      <figure class="ph w2"><img src="sary/vondrona.jpg" alt="Vondron'olona misy marika fotsy amin'ny handrina" loading="lazy"><figcaption>Vondron'olona misy marika fotsy amin'ny handrina</figcaption></figure>
+      <figure class="ph w2"><img src="sary/lefona.jpg" alt="Lehilahy mitana lefona, mifehy lamba fotsy ny loha" loading="lazy"><figcaption>Lehilahy mitana lefona, mifehy lamba fotsy ny loha</figcaption></figure>
     </div>
   </div>
 </section>
@@ -655,6 +691,29 @@ h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;
       </div>
     </div>
   </div>
+
+  <div class="wrap">
+    <div class="blk-title reveal"><span class="eyebrow">Ankehitriny</span><h3>Ireo ampanjaka sakalava</h3><p>Mbola mitarika ny lanonana sy ny fanompoana ary hajain'ny vahoaka ireo ampanjaka sakalava amin'izao fotoana izao.</p></div>
+    <div class="royals reveal">
+      <article class="royal">
+        <div class="imgs"><figure class="ph "><img src="sary/dina-seza.jpg" alt="Prince Dina Herimisy Guy, Ampanjaka ben'ny Boeny" loading="lazy"><figcaption>Prince Dina Herimisy Guy, Ampanjaka ben'ny Boeny</figcaption></figure><figure class="ph "><img src="sary/dina-seza2.jpg" alt="Prince Dina Herimisy Guy eo amin'ny seza fiandrianana" loading="lazy"><figcaption>Prince Dina Herimisy Guy eo amin'ny seza fiandrianana</figcaption></figure><figure class="ph "><img src="sary/dina-sary.jpg" alt="Prince Dina Herimisy Guy" loading="lazy"><figcaption>Prince Dina Herimisy Guy</figcaption></figure></div>
+        <div class="tx"><small>Ampanjaka ben'ny Boeny</small><h4>Prince Dina Herimisy Guy</h4><p>Ampanjaka ben'ny Boeny ankehitriny.</p></div>
+      </article>
+      <article class="royal">
+        <div class="imgs one"><figure class="ph "><img src="sary/ampanjaka-vavy.jpg" alt="Ampanjaka vavy sakalava" loading="lazy"><figcaption>Ampanjaka vavy sakalava</figcaption></figure></div>
+        <div class="tx"><small>Ampanjaka</small><h4 data-royal="vavy">Ampanjaka sakalava</h4><p>Eo amin'ny lanonana, miaraka amin'ny vahoaka.</p></div>
+      </article>
+      <article class="royal">
+        <div class="imgs one"><figure class="ph "><img src="sary/ampanjaka-lahy.jpg" alt="Ampanjaka sakalava" loading="lazy"><figcaption>Ampanjaka sakalava</figcaption></figure></div>
+        <div class="tx"><small>Ampanjaka</small><h4 data-royal="lahy">Ampanjaka sakalava</h4><p>Mitondra ny satroka sy ny fitafiana fanao amin'ny lanonana.</p></div>
+      </article>
+    </div>
+    <div class="phgrid reveal">
+      <figure class="ph w2 h2"><img src="sary/tanana.jpg" alt="Prince Dina Herimisy Guy mitsidika ny vahoaka" loading="lazy"><figcaption>Prince Dina Herimisy Guy mitsidika ny vahoaka</figcaption></figure>
+      <figure class="ph h2"><img src="sary/ampanjaka-vavy2.jpg" alt="Ampanjaka sy ny mpanampy azy" loading="lazy"><figcaption>Ampanjaka sy ny mpanampy azy</figcaption></figure>
+      <figure class="ph h2"><img src="sary/filaharana-2.jpg" alt="Ampanjaka sy ny raiamandreny eo amin'ny filaharana" loading="lazy"><figcaption>Ampanjaka sy ny raiamandreny eo amin'ny filaharana</figcaption></figure>
+    </div>
+  </div>
 </section>
 
 <!-- ============ SARY ============ -->
@@ -663,7 +722,7 @@ h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;
     <div class="reveal">
       <span class="eyebrow">Sary</span>
       <h2>Tontolo sakalava</h2>
-      <p class="lead">Sary fampisehoana ireto. Azo soloina sarin'ny lanonana sy ny hetsika FIBESAMA tena izy: apetraho ao amin'ny lahatahiry <code>sary/</code> ary soraty ao amin'ny lisitra eo amin'ny faran'ity rakitra ity.</p>
+      <p class="lead">Sarin'ny lanonana sy ny fiainana sakalava. Tsindrio ny sary iray hanitarana azy.</p>
     </div>
     <div class="gallery reveal" id="gallery"></div>
   </div>
@@ -752,6 +811,7 @@ h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;
   <button id="pgDown" aria-label="Fizarana manaraka"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button>
 </div>
 <div id="hint">Tsindrio ▼ hidinana amin'ny pejy manaraka</div>
+<div id="lb" role="dialog" aria-label="Sary"><button class="x" aria-label="Akatona">✕</button><button class="nv pv" aria-label="Teo aloha">‹</button><img alt=""><p></p><button class="nv nx" aria-label="Manaraka">›</button></div>
 <div id="installBar" role="dialog" aria-label="Apetraho ny application">
   <span style="font-size:1.6rem">📲</span>
   <p><b>Apetraho ny FIBESAMA</b><br>Hisokatra toy ny application ao amin'ny findainao.</p>
@@ -787,12 +847,12 @@ const SITE = {
 /* Sary: ampio eto ny sarinao (apetraho ao amin'ny lahatahiry sary/).
    src: null = sary fampisehoana voaloko. size: "big" | "wide" | "" */
 const SARY = [
-  { src: null, size: "big",  title: "Baobab amin'ny hariva", art: "baobab" },
-  { src: null, size: "",     title: "Lakana eny amin'ny ranomasina", art: "lakana" },
-  { src: null, size: "",     title: "Doany", art: "doany" },
-  { src: null, size: "wide", title: "Fanompoambe, Mahajanga", art: "fanompoambe" },
-  { src: null, size: "wide", title: "Lamba mena", art: "lamba" },
-  { src: null, size: "wide", title: "Masonjoany", art: "masonjoany" },
+  { src: "sary/hero.jpg", size: "big",  title: "Baobab sy omby" },
+  { src: "sary/doany-fefy.jpg", size: "", title: "Fefin'ny doany" },
+  { src: "sary/antsiva.jpg", size: "", title: "Antsiva" },
+  { src: "sary/filaharana-2.jpg", size: "wide", title: "Filaharana amin'ny lanonana" },
+  { src: "sary/fanompoana-2.jpg", size: "wide", title: "Fanompoana" },
+  { src: "sary/lehibe-morondava.jpg", size: "wide", title: "Lehiben'ny Sakalava, Morondava (taloha)" },
 ];
 /* ===================================================================== */
 
@@ -942,6 +1002,24 @@ $('#installClose').addEventListener('click', () => { $('#installBar').classList.
     if (e.key === 'PageDown') { e.preventDefault(); go(1); }
     if (e.key === 'PageUp') { e.preventDefault(); go(-1); }
   });
+})();
+
+
+/* Lightbox */
+(() => {
+  const lb = document.getElementById('lb'), im = lb.querySelector('img'), cp = lb.querySelector('p');
+  let list = [], k = 0;
+  const show = i => { k = (i + list.length) % list.length; const f = list[k]; im.src = f.querySelector('img').src; cp.textContent = f.querySelector('figcaption')?.textContent || f.querySelector('img').alt; };
+  document.addEventListener('click', e => {
+    const f = e.target.closest('.ph, .gallery figure, .portrait, .wide-photo'); if (!f || !f.querySelector('img')) return;
+    list = [...document.querySelectorAll('.ph, .gallery figure, .portrait, .wide-photo')].filter(x => x.querySelector('img'));
+    show(list.indexOf(f)); lb.classList.add('on');
+  });
+  lb.querySelector('.x').onclick = () => lb.classList.remove('on');
+  lb.querySelector('.pv').onclick = e => { e.stopPropagation(); show(k - 1); };
+  lb.querySelector('.nx').onclick = e => { e.stopPropagation(); show(k + 1); };
+  lb.addEventListener('click', e => { if (e.target === lb) lb.classList.remove('on'); });
+  addEventListener('keydown', e => { if (!lb.classList.contains('on')) return; if (e.key === 'Escape') lb.classList.remove('on'); if (e.key === 'ArrowRight') show(k + 1); if (e.key === 'ArrowLeft') show(k - 1); });
 })();
 
 if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js', { scope: './' }).catch(() => {});
