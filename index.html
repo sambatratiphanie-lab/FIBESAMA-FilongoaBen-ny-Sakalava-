@@ -230,7 +230,7 @@ footer li{margin-bottom:6px}
 .article .body::after{content:"";display:block;clear:both}
 
 .article{margin-top:64px;background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}
-.article .head{background:linear-gradient(135deg,var(--mena),var(--mena-maizina));color:#fff;padding:clamp(24px,4vw,44px)}
+.article .head{background:linear-gradient(135deg,var(--sec,var(--mena)),color-mix(in srgb,var(--sec,var(--mena)) 55%,#000));color:#fff;padding:clamp(24px,4vw,44px)}
 .article .head h3{font-size:clamp(1.8rem,4vw,2.6rem);margin:.2em 0 .3em}
 .article .head p{opacity:.9;margin:0;max-width:720px}
 .article .body{padding:clamp(22px,4vw,44px)}
@@ -255,6 +255,61 @@ footer li{margin-bottom:6px}
 .tree .ln.d{stroke-dasharray:5 4}
 .tree-cap{font-size:.82rem;color:var(--muted);margin-top:8px}
 
+/* ===== PRO PRESENTATION LAYER ===== */
+.pg .article .head .eyebrow{color:var(--volamena)!important}
+h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.02}
+.pg{position:relative;--sec:var(--accent);transition:background .4s}
+.pg .eyebrow{color:var(--sec)!important}
+.sec-head{display:flex;align-items:flex-end;gap:18px;margin-bottom:6px}
+.sec-num{font-family:Inter,sans-serif;font-weight:800;font-size:clamp(3rem,8vw,5.5rem);line-height:.8;color:var(--sec);opacity:.18;letter-spacing:-.04em}
+.sec-sub{display:block;font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:-.2em 0 1.2em;font-weight:500}
+.pg-foot{max-width:1160px;margin:56px auto 0;padding:14px 20px 0;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--muted);border-top:1px solid var(--line)}
+.pg-foot b{display:inline-grid;place-items:center;min-width:34px;height:34px;border-radius:10px;background:var(--sec);color:#fff;font-weight:700}
+.pg-foot span i{font-style:normal;opacity:.5;margin:0 .6em}
+.pg::before{content:"";position:absolute;left:0;top:0;width:6px;height:0;background:var(--sec);transition:height 1s cubic-bezier(.2,.7,.2,1)}
+.pg.pg-in::before{height:100%}
+@media (max-width:760px){.pg::before{width:4px}}
+/* page enter / leave */
+.pg>.wrap{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1),filter .7s}
+.pg:not(.pg-in)>.wrap{opacity:.25;transform:translateY(40px) scale(.98);filter:saturate(.6)}
+/* progress bar */
+#progress{position:fixed;left:0;top:0;height:4px;width:0;z-index:80;background:var(--cur,#d9a441);transition:background .5s;box-shadow:0 0 12px var(--cur,#d9a441)}
+/* dots */
+#dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:55;display:flex;flex-direction:column;gap:12px}
+#dots a{position:relative;width:12px;height:12px;border-radius:50%;background:rgba(127,127,127,.35);border:2px solid transparent;transition:all .3s;display:block}
+#dots a.on{background:var(--cur);transform:scale(1.35);box-shadow:0 0 0 4px color-mix(in srgb,var(--cur) 25%,transparent)}
+#dots a span{position:absolute;right:24px;top:50%;transform:translateY(-50%) translateX(6px);white-space:nowrap;background:var(--card);color:var(--text);border:1px solid var(--line);padding:5px 10px;border-radius:8px;font-size:.8rem;font-weight:600;opacity:0;pointer-events:none;transition:all .2s;box-shadow:var(--shadow)}
+#dots a:hover span,#dots a:focus span{opacity:1;transform:translateY(-50%)}
+@media (max-width:920px){#dots{display:none}}
+/* pager */
+#pager{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px;box-shadow:var(--shadow)}
+#pager button{width:42px;height:42px;border-radius:50%;border:0;cursor:pointer;background:var(--cur);color:#fff;display:grid;place-items:center;transition:transform .2s,opacity .2s,background .5s}
+#pager button:hover{transform:scale(1.08)}
+#pager button:disabled{opacity:.3;cursor:default;transform:none}
+#pager .lbl{font-size:.82rem;font-weight:600;padding:0 6px;min-width:110px;text-align:center;line-height:1.2}
+#pager .lbl small{display:block;color:var(--muted);font-weight:500;font-size:.72rem}
+#hint{position:fixed;right:24px;bottom:84px;z-index:61;background:var(--cur,#8c1d18);color:#fff;padding:10px 14px;border-radius:12px;font-size:.85rem;font-weight:600;box-shadow:var(--shadow);animation:hintb 1.6s infinite;transition:opacity .4s}
+#hint::after{content:"";position:absolute;right:26px;bottom:-7px;border:7px solid transparent;border-bottom:0;border-top-color:var(--cur,#8c1d18)}
+#hint.off{opacity:0;pointer-events:none}
+@keyframes hintb{50%{transform:translateY(-5px)}}
+@media (max-width:540px){#pager .lbl{min-width:84px}#installBar{bottom:84px}}
+/* nav active */
+.links a.on{background:var(--cur)!important;color:#fff!important}
+/* sommaire */
+.sommaire{padding-top:70px}
+.som-box{background:var(--bg2);border-radius:24px;padding:clamp(28px,5vw,64px);position:relative;overflow:hidden}
+.som-box::after{content:"";position:absolute;right:0;top:0;width:clamp(70px,12vw,150px);height:clamp(70px,12vw,150px);background:var(--mena);border-radius:0 0 0 24px}
+.som-title{font-size:clamp(2.6rem,7vw,4.6rem);margin-bottom:.1em}
+.som-sub{color:var(--muted);margin-bottom:34px}
+.som-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 40px}
+@media (max-width:640px){.som-list{grid-template-columns:1fr}}
+.som-list a{display:flex;align-items:center;gap:16px;text-decoration:none;color:var(--text);padding:10px 12px;border-radius:14px;transition:background .2s,transform .2s}
+.som-list a:hover{background:var(--card);transform:translateX(6px)}
+.som-list b{flex:none;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;color:#fff;font-weight:800}
+.som-list span{font-weight:800;text-transform:uppercase;letter-spacing:.02em;font-size:1.02rem}
+.som-list small{display:block;font-weight:500;text-transform:none;letter-spacing:0;color:var(--muted);font-size:.85rem}
+@media (prefers-reduced-motion:reduce){.pg>.wrap,.pg:not(.pg-in)>.wrap{opacity:1;transform:none;filter:none;transition:none}#hint{animation:none}}
+
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.scroll-hint{animation:none}}
@@ -273,6 +328,7 @@ footer li{margin-bottom:6px}
       FIBESAMA
     </a>
     <nav class="links" id="links">
+      <a href="#sommaire">Sommaire</a>
       <a href="#momba">Momba anay</a>
       <a href="#tantara">Tantara</a>
       <a href="#boeny">Boeny</a>
@@ -308,8 +364,19 @@ footer li{margin-bottom:6px}
 </section>
 <div class="lamba"></div>
 
+
+<!-- ============ SOMMAIRE (voaforona ho azy avy amin'ireo fizarana) ============ -->
+<section id="sommaire" class="pg sommaire" data-title="Sommaire" data-sub="Ny ao anatiny" data-color="#2a1a14" data-nonum="1">
+  <div class="wrap">
+    <div class="som-box reveal">
+      <h2 class="som-title">Ao anatiny</h2>
+      <p class="som-sub">Tsindrio ny fizarana tianao hovakiana</p>
+      <ol class="som-list" id="somList"></ol>
+    </div>
+  </div>
+</section>
 <!-- ============ MOMBA ============ -->
-<section id="momba">
+<section id="momba" class="pg" data-title="Momba anay" data-sub="Iza moa izahay?" data-color="#8c1d18">
   <div class="wrap">
     <div class="grid2">
       <div class="reveal">
@@ -367,7 +434,7 @@ footer li{margin-bottom:6px}
 </section>
 
 <!-- ============ TANTARA ============ -->
-<section id="tantara" class="alt">
+<section id="tantara" class="pg alt" data-title="Tantara" data-sub="Ny fiaviana sy ny lalan-tantara" data-color="#b5652b">
   <div class="wrap">
     <div class="reveal">
       <span class="eyebrow">Tantara sakalava</span>
@@ -504,7 +571,7 @@ footer li{margin-bottom:6px}
 </section>
 
 <!-- ============ BOENY ============ -->
-<section id="boeny">
+<section id="boeny" class="pg" data-title="Boeny" data-sub="Tanin'ny Doany sy ny ranomasina" data-color="#0f4c5c">
   <div class="wrap">
     <div class="feature reveal">
       <div class="art">
@@ -542,7 +609,7 @@ footer li{margin-bottom:6px}
 </section>
 
 <!-- ============ VAKOKA ============ -->
-<section id="vakoka" class="alt">
+<section id="vakoka" class="pg alt" data-title="Vakoka" data-sub="Fomban-drazana sy finoana" data-color="#9a6b12">
   <div class="wrap">
     <div class="reveal">
       <span class="eyebrow">Vakoka sy fomban-drazana</span>
@@ -564,7 +631,7 @@ footer li{margin-bottom:6px}
 </section>
 
 <!-- ============ MPITONDRA ============ -->
-<section id="mpitondra">
+<section id="mpitondra" class="pg" data-title="Mpitondra" data-sub="Ampanjaka sy fifandraisana" data-color="#2c5f4a">
   <div class="wrap">
     <div class="grid2">
       <div class="reveal">
@@ -591,7 +658,7 @@ footer li{margin-bottom:6px}
 </section>
 
 <!-- ============ SARY ============ -->
-<section id="sary" class="alt">
+<section id="sary" class="pg alt" data-title="Sary" data-sub="Tontolo sakalava" data-color="#7a4a1c">
   <div class="wrap">
     <div class="reveal">
       <span class="eyebrow">Sary</span>
@@ -603,7 +670,7 @@ footer li{margin-bottom:6px}
 </section>
 
 <!-- ============ PUB ============ -->
-<section id="dokam-barotra">
+<section id="dokam-barotra" class="pg" data-title="Mpanohana" data-sub="Dokam-barotra sy tambajotra" data-color="#163c45">
   <div class="wrap">
     <div class="reveal">
       <span class="eyebrow">Dokam-barotra sy mpiara-miasa</span>
@@ -628,7 +695,7 @@ footer li{margin-bottom:6px}
 </section>
 
 <!-- ============ FIFANDRAISANA ============ -->
-<section id="fifandraisana" class="alt">
+<section id="fifandraisana" class="pg alt" data-title="Fifandraisana" data-sub="Andao hifandray" data-color="#5e120f">
   <div class="wrap contact">
     <div class="reveal">
       <span class="eyebrow">Fifandraisana</span>
@@ -676,6 +743,15 @@ footer li{margin-bottom:6px}
 </footer>
 <div class="lamba"></div>
 
+
+<div id="progress" aria-hidden="true"></div>
+<nav id="dots" aria-label="Fizarana"></nav>
+<div id="pager">
+  <button id="pgUp" aria-label="Fizarana teo aloha"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 15l6-6 6 6"/></svg></button>
+  <div class="lbl" id="pgLbl">01 / 08</div>
+  <button id="pgDown" aria-label="Fizarana manaraka"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button>
+</div>
+<div id="hint">Tsindrio ▼ hidinana amin'ny pejy manaraka</div>
 <div id="installBar" role="dialog" aria-label="Apetraho ny application">
   <span style="font-size:1.6rem">📲</span>
   <p><b>Apetraho ny FIBESAMA</b><br>Hisokatra toy ny application ao amin'ny findainao.</p>
@@ -775,7 +851,7 @@ $('#themeBtn').addEventListener('click', () => {
 });
 
 /* reveal */
-const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 }) : null;
+const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0, rootMargin: '0px 0px -8% 0px' }) : null;
 $$('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
 
 /* contact: open mail or WhatsApp, nothing stored */
@@ -802,6 +878,72 @@ const doInstall = async () => {
 $('#installBtn').addEventListener('click', doInstall);
 $('#installBtn2').addEventListener('click', doInstall);
 $('#installClose').addEventListener('click', () => { $('#installBar').classList.remove('show'); try { localStorage.setItem('fib-install-off', '1'); } catch (x) {} });
+
+/* ===== PRO PRESENTATION LAYER =====
+   Hanampiana fizarana vaovao: <section id="..." class="pg" data-title="Lohateny" data-sub="Lohateny kely" data-color="#hex">
+   Ho azy avy eo ny laharana, ny sommaire, ny loko, ny bokotra ary ny dots. */
+(() => {
+  const all = [...document.querySelectorAll('section.pg')];
+  const numbered = all.filter(x => !x.dataset.nonum);
+  const pad = n => String(n).padStart(2, '0');
+  const hero = document.getElementById('top');
+  const order = [hero, ...all];
+  numbered.forEach((sec, i) => {
+    sec.style.setProperty('--sec', sec.dataset.color);
+    sec.dataset.num = pad(i + 1);
+    const eb = sec.querySelector('.eyebrow');
+    if (eb && !sec.querySelector('.sec-head')) {
+      const h = document.createElement('div'); h.className = 'sec-head';
+      h.innerHTML = `<span class="sec-num">${pad(i + 1)}</span>`;
+      eb.parentNode.insertBefore(h, eb); h.appendChild(eb);
+      const h2 = sec.querySelector('h2');
+      if (h2 && sec.dataset.sub && !h2.nextElementSibling?.classList.contains('sec-sub')) h2.insertAdjacentHTML('afterend', `<span class="sec-sub">${sec.dataset.sub}</span>`);
+    }
+    sec.insertAdjacentHTML('beforeend', `<div class="pg-foot"><span>FIBESAMA<i>|</i>${sec.dataset.title}</span><b>${pad(i + 1)}</b></div>`);
+  });
+  document.getElementById('somList').innerHTML = numbered.map((x, i) =>
+    `<li><a href="#${x.id}"><b style="background:${x.dataset.color}">${pad(i + 1)}</b><span>${x.dataset.title}<small>${x.dataset.sub}</small></span></a></li>`).join('');
+  const dots = document.getElementById('dots');
+  dots.innerHTML = order.map(x => `<a href="#${x.id}"><span>${x === hero ? 'Fandraisana' : x.dataset.title}</span></a>`).join('');
+  const dotEls = [...dots.children];
+  const root = document.documentElement, bar = document.getElementById('progress');
+  const up = document.getElementById('pgUp'), down = document.getElementById('pgDown'), lbl = document.getElementById('pgLbl'), hint = document.getElementById('hint');
+  const navLinks = [...document.querySelectorAll('#links a')];
+  let cur = 0;
+  const colorOf = x => x === hero ? '#d9a441' : (x.dataset.color || '#8c1d18');
+  const setCur = i => {
+    cur = i; const x = order[i];
+    root.style.setProperty('--cur', colorOf(x));
+    dotEls.forEach((d, j) => d.classList.toggle('on', j === i));
+    navLinks.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + x.id));
+    const n = numbered.indexOf(x);
+    lbl.innerHTML = x === hero ? `Fandraisana<small>${numbered.length} fizarana</small>` : (n < 0 ? `${x.dataset.title}<small>Ao anatiny</small>` : `${pad(n + 1)} / ${pad(numbered.length)}<small>${x.dataset.title}</small>`);
+    up.disabled = i === 0; down.disabled = i === order.length - 1;
+    const nx = order[i + 1]; down.title = nx ? 'Manaraka: ' + (nx.dataset.title || '') : '';
+    const pv = order[i - 1]; up.title = pv ? 'Teo aloha: ' + (pv === hero ? 'Fandraisana' : pv.dataset.title) : '';
+  };
+  const go = d => { const t = order[Math.max(0, Math.min(order.length - 1, cur + d))]; t.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); hint.classList.add('off'); };
+  up.addEventListener('click', () => go(-1)); down.addEventListener('click', () => go(1));
+  const tick = () => {
+    const h = root.scrollHeight - innerHeight; bar.style.width = (h > 0 ? scrollY / h * 100 : 0) + '%';
+    const mid = innerHeight * 0.4; let idx = 0;
+    order.forEach((x, i) => { if (x.getBoundingClientRect().top <= mid) idx = i; });
+    if (idx !== cur) setCur(idx);
+    if (scrollY > 300) hint.classList.add('off');
+  };
+  addEventListener('scroll', tick, { passive: true }); addEventListener('resize', tick);
+  setCur(0); tick(); setTimeout(() => hint.classList.add('off'), 9000);
+  if ('IntersectionObserver' in window) {
+    const po = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('pg-in', e.isIntersecting)), { threshold: 0.08 });
+    all.forEach(x => po.observe(x));
+  } else all.forEach(x => x.classList.add('pg-in'));
+  addEventListener('keydown', e => {
+    if (/input|textarea/i.test(e.target.tagName)) return;
+    if (e.key === 'PageDown') { e.preventDefault(); go(1); }
+    if (e.key === 'PageUp') { e.preventDefault(); go(-1); }
+  });
+})();
+
 if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js', { scope: './' }).catch(() => {});
 </script>
 </body>
