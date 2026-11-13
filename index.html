@@ -85,8 +85,8 @@ header.nav.solid{background:color-mix(in srgb,var(--bg) 88%,transparent);backdro
 
 /* HERO */
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
-.hero .scene{position:absolute;inset:0;z-index:-2;width:100%;height:100%}
-.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,8,5,.15) 0%,rgba(20,8,5,.05) 40%,rgba(20,8,5,.75) 100%)}
+.hero .scene{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,8,5,.45) 0%,rgba(20,8,5,.2) 35%,rgba(20,8,5,.82) 100%)}
 .hero .wrap{padding-bottom:clamp(56px,10vh,110px);padding-top:120px}
 .hero h1{font-size:clamp(2.6rem,8vw,5.6rem);font-weight:800;letter-spacing:-.01em;margin-bottom:.15em;text-shadow:0 4px 30px rgba(0,0,0,.35)}
 .hero .full{font-family:Fraunces,serif;font-size:clamp(1.05rem,2.4vw,1.5rem);opacity:.95;margin-bottom:1em}
@@ -246,48 +246,7 @@ footer li{margin-bottom:6px}
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top" style="padding:0">
-  <svg class="scene" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-    <defs>
-      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#2b0f22"/><stop offset=".38" stop-color="#8c2a1d"/><stop offset=".62" stop-color="#e07a2c"/><stop offset=".78" stop-color="#f6c26b"/>
-      </linearGradient>
-      <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c96a2e"/><stop offset=".25" stop-color="#5b3b3c"/><stop offset="1" stop-color="#14262c"/></linearGradient>
-      <radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff3c4"/><stop offset=".5" stop-color="#ffd27a"/><stop offset="1" stop-color="#ffb347" stop-opacity="0"/></radialGradient>
-    </defs>
-    <rect width="1600" height="1000" fill="url(#sky)"/>
-    <circle cx="1060" cy="640" r="210" fill="url(#sun)"/>
-    <circle cx="1060" cy="640" r="70" fill="#fff0c0"/>
-    <rect y="660" width="1600" height="340" fill="url(#sea)"/>
-    <g fill="#ffd89a" opacity=".55">
-      <rect x="980" y="680" width="160" height="4" rx="2"/><rect x="1010" y="702" width="100" height="3" rx="2"/><rect x="960" y="726" width="200" height="3" rx="2"/><rect x="1030" y="752" width="60" height="3" rx="2"/>
-    </g>
-    <!-- lakana / dhow -->
-    <g transform="translate(1210 672)" fill="#1a0c09">
-      <path d="M-70 0 Q0 22 80 0 L64 14 Q0 26 -58 14z"/>
-      <path d="M0 -4 L4 -150 L6 -4z"/>
-      <path d="M8 -146 Q70 -90 74 -10 L8 -10z"/>
-    </g>
-    <!-- ground -->
-    <path d="M0 700 Q300 660 620 690 T1600 700 V1000 H0z" fill="#1a0c09" opacity=".0"/>
-    <path d="M0 735 Q260 700 520 720 Q760 738 900 760 L900 1000 H0z" fill="#1d0e0a"/>
-    <path d="M700 1000 Q1000 820 1600 860 V1000z" fill="#160a07"/>
-    <!-- baobabs -->
-    <g fill="#1d0e0a">
-      <path d="M150 730 C160 600 152 520 160 430 L196 430 C204 520 196 600 210 730z"/>
-      <path d="M160 440 C130 400 110 405 92 380 M178 432 C176 395 182 372 170 345 M192 436 C222 400 238 402 262 378 M186 440 C204 410 222 400 218 370" stroke="#1d0e0a" stroke-width="10" stroke-linecap="round" fill="none"/>
-      <g><circle cx="92" cy="376" r="16"/><circle cx="170" cy="340" r="16"/><circle cx="262" cy="374" r="16"/><circle cx="218" cy="364" r="13"/><circle cx="120" cy="392" r="10"/></g>
-      <path d="M380 740 C392 560 384 470 392 360 L440 360 C448 470 440 560 452 740z"/>
-      <path d="M396 372 C356 330 330 336 306 300 M416 362 C412 320 422 294 406 262 M436 368 C476 324 500 328 530 296 M428 372 C452 336 474 324 470 290" stroke="#1d0e0a" stroke-width="13" stroke-linecap="round" fill="none"/>
-      <g><circle cx="306" cy="296" r="20"/><circle cx="406" cy="256" r="22"/><circle cx="530" cy="290" r="20"/><circle cx="470" cy="284" r="17"/><circle cx="350" cy="318" r="12"/><circle cx="440" cy="300" r="12"/></g>
-      <path d="M610 740 C618 640 612 590 618 520 L646 520 C652 590 646 640 654 740z"/>
-      <path d="M622 528 C600 500 584 504 572 484 M634 522 C632 498 638 482 628 462 M644 528 C664 504 680 506 694 488" stroke="#1d0e0a" stroke-width="8" stroke-linecap="round" fill="none"/>
-      <g><circle cx="572" cy="482" r="11"/><circle cx="628" cy="458" r="12"/><circle cx="694" cy="484" r="11"/></g>
-    </g>
-    <!-- birds -->
-    <g fill="none" stroke="#2b120d" stroke-width="3" stroke-linecap="round" opacity=".7">
-      <path d="M820 300 q12 -10 24 0 q12 -10 24 0"/><path d="M890 260 q9 -8 18 0 q9 -8 18 0"/><path d="M760 340 q8 -7 16 0 q8 -7 16 0"/>
-    </g>
-  </svg>
+  <img class="scene" src="sary/hero.jpg" alt="" fetchpriority="high">
   <div class="wrap">
     <img class="hero-logo" src="logo.png" alt="Logo FIBESAMA" width="160" height="188"><br>
     <span class="eyebrow" style="color:var(--volamena)">Fikambanana sosialy</span>
