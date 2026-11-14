@@ -1601,6 +1601,14 @@
 "Raha ny Prince Dina Herimisy Guy no manohy ny taranaka Ndriamifehinarivo ao amin'ny Doany Miarinarivo any Mahajanga, dia ny Ampanjaka Salima Said kosa no mitazona ny taranaka Ndriamandrantsiarivo ao amin'ny Doany Bezavo. Samy taranaky ny mpanjaka lehibe Ndriamandisoarivo, mpanorina ny fanjakana Boeny, izy roa.": [
 "Si le prince Dina Herimisy Guy perpétue la lignée de Ndriamifehinarivo au Doany Miarinarivo de Mahajanga, c'est la reine Salima Said qui porte la lignée de Ndriamandrantsiarivo au Doany Bezavo. Tous deux descendent du grand roi Ndriamandisoarivo, fondateur du royaume du Boeny.",
 "While Prince Dina Herimisy Guy carries on the line of Ndriamifehinarivo at the Doany Miarinarivo in Mahajanga, Queen Salima Said holds the line of Ndriamandrantsiarivo at the Doany Bezavo. Both descend from the great king Ndriamandisoarivo, founder of the Boeny kingdom."
+],
+"Ampanjaka Issa Tsimiaro III, Ampanjaka antakarana": [
+"Ampanjaka Issa Tsimiaro III, roi antakarana",
+"Ampanjaka Issa Tsimiaro III, Antakarana king"
+],
+"Ampanjaka antakarana": [
+"Roi antakarana",
+"Antakarana king"
 ]
 };
   var I = L === 'fr' ? 0 : 1;
