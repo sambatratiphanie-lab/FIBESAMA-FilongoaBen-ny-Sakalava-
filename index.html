@@ -323,7 +323,7 @@ h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;
 .blk-title{margin-top:60px}
 .blk-title h3{font-family:Inter,sans-serif;font-weight:800;font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-.02em;margin:.1em 0 .2em}
 .blk-title p{color:var(--muted);max-width:760px}
-.royals{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:18px;margin-top:28px}
+.royals{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:28px}
 @media (max-width:860px){.royals{grid-template-columns:1fr}}
 .royal{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
 .royal .imgs{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:4px;height:360px}
@@ -444,6 +444,11 @@ header.nav .brand,header.nav .iconbtn{color:var(--text)}
 #installBar.show{display:flex}
 #installBar p{margin:0;font-size:.92rem;flex:1}
 .lang-sel{appearance:none;-webkit-appearance:none;background:transparent;color:var(--text);border:1.5px solid var(--line);border-radius:999px;font:700 12.5px/1 Inter,system-ui,sans-serif;letter-spacing:.04em;padding:8px 10px;cursor:pointer;margin-left:2px}.lang-sel:focus-visible{outline:2px solid var(--volamena);outline-offset:2px}.lang-sel option{color:#222;background:#fff}
+.lineage{list-style:none;counter-reset:gen;margin:18px 0 26px;padding:0 0 0 6px;border-left:3px solid var(--sec,var(--mena));max-width:860px}
+.lineage li{counter-increment:gen;position:relative;padding:10px 0 10px 40px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.lineage li::before{content:counter(gen);position:absolute;left:-16px;top:9px;width:28px;height:28px;border-radius:50%;background:var(--sec,var(--mena));color:#fff;font:700 .8rem/28px Inter,sans-serif;text-align:center}
+.lineage .who{font-weight:600}.lineage .kid{color:var(--muted)}.lineage .kid b{color:var(--volamena)}.lineage i{font-style:normal;font-size:.85em;color:var(--muted)}
+.lineage li:last-child .kid{color:var(--text);font-weight:700}
 </style>
 </head>
 <body>
@@ -809,14 +814,70 @@ header.nav .brand,header.nav .iconbtn{color:var(--text)}
         <div class="tx"><small>Ampanjaka ben'ny Boeny</small><h4>Prince Dina Herimisy Guy</h4><p>Ampanjaka ben'ny Boeny ankehitriny.</p></div>
       </article>
       <article class="royal">
-        <div class="imgs one"><figure class="ph "><img src="sary/ampanjaka-vavy.jpg" alt="Ampanjaka vavy sakalava" loading="lazy"><figcaption>Ampanjaka vavy sakalava</figcaption></figure></div>
-        <div class="tx"><small>Ampanjaka</small><h4 data-royal="vavy">Ampanjaka sakalava</h4><p>Eo amin'ny lanonana, miaraka amin'ny vahoaka.</p></div>
+        <div class="imgs one"><figure class="ph "><img src="sary/salima.jpg" alt="Ampanjaka Salima Binty Said Yahaya, Mpanjakaben'ny Maroambitsy" loading="lazy"><figcaption>Ampanjaka Salima Binty Said Yahaya, Mpanjakaben'ny Maroambitsy</figcaption></figure></div>
+        <div class="tx"><small>Mpanjakaben'ny Maroambitsy</small><h4 data-royal="vavy">Ampanjaka Salima Binty Said Yahaya</h4><p>Nandimby ny reniny, Ampanjaka Amina Said, tamin'ny 2023.</p><p><a href="#maroambitsy">Vakio ny tantaran'ny Maroambitsy →</a></p></div>
+      </article>
+      <article class="royal">
+        <div class="imgs one"><figure class="ph "><img src="sary/amina-said.jpg" alt="Ampanjaka Amina Said, Ampanjaka ny Sakalavan'ny Maroambitsy (1939 – 2023)" loading="lazy"><figcaption>Ampanjaka Amina Said (1939 – 2023)</figcaption></figure></div>
+        <div class="tx"><small>Ampanjaka ny Sakalavan'ny Maroambitsy</small><h4>Ampanjaka Amina Said</h4><p>1939 – 2023. Nitondra ny fanjakana Maroambitsy nanomboka tamin'ny 1981.</p></div>
       </article>
       <article class="royal">
         <div class="imgs one"><figure class="ph "><img src="sary/ampanjaka-lahy.jpg" alt="Ampanjaka sakalava" loading="lazy"><figcaption>Ampanjaka sakalava</figcaption></figure></div>
         <div class="tx"><small>Ampanjaka</small><h4 data-royal="lahy">Ampanjaka sakalava</h4><p>Mitondra ny satroka sy ny fitafiana fanao amin'ny lanonana.</p></div>
       </article>
     </div>
+
+    <article class="article reveal" id="maroambitsy">
+      <div class="head">
+        <span class="eyebrow" style="color:var(--volamena)">Fanjakana Maroambitsy · Mitsinjo</span>
+        <h3>Ny Ampanjaka sakalavan'ny Maroambitsy</h3>
+        <p>Ny tantaran'ny Ampanjaka Amina Said, izay nitondra nanomboka tamin'ny 1981 ka hatramin'ny 2023, sy ny fanandratana ny zanany vavy, Ampanjaka Salima, ho mpandimby azy.</p>
+      </div>
+      <div class="body">
+        <figure class="portrait"><img src="sary/amina-said.jpg" alt="Ampanjaka Amina Said (1939 – 2023)" loading="lazy" width="458" height="680"><figcaption>Ampanjaka Amina Said, Ampanjaka ny Sakalavan'ny Maroambitsy (1939 – 2023)</figcaption></figure>
+        <h4 style="font-size:1.25rem">Ampanjaka Amina Said (1939 – 2023)</h4>
+        <p>Tao Mitsinjo no nahaterahan'ny Ampanjaka Amina Said, tamin'ny taona 1939. Said no anaran'ny rainy, ary Ronkia kosa ny an'ny reniny.</p>
+        <p>Ny nenitoany (angovaviny), Moana Salima, izay nantsoina hoe Manjakareniniarivo, no nitaiza azy. Rehefa nodimandry io farany, dia izy no nisolo azy teo amin'ny fitondrana nanomboka tamin'ny taona 1981, ary nitondra ny fanjakana hatramin'ny nodimandriany tamin'ny volana Jona 2023.</p>
+        <p>Zanakavavy roa no naterany: ny Princesse Salima sy ny Princesse Sama.</p>
+
+        <h4 style="font-size:1.25rem;clear:both;padding-top:.6em">Ampanjaka Salima Binty Said Yahaya, Mpanjakaben'ny Maroambitsy</h4>
+        <figure class="wide-photo" style="margin:16px 0 22px"><img src="sary/salima.jpg" alt="Ampanjaka Salima Binty Said Yahaya" loading="lazy" width="1080" height="810"><figcaption>Ampanjaka Salima Binty Said Yahaya, eo anivon'ny vahoaka</figcaption></figure>
+        <p>Ny 9 Jona 2023 no voatendry hisolo ny reniny ny Ampanjaka Salima Binty Said Yahaya. Nanaraka izany ny lanonana Haribahiny, izay namarana ny fisaonana ny Ampanjaka Amina Said. Ny Alarobia 19 Jolay 2023 kosa no nanandratana azy ho Mpanjakaben'ny Maroambitsy, teo imason'ny fokonolona.</p>
+        <p>Nanatrika io lanonana io ny rangitsy sy ny ben'ny varavara, ny manantany, ireo sahan'ny razan'ampanjaka maro, ary mpanompo an-jatony maro. Tonga nanatrika koa ireo manampahefana maro ao amin'ny Distrikan'i Mitsinjo. Ny 31 Jolay 2023 no nokasaina hanatanterahan'ny Ampanjaka vao napetraka ny fanompoana KIPA.</p>
+
+
+        <h4 style="font-size:1.25rem">Doany Bezavo, fiandohan'ny fanjakana Boeny</h4>
+        <p>Hatramin'ny andron'ny Mpanjaka Ndriamandisoarivo, mpanorina ny fanjakana Boeny, dia isan-taona no atao any Boeny ny lanonana Fanompoa. Roa no tena lehibe indrindra:</p>
+        <div class="versions">
+          <div><h4>🌊 Fanompoambe, Mahajanga</h4><p>Ao amin'ny Doany Miarinarivo, manodidina ny volana Jolay (Volambita). Ny Mitahy, izany hoe ireo fitahirizana masina (reliques), no sasana.</p></div>
+          <div class="mb"><h4>🌳 Fanompoa Valibolamena, Bezavo</h4><p>Ao amin'ny Doany Bezavo any Maroambitsy, manodidina ny volana Oktobra. Tsy ireo fitahirizana masina no karakaraina fa ny razana mihitsy, voatahiry ao amin'ny Zomba.</p></div>
+        </div>
+        <p>Fefy roa sosona vita amin'ny tsato-kazo, ny Fiaromby, no miaro ny Zomba ary manasaraka ny faritra masina indrindra. Ny tena votoatin'ny lanonana dia ny fandrakofana amin'ny sarona ny fatin'ireo mpanjaka voalohany tao Boeny, izay mandry ao amin'ny Zomba. Mitovitovy amin'ny famadihana any Imerina izany.</p>
+        <p>Ankoatra ny maha-masina azy, mariky ny firaisankin'ny Sakalava rehetra ity Fanompoa ity: tsy ho an'ny any Maroambitsy ihany, fa ho an'ny faritra Boeny manontolo, hatrany Ambongo sy Melaky aza.</p>
+        <p>Ranomasin'olona no manenika an'i Bezavo amin'izany andro izany, mponina sy mpitsidika mifangaro: vehivavy miakanjo lambahoany maro loko, lehilahy mikitamby. Tsy maintsy manaja ny fitafy nentim-paharazana ireo mpandray anjara, ary voarara ny kiraro.</p>
+        <p>Mandritra ny alin'ny Alahady, alin'ny andro lehibe, dia mihira sy mandihy hatramin'ny maraina i Bezavo: izany no atao hoe Tsimandrimandry. Mamaky ny fahanginana mahazatra amin'ity tanàna kely voahodidin'ny zavamaniry ity io fiambenana io, eto amin'ny toerana nahaterahan'ny fanjakana sakalava any Boeny.</p>
+        <p>Ny Alatsinainy, rehefa mipoaka ny basy ary manomboka ny hira masina (Kolondoy) miaraka amin'ny tehaka, dia mandeha ny filaharana mankany amin'ny manda Valamena. Mbola hita ao ireo siny tranainy sy fitaovana fandrahoan-tsakafo nampiasain'ny mpanjaka.</p>
+        <p>Tsikelikely dia miditra ao anatin'ny manda ny filaharana, ao amin'ny Zomba masina misy ny sisa tavela tamin'ireo mpanjaka voalohan'i Boeny. Any ivelany kosa, vavolombelona maro no manaraka maso ny lanonana sady miara-mihira sy mandihy.</p>
+        <p>Raha ny Prince Dina Herimisy Guy no manohy ny taranaka Ndriamifehinarivo ao amin'ny Doany Miarinarivo any Mahajanga, dia ny Ampanjaka Salima Said kosa no mitazona ny taranaka Ndriamandrantsiarivo ao amin'ny Doany Bezavo. Samy taranaky ny mpanjaka lehibe Ndriamandisoarivo, mpanorina ny fanjakana Boeny, izy roa.</p>
+
+        <h4 style="font-size:1.25rem">Ny razana nipoirany</h4>
+        <p>Ity ny filaharan'ny taranaka, manomboka amin'i Andriamandisoarivo ka hatramin'ny Ampanjaka Salima. Ny anarana ao anaty fononteny dia araka ny voasoratra tany am-boalohany.</p>
+        <ol class="lineage">
+          <li><span class="who">Andriamandisoarivo <i>(Bezavo)</i> <span>sy</span> Andriamandikavavy <i>(Bezavo)</i></span><span class="kid"><b>→</b> Andriamboniarivo</span></li>
+          <li><span class="who">Andriamboniarivo <i>(Bezavo)</i> <span>sy</span> Andriananohiarivo</span><span class="kid"><b>→</b> Efatra mirahalahy, anisan'izany Andrianahilitsiarivo faralahy</span></li>
+          <li><span class="who">Andrianahilitsiarivo <i>(Betsioka)</i> <span>sy</span> Akanjovola</span><span class="kid"><b>→</b> Andriamarofaly <i>(Betsioka)</i></span></li>
+          <li><span class="who">Andriamarofaly <span>sy</span> Andrianiavotsiarivo <i>(Ambararatafaly)</i></span><span class="kid"><b>→</b> Andriamamelonarivo <i>(Betsioka)</i></span></li>
+          <li><span class="who">Andriamamelonarivo</span><span class="kid"><b>→</b> Andriamadrangitrarivo <span>sy</span> Andrianifefiarivo <i>(Betsioka)</i></span></li>
+          <li><span class="who">Andriamadrangitrarivo <i>(Ambararatafaly)</i></span><span class="kid"><b>→</b> Andriamanavakarivo</span></li>
+          <li><span class="who">Andriamanavakarivo <i>(Mayotte)</i></span><span class="kid"><b>→</b> Andrianahoatsiarivo <i>(Doany Be Ankarananjy)</i> <span>sy</span> Andrianingahinarivo <i>(Doany kely Ankarananjy)</i></span></li>
+          <li><span class="who">Andrianahoatsiarivo</span><span class="kid"><b>→</b> Andriamitanjakarivo, Andriamanonjoarivo <i>(Bezavo)</i>, Andriamandilatrarivo</span></li>
+          <li><span class="who">Andriamandilatrarivo</span><span class="kid"><b>→</b> Said <i>(Nosy Be)</i></span></li>
+          <li><span class="who">Said <span>sy</span> Ronkia</span><span class="kid"><b>→</b> Amina Said</span></li>
+          <li><span class="who">Amina Said</span><span class="kid"><b>→</b> Salima Binty Said Yahaya</span></li>
+        </ol>
+        <p class="credit">Loharano: Jeannot, DLCC Mitsinjo (Jolay 2023); tantara fohy momba ny Ampanjaka Amina Said; Zafi-Dorian'i Dadilahy Ndranikendraza (Doany Bezavo).</p>
+      </div>
+    </article>
     <div class="phgrid reveal">
       <figure class="ph w2 h2"><img src="sary/tanana.jpg" alt="Prince Dina Herimisy Guy mitsidika ny vahoaka" loading="lazy"><figcaption>Prince Dina Herimisy Guy mitsidika ny vahoaka</figcaption></figure>
       <figure class="ph h2"><img src="sary/ampanjaka-vavy2.jpg" alt="Ampanjaka sy ny mpanampy azy" loading="lazy"><figcaption>Ampanjaka sy ny mpanampy azy</figcaption></figure>

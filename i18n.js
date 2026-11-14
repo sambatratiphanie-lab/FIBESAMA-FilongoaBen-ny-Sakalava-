@@ -1465,6 +1465,142 @@
 "Fiteny": [
 "Langue",
 "Language"
+],
+"Ampanjaka Salima Binty Said Yahaya, Mpanjakaben'ny Maroambitsy": [
+"Reine Salima Binty Said Yahaya, souveraine du Maroambitsy",
+"Queen Salima Binty Said Yahaya, sovereign of Maroambitsy"
+],
+"Mpanjakaben'ny Maroambitsy": [
+"Souveraine du Maroambitsy",
+"Sovereign of Maroambitsy"
+],
+"Nandimby ny reniny, Ampanjaka Amina Said, tamin'ny 2023.": [
+"A succédé à sa mère, la reine Amina Said, en 2023.",
+"Succeeded her mother, Queen Amina Said, in 2023."
+],
+"Vakio ny tantaran'ny Maroambitsy →": [
+"Lire l'histoire du Maroambitsy →",
+"Read the history of Maroambitsy →"
+],
+"Ampanjaka Amina Said, Ampanjaka ny Sakalavan'ny Maroambitsy (1939 – 2023)": [
+"Reine Amina Said, reine des Sakalava du Maroambitsy (1939 – 2023)",
+"Queen Amina Said, queen of the Sakalava of Maroambitsy (1939 – 2023)"
+],
+"Ampanjaka ny Sakalavan'ny Maroambitsy": [
+"Reine des Sakalava du Maroambitsy",
+"Queen of the Sakalava of Maroambitsy"
+],
+"1939 – 2023. Nitondra ny fanjakana Maroambitsy nanomboka tamin'ny 1981.": [
+"1939 – 2023. A régné sur le Maroambitsy à partir de 1981.",
+"1939 – 2023. Ruled the Maroambitsy kingdom from 1981."
+],
+"Efatra mirahalahy, anisan'izany Andrianahilitsiarivo faralahy": [
+"Quatre frères, dont Andrianahilitsiarivo, le cadet",
+"Four brothers, including Andrianahilitsiarivo, the youngest"
+],
+"sy": [
+"et",
+"and"
+],
+"Fanjakana Maroambitsy · Mitsinjo": [
+"Royaume du Maroambitsy · Mitsinjo",
+"Kingdom of Maroambitsy · Mitsinjo"
+],
+"Ny Ampanjaka sakalavan'ny Maroambitsy": [
+"Les reines sakalava du Maroambitsy",
+"The Sakalava queens of Maroambitsy"
+],
+"Ny tantaran'ny Ampanjaka Amina Said, izay nitondra nanomboka tamin'ny 1981 ka hatramin'ny 2023, sy ny fanandratana ny zanany vavy, Ampanjaka Salima, ho mpandimby azy.": [
+"L'histoire de la reine Amina Said, qui a régné de 1981 à 2023, et l'intronisation de sa fille, la reine Salima, qui lui succède.",
+"The story of Queen Amina Said, who reigned from 1981 to 2023, and the enthronement of her daughter, Queen Salima, as her successor."
+],
+"Tao Mitsinjo no nahaterahan'ny Ampanjaka Amina Said, tamin'ny taona 1939. Said no anaran'ny rainy, ary Ronkia kosa ny an'ny reniny.": [
+"La reine Amina Said est née en 1939 à Mitsinjo. Son père s'appelait Said et sa mère Ronkia.",
+"Queen Amina Said was born in 1939 in Mitsinjo. Her father was named Said and her mother Ronkia."
+],
+"Ny nenitoany (angovaviny), Moana Salima, izay nantsoina hoe Manjakareniniarivo, no nitaiza azy. Rehefa nodimandry io farany, dia izy no nisolo azy teo amin'ny fitondrana nanomboka tamin'ny taona 1981, ary nitondra ny fanjakana hatramin'ny nodimandriany tamin'ny volana Jona 2023.": [
+"Elle a été élevée par sa tante (angovavy), Moana Salima, appelée Manjakareniniarivo. À la mort de celle-ci, c'est elle qui lui a succédé au pouvoir à partir de 1981, et elle a régné jusqu'à son décès en juin 2023.",
+"She was raised by her aunt (angovavy), Moana Salima, known as Manjakareniniarivo. When her aunt died, she succeeded her as ruler from 1981, and reigned until her own death in June 2023."
+],
+"Zanakavavy roa no naterany: ny Princesse Salima sy ny Princesse Sama.": [
+"Elle a eu deux filles : la princesse Salima et la princesse Sama.",
+"She had two daughters: Princess Salima and Princess Sama."
+],
+"Ampanjaka Salima Binty Said Yahaya, eo anivon'ny vahoaka": [
+"La reine Salima Binty Said Yahaya, au milieu du peuple",
+"Queen Salima Binty Said Yahaya, among the people"
+],
+"Ny 9 Jona 2023 no voatendry hisolo ny reniny ny Ampanjaka Salima Binty Said Yahaya. Nanaraka izany ny lanonana Haribahiny, izay namarana ny fisaonana ny Ampanjaka Amina Said. Ny Alarobia 19 Jolay 2023 kosa no nanandratana azy ho Mpanjakaben'ny Maroambitsy, teo imason'ny fokonolona.": [
+"Le 9 juin 2023, la reine Salima Binty Said Yahaya a été désignée pour succéder à sa mère. Vint ensuite la cérémonie Haribahiny, qui a clos le deuil de la reine Amina Said. Le mercredi 19 juillet 2023, elle a été intronisée souveraine du Maroambitsy devant la population.",
+"On 9 June 2023, Queen Salima Binty Said Yahaya was chosen to succeed her mother. This was followed by the Haribahiny ceremony, which ended the mourning for Queen Amina Said. On Wednesday 19 July 2023 she was enthroned as sovereign of Maroambitsy before the community."
+],
+"Nanatrika io lanonana io ny rangitsy sy ny ben'ny varavara, ny manantany, ireo sahan'ny razan'ampanjaka maro, ary mpanompo an-jatony maro. Tonga nanatrika koa ireo manampahefana maro ao amin'ny Distrikan'i Mitsinjo. Ny 31 Jolay 2023 no nokasaina hanatanterahan'ny Ampanjaka vao napetraka ny fanompoana KIPA.": [
+"La cérémonie s'est déroulée en présence des rangitsy et du ben'ny varavara, du manantany, de nombreux saha (médiums) des ancêtres royaux et de centaines de mpanompo (serviteurs). De nombreuses autorités du district de Mitsinjo y ont également assisté. Le 31 juillet 2023 était prévu pour le fanompoana KIPA de la nouvelle reine.",
+"The ceremony was attended by the rangitsy and the ben'ny varavara, the manantany, many saha (mediums) of the royal ancestors and hundreds of mpanompo (servants). Many officials of the Mitsinjo district also attended. The KIPA fanompoana of the newly enthroned queen was planned for 31 July 2023."
+],
+"Ny razana nipoirany": [
+"Les ancêtres dont elle descend",
+"The ancestors she descends from"
+],
+"Ity ny filaharan'ny taranaka, manomboka amin'i Andriamandisoarivo ka hatramin'ny Ampanjaka Salima. Ny anarana ao anaty fononteny dia araka ny voasoratra tany am-boalohany.": [
+"Voici la lignée, d'Andriamandisoarivo jusqu'à la reine Salima. Les noms entre parenthèses sont repris tels qu'ils figurent dans le texte d'origine.",
+"Here is the lineage, from Andriamandisoarivo down to Queen Salima. The names in brackets are given as they appear in the original text."
+],
+"Loharano: Jeannot, DLCC Mitsinjo (Jolay 2023); tantara fohy momba ny Ampanjaka Amina Said; Zafi-Dorian'i Dadilahy Ndranikendraza (Doany Bezavo).": [
+"Sources : Jeannot, DLCC Mitsinjo (juillet 2023) ; bref historique de la reine Amina Said ; Zafi-Dorian'i Dadilahy Ndranikendraza (Doany Bezavo).",
+"Sources: Jeannot, DLCC Mitsinjo (July 2023); short history of Queen Amina Said; Zafi-Dorian'i Dadilahy Ndranikendraza (Doany Bezavo)."
+],
+"Doany Bezavo, fiandohan'ny fanjakana Boeny": [
+"Doany Bezavo, berceau du royaume du Boeny",
+"Doany Bezavo, cradle of the Boeny kingdom"
+],
+"Hatramin'ny andron'ny Mpanjaka Ndriamandisoarivo, mpanorina ny fanjakana Boeny, dia isan-taona no atao any Boeny ny lanonana Fanompoa. Roa no tena lehibe indrindra:": [
+"Depuis l'époque du roi Ndriamandisoarivo, fondateur du royaume du Boeny, la cérémonie du Fanompoa a lieu chaque année au Boeny. Deux d'entre elles sont les plus importantes :",
+"Since the time of King Ndriamandisoarivo, founder of the Boeny kingdom, the Fanompoa ceremony has been held every year in Boeny. Two are the most important:"
+],
+"🌊 Fanompoambe, Mahajanga": [
+"🌊 Fanompoambe, Mahajanga",
+"🌊 Fanompoambe, Mahajanga"
+],
+"Ao amin'ny Doany Miarinarivo, manodidina ny volana Jolay (Volambita). Ny Mitahy, izany hoe ireo fitahirizana masina (reliques), no sasana.": [
+"Au Doany Miarinarivo, vers le mois de juillet (Volambita). On y lave les Mitahy, c'est-à-dire les reliques sacrées.",
+"At the Doany Miarinarivo, around July (Volambita). The Mitahy, the sacred relics, are washed."
+],
+"🌳 Fanompoa Valibolamena, Bezavo": [
+"🌳 Fanompoa Valibolamena, Bezavo",
+"🌳 Fanompoa Valibolamena, Bezavo"
+],
+"Ao amin'ny Doany Bezavo any Maroambitsy, manodidina ny volana Oktobra. Tsy ireo fitahirizana masina no karakaraina fa ny razana mihitsy, voatahiry ao amin'ny Zomba.": [
+"Au Doany Bezavo, au Maroambitsy, vers le mois d'octobre. Ce ne sont pas les reliques que l'on honore, mais les ancêtres eux-mêmes, conservés dans le Zomba.",
+"At the Doany Bezavo in Maroambitsy, around October. It is not the relics that are honoured, but the ancestors themselves, kept in the Zomba."
+],
+"Fefy roa sosona vita amin'ny tsato-kazo, ny Fiaromby, no miaro ny Zomba ary manasaraka ny faritra masina indrindra. Ny tena votoatin'ny lanonana dia ny fandrakofana amin'ny sarona ny fatin'ireo mpanjaka voalohany tao Boeny, izay mandry ao amin'ny Zomba. Mitovitovy amin'ny famadihana any Imerina izany.": [
+"Une double clôture de pieux, le Fiaromby, protège le Zomba et isole l'espace le plus sacré. Le cœur de la cérémonie consiste à recouvrir d'un linceul les dépouilles des premiers rois du Boeny qui reposent dans le Zomba. Cela rappelle le famadihana (retournement des morts) de l'Imerina.",
+"A double fence of stakes, the Fiaromby, protects the Zomba and sets apart the most sacred area. The heart of the ceremony is covering with a shroud the remains of the first kings of Boeny who rest in the Zomba. It resembles the famadihana (turning of the dead) of Imerina."
+],
+"Ankoatra ny maha-masina azy, mariky ny firaisankin'ny Sakalava rehetra ity Fanompoa ity: tsy ho an'ny any Maroambitsy ihany, fa ho an'ny faritra Boeny manontolo, hatrany Ambongo sy Melaky aza.": [
+"Au-delà de son caractère sacré, ce Fanompoa est un symbole d'unité pour tous les Sakalava : pas seulement ceux du Maroambitsy, mais de tout le Boeny, et jusqu'à l'Ambongo et au Melaky.",
+"Beyond being sacred, this Fanompoa is a symbol of unity for all Sakalava: not only those of Maroambitsy, but the whole Boeny region, and even as far as Ambongo and Melaky."
+],
+"Ranomasin'olona no manenika an'i Bezavo amin'izany andro izany, mponina sy mpitsidika mifangaro: vehivavy miakanjo lambahoany maro loko, lehilahy mikitamby. Tsy maintsy manaja ny fitafy nentim-paharazana ireo mpandray anjara, ary voarara ny kiraro.": [
+"Ces jours-là, une marée humaine envahit Bezavo, habitants et visiteurs mêlés : femmes en lambahoany multicolores, hommes en kitamby. Les participants doivent respecter la tenue traditionnelle, et les chaussures sont interdites.",
+"On those days a sea of people fills Bezavo, residents and visitors together: women in colourful lambahoany, men wearing the kitamby. Participants must respect traditional dress, and shoes are forbidden."
+],
+"Mandritra ny alin'ny Alahady, alin'ny andro lehibe, dia mihira sy mandihy hatramin'ny maraina i Bezavo: izany no atao hoe Tsimandrimandry. Mamaky ny fahanginana mahazatra amin'ity tanàna kely voahodidin'ny zavamaniry ity io fiambenana io, eto amin'ny toerana nahaterahan'ny fanjakana sakalava any Boeny.": [
+"Toute la nuit du dimanche, veille du grand jour, Bezavo chante et danse jusqu'à l'aube : c'est le Tsimandrimandry. Cette veillée rompt le calme habituel de ce petit village entouré de verdure, lieu de naissance du royaume sakalava du Boeny.",
+"All through Sunday night, the eve of the great day, Bezavo sings and dances until dawn: this is the Tsimandrimandry. The vigil breaks the usual calm of this small village surrounded by greenery, the birthplace of the Sakalava kingdom of Boeny."
+],
+"Ny Alatsinainy, rehefa mipoaka ny basy ary manomboka ny hira masina (Kolondoy) miaraka amin'ny tehaka, dia mandeha ny filaharana mankany amin'ny manda Valamena. Mbola hita ao ireo siny tranainy sy fitaovana fandrahoan-tsakafo nampiasain'ny mpanjaka.": [
+"Le lundi, au son des salves de fusil (basy) et des chants sacrés (Kolondoy) rythmés par les battements de mains, la procession s'élance vers l'enceinte Valamena. On peut encore y voir les anciennes jarres et les ustensiles de cuisine utilisés par les rois.",
+"On Monday, as the rifle volleys (basy) ring out and the sacred songs (Kolondoy) begin with clapping, the procession sets off towards the Valamena enclosure. The old jars and cooking utensils used by the kings can still be seen there."
+],
+"Tsikelikely dia miditra ao anatin'ny manda ny filaharana, ao amin'ny Zomba masina misy ny sisa tavela tamin'ireo mpanjaka voalohan'i Boeny. Any ivelany kosa, vavolombelona maro no manaraka maso ny lanonana sady miara-mihira sy mandihy.": [
+"Peu à peu, la procession entre dans l'enceinte qui protège le Zomba sacré, où reposent les restes des premiers rois du Boeny. Dehors, de nombreux témoins suivent la cérémonie tout en prenant part aux chants et aux danses traditionnels.",
+"Little by little the procession enters the enclosure guarding the sacred Zomba, where the remains of the first kings of Boeny lie. Outside, many onlookers follow the ceremony while joining in the traditional songs and dances."
+],
+"Raha ny Prince Dina Herimisy Guy no manohy ny taranaka Ndriamifehinarivo ao amin'ny Doany Miarinarivo any Mahajanga, dia ny Ampanjaka Salima Said kosa no mitazona ny taranaka Ndriamandrantsiarivo ao amin'ny Doany Bezavo. Samy taranaky ny mpanjaka lehibe Ndriamandisoarivo, mpanorina ny fanjakana Boeny, izy roa.": [
+"Si le prince Dina Herimisy Guy perpétue la lignée de Ndriamifehinarivo au Doany Miarinarivo de Mahajanga, c'est la reine Salima Said qui porte la lignée de Ndriamandrantsiarivo au Doany Bezavo. Tous deux descendent du grand roi Ndriamandisoarivo, fondateur du royaume du Boeny.",
+"While Prince Dina Herimisy Guy carries on the line of Ndriamifehinarivo at the Doany Miarinarivo in Mahajanga, Queen Salima Said holds the line of Ndriamandrantsiarivo at the Doany Bezavo. Both descend from the great king Ndriamandisoarivo, founder of the Boeny kingdom."
 ]
 };
   var I = L === 'fr' ? 0 : 1;
