@@ -341,6 +341,99 @@ h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;
 #lb button{position:absolute;top:16px;right:16px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.15);color:#fff;font-size:1.3rem;cursor:pointer}
 #lb .nv{top:50%;transform:translateY(-50%)}#lb .pv{left:16px;right:auto}#lb .nx{right:16px}
 
+/* ===== NEWS-STYLE HEADER ===== */
+html{scroll-padding-top:124px}
+header.nav,header.nav.solid{background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+header.nav .brand,header.nav .iconbtn{color:var(--text)}
+.nav .wrap.topbar{height:62px;gap:12px}
+.search{flex:1;max-width:460px;margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:0 14px;height:42px;color:var(--muted)}
+.search:focus-within{border-color:var(--volamena);box-shadow:0 0 0 3px color-mix(in srgb,var(--volamena) 25%,transparent)}
+.search input{border:0;background:none;padding:0;height:100%;outline:none;font-size:.95rem;color:var(--text);flex:1;min-width:0}
+#searchToggle{display:none}
+.login-btn{display:inline-flex;align-items:center;gap:7px;border:0;background:var(--mena);color:#fff;font:inherit;font-weight:600;font-size:.9rem;padding:9px 15px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.login-btn.on{background:var(--ranomasina)}
+.catbar{border-top:1px solid var(--line);background:var(--card)}
+.catbar .wrap{height:auto}
+.catbar .links,.nav .catbar .links{position:static;transform:none;flex-direction:row;align-items:center;background:none;box-shadow:none;padding:0;margin:0;gap:2px;overflow-x:auto;scrollbar-width:none;white-space:nowrap;height:48px}
+.catbar .links::-webkit-scrollbar{display:none}
+.catbar .links a,.nav .catbar .links a,.ddb{color:var(--text)!important;padding:8px 13px;font-size:.92rem;font-weight:500;border-radius:999px;display:inline-flex;align-items:center;gap:6px;text-decoration:none}
+.catbar .links a.home{border-right:1px solid var(--line);border-radius:10px;margin-right:4px}
+.catbar .links a:hover,.ddb:hover{background:var(--chip)}
+.dd{position:relative}
+.ddb{border:0;background:none;font:inherit;cursor:pointer}
+.ddm{position:fixed;display:none;min-width:240px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:6px;z-index:90}
+.ddm.open{display:block}
+.ddm a{display:block!important;padding:10px 12px!important;border-radius:10px!important}
+.hero .wrap{padding-top:170px}
+@media (max-width:760px){
+  .search{display:none;position:absolute;left:12px;right:12px;top:68px;max-width:none;z-index:95;background:var(--card);box-shadow:var(--shadow)}
+  .search.open{display:flex}
+  #searchToggle{display:grid;margin-left:auto}
+  .login-btn span{display:none}.login-btn{padding:9px 11px}
+  .brand{font-size:1.1rem}
+}
+.results{position:absolute;left:50%;transform:translateX(-50%);top:58px;width:min(620px,calc(100% - 24px));max-height:70vh;overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:8px;z-index:96}
+@media (max-width:760px){.results{top:116px}}
+.results a{display:block;padding:10px 12px;border-radius:10px;text-decoration:none;color:var(--text)}
+.results a:hover,.results a.sel{background:var(--chip)}
+.results small{display:block;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tany)}
+.results p{margin:2px 0 0;font-size:.88rem;color:var(--muted)}
+.results mark{background:color-mix(in srgb,var(--volamena) 45%,transparent);color:inherit;border-radius:3px;padding:0 2px}
+.results .none{padding:14px;color:var(--muted);font-size:.9rem}
+.flash{animation:flash 2.2s ease}
+@keyframes flash{0%,40%{background:color-mix(in srgb,var(--volamena) 40%,transparent);box-shadow:0 0 0 6px color-mix(in srgb,var(--volamena) 40%,transparent);border-radius:10px}100%{}}
+/* ===== ACTION BAR ===== */
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:26px;padding-top:16px;border-top:1px dashed var(--line)}
+.actions button{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit;font-size:.88rem;font-weight:600;padding:8px 14px;border-radius:999px;cursor:pointer;transition:all .2s}
+.actions button:hover{border-color:var(--sec,var(--accent));color:var(--sec,var(--accent))}
+.actions button.on{background:var(--sec,var(--accent));border-color:var(--sec,var(--accent));color:#fff}
+.actions button svg{width:17px;height:17px}
+.actions .sp{flex:1}
+.actions .lbl0{font-size:.78rem;color:var(--muted);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-right:4px}
+.cmts{margin-top:14px;background:var(--bg2);border-radius:16px;padding:16px}
+.cmts .c{padding:10px 0;border-bottom:1px solid var(--line)}
+.cmts .c:last-of-type{border-bottom:0}
+.cmts .c b{font-size:.9rem}.cmts .c time{font-size:.75rem;color:var(--muted);margin-left:8px}
+.cmts .c p{margin:4px 0 0;font-size:.92rem}
+.cmts form{display:flex;gap:8px;margin-top:10px}
+.cmts textarea{min-height:46px;flex:1}
+.cmts .empty{color:var(--muted);font-size:.9rem}
+.smenu{position:fixed;z-index:97;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:6px;display:flex;flex-direction:column;min-width:190px}
+.smenu a,.smenu button{padding:10px 12px;border-radius:10px;text-decoration:none;color:var(--text);font:inherit;font-weight:600;font-size:.9rem;background:none;border:0;text-align:left;cursor:pointer}
+.smenu a:hover,.smenu button:hover{background:var(--chip)}
+#toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);background:#1b0f0b;color:#fff;padding:10px 18px;border-radius:12px;font-size:.9rem;font-weight:600;opacity:0;pointer-events:none;transition:all .3s;z-index:120;max-width:calc(100% - 32px);text-align:center}
+#toast.on{opacity:1;transform:translateX(-50%)}
+/* ===== MODAL ===== */
+.modal{position:fixed;inset:0;z-index:110;background:rgba(15,8,5,.6);backdrop-filter:blur(4px);display:grid;place-items:center;padding:16px}
+.modal[hidden]{display:none}
+.mbox{position:relative;width:min(420px,100%);background:var(--card);border-radius:22px;padding:30px 26px;box-shadow:0 30px 80px rgba(0,0,0,.4);text-align:center}
+.mbox h3{font-family:Inter,sans-serif;font-weight:800;font-size:1.4rem}
+.msub{color:var(--muted);font-size:.92rem}
+.mx{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;border:0;background:var(--chip);color:var(--text);cursor:pointer}
+.gbtn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit;font-weight:600;cursor:pointer}
+.gbtn:hover{background:var(--bg2)}
+.or{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:.8rem;margin:14px 0}
+.or::before,.or::after{content:"";flex:1;height:1px;background:var(--line)}
+#emailForm{gap:10px}
+.mrow{display:flex;gap:8px}.mrow .btn{flex:1;justify-content:center;padding:11px}
+.btn.ghost2{background:var(--chip);color:var(--text)}
+.mnote{font-size:.85rem;color:var(--mena);margin:12px 0 0;min-height:1em}
+/* ===== NEWS & VIDEO ===== */
+.news{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;margin-top:30px}
+.ncard{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.ncard img{width:100%;height:200px;object-fit:cover}
+.ncard .nb{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.ncard .meta{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--sec)}
+.ncard h3{font-family:Inter,sans-serif;font-weight:800;font-size:1.2rem;margin:.4em 0}
+.ncard p{color:var(--muted);font-size:.93rem}
+.ncard .actions{margin-top:auto}
+.videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;margin-top:30px}
+.vcard{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
+.vcard .vf{position:relative;aspect-ratio:16/9;background:#000}
+.vcard iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vcard .vt{padding:14px 18px;font-weight:700}
+.vempty{grid-column:1/-1;border:2px dashed var(--line);border-radius:20px;padding:40px 24px;text-align:center;color:var(--muted)}
+
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.scroll-hint{animation:none}}
@@ -352,29 +445,41 @@ h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;
 </head>
 <body>
 
-<header class="nav" id="nav">
-  <div class="wrap">
+<header class="nav solid" id="nav">
+  <div class="wrap topbar">
     <a class="brand" href="#top" aria-label="FIBESAMA">
       <span class="logo-badge"><img src="logo.png" alt="" width="40" height="47"></span>
       FIBESAMA
     </a>
-    <nav class="links" id="links">
-      <a href="#sommaire">Sommaire</a>
-      <a href="#momba">Momba anay</a>
-      <a href="#tantara">Tantara</a>
-      <a href="#boeny">Boeny</a>
-      <a href="#vakoka">Vakoka</a>
-      <a href="#mpitondra">Mpitondra</a>
-      <a href="#sary">Sary</a>
-      <a href="#fifandraisana">Fifandraisana</a>
-    </nav>
+    <form class="search" id="searchForm" role="search" autocomplete="off">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Hikaroka: Andriamisara, doany, tromba..." aria-label="Hikaroka">
+    </form>
+    <button class="iconbtn" id="searchToggle" aria-label="Hikaroka"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+    <button class="login-btn" id="loginBtn" type="button"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span id="loginLbl">Hiditra</span></button>
     <button class="iconbtn" id="themeBtn" aria-label="Ovay ny loko (maizina/mazava)">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
     </button>
-    <button class="iconbtn" id="menuBtn" aria-label="Menu" aria-expanded="false">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-    </button>
+    <button class="iconbtn" id="menuBtn" aria-label="Menu" aria-expanded="false" hidden></button>
   </div>
+  <div class="catbar">
+    <div class="wrap">
+      <nav class="links" id="links" aria-label="Sokajy">
+        <a href="#top" class="home" aria-label="Fandraisana"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></a>
+        <a href="#momba">Fikambanana</a>
+        <a href="#mpitondra">Fiaraha-monina</a>
+        <div class="dd"><button type="button" class="ddb" aria-expanded="false">Faritra <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></button><div class="ddm"><a href="#r-fiherenana" data-region="r-fiherenana">Fiherenana · Onilahy</a><a href="#r-menabe" data-region="r-menabe">Menabe</a><a href="#r-melaky" data-region="r-melaky">Melaky · Ambongo</a><a href="#r-boeny" data-region="r-boeny">Boeny</a><a href="#r-avaratra" data-region="r-avaratra">Analalava · Ambanja · Nosy Be</a></div></div>
+        <a href="#vaovao">Vaovao</a>
+        <a href="#video"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M10 8.5v7l6-3.5z" fill="currentColor"/></svg> Horonantsary</a>
+        <a href="#tantara">Tantara</a>
+        <a href="#boeny">Boeny</a>
+        <a href="#vakoka">Vakoka</a>
+        <a href="#sary">Sary</a>
+        <a href="#fifandraisana">Fifandraisana</a>
+      </nav>
+    </div>
+  </div>
+  <div class="results" id="results" hidden></div>
 </header>
 
 <!-- ============ HERO ============ -->
@@ -591,12 +696,12 @@ h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;
       <span class="eyebrow">Fiitarana</span>
       <h3 style="font-size:1.7rem">Ny tanin'ny Sakalava, avy atsimo ka hatrany avaratra</h3>
     </div>
-    <div class="regions reveal">
-      <div class="region" style="background:linear-gradient(160deg,#b5652b,#6b2a12)"><span>ATSIMO</span><h4>Fiherenana · Onilahy</h4><p>Faritra niaviana voalohany araka ny lovantsofina.</p></div>
-      <div class="region" style="background:linear-gradient(160deg,#8c1d18,#4a0d0a)"><span>ANDREFANA</span><h4>Menabe</h4><p>Morondava, Belo-sur-Tsiribihina. Tanin'ny Fitampoha sy ny baobab.</p></div>
-      <div class="region" style="background:linear-gradient(160deg,#7a4a1c,#3b220c)"><span>ANDREFANA</span><h4>Melaky · Ambongo</h4><p>Maintirano sy ny morontsiraka afovoany.</p></div>
-      <div class="region" style="background:linear-gradient(160deg,#0f4c5c,#082a33)"><span>AVARATRA ANDREFANA</span><h4>Boeny</h4><p>Mahajanga, Marovoay. Foiben'ny fanjakana Boeny.</p></div>
-      <div class="region" style="background:linear-gradient(160deg,#2c5f4a,#123326)"><span>AVARATRA</span><h4>Analalava · Ambanja · Nosy Be</h4><p>Bemihisatra sy Bemazava, taranaka mpanjaka nifindra avaratra.</p></div>
+    <div class="regions reveal" id="faritra">
+      <div class="region" id="r-fiherenana" style="background:linear-gradient(160deg,#b5652b,#6b2a12)"><span>ATSIMO</span><h4>Fiherenana · Onilahy</h4><p>Faritra niaviana voalohany araka ny lovantsofina.</p></div>
+      <div class="region" id="r-menabe" style="background:linear-gradient(160deg,#8c1d18,#4a0d0a)"><span>ANDREFANA</span><h4>Menabe</h4><p>Morondava, Belo-sur-Tsiribihina. Tanin'ny Fitampoha sy ny baobab.</p></div>
+      <div class="region" id="r-melaky" style="background:linear-gradient(160deg,#7a4a1c,#3b220c)"><span>ANDREFANA</span><h4>Melaky · Ambongo</h4><p>Maintirano sy ny morontsiraka afovoany.</p></div>
+      <div class="region" id="r-boeny" style="background:linear-gradient(160deg,#0f4c5c,#082a33)"><span>AVARATRA ANDREFANA</span><h4>Boeny</h4><p>Mahajanga, Marovoay. Foiben'ny fanjakana Boeny.</p></div>
+      <div class="region" id="r-avaratra" style="background:linear-gradient(160deg,#2c5f4a,#123326)"><span>AVARATRA</span><h4>Analalava · Ambanja · Nosy Be</h4><p>Bemihisatra sy Bemazava, taranaka mpanjaka nifindra avaratra.</p></div>
     </div>
   </div>
 </section>
@@ -753,6 +858,30 @@ h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;
   </div>
 </section>
 
+
+<!-- ============ VAOVAO (Actualités) ============ -->
+<section id="vaovao" class="pg" data-title="Vaovao" data-sub="Ny vaovao farany" data-color="#a3341f">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Vaovao</span>
+      <h2>Ny vaovao farany</h2>
+      <p class="lead">Ireo hetsika, fanambarana ary vaovao avy amin'ny FIBESAMA sy ny tontolo sakalava.</p>
+    </div>
+    <div class="news" id="newsList"></div>
+  </div>
+</section>
+
+<!-- ============ HORONANTSARY (Vidéos) ============ -->
+<section id="video" class="pg alt" data-title="Horonantsary" data-sub="Vidéo sy fandaharana" data-color="#3d2a6b">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Horonantsary</span>
+      <h2>Vidéo</h2>
+      <p class="lead">Horonantsarin'ny lanonana, ny fihaonana ary ny tantara sakalava.</p>
+    </div>
+    <div class="videos" id="videoList"></div>
+  </div>
+</section>
 <!-- ============ FIFANDRAISANA ============ -->
 <section id="fifandraisana" class="pg alt" data-title="Fifandraisana" data-sub="Andao hifandray" data-color="#5e120f">
   <div class="wrap contact">
@@ -811,6 +940,37 @@ h2{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;
   <button id="pgDown" aria-label="Fizarana manaraka"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button>
 </div>
 <div id="hint">Tsindrio ▼ hidinana amin'ny pejy manaraka</div>
+
+<div id="acct" class="modal" role="dialog" aria-modal="true" aria-labelledby="acctT" hidden>
+  <div class="mbox">
+    <button class="mx" type="button" aria-label="Akatona">✕</button>
+    <div id="acctOut">
+      <img src="logo.png" alt="" width="54" style="margin:0 auto 8px">
+      <h3 id="acctT">Kaonty FIBESAMA</h3>
+      <p class="msub">Midira mba hahafahanao manome "tiako", maneho hevitra, manaraka ny vaovao ary mandefa hafatra.</p>
+      <button class="gbtn" id="gLogin" type="button"><svg width="18" height="18" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg> Hiditra amin'ny Google</button>
+      <div class="or"><span>na</span></div>
+      <form id="emailForm">
+        <input id="aName" placeholder="Anarana (raha vao hisoratra)" autocomplete="name">
+        <input id="aMail" type="email" placeholder="Mailaka" required autocomplete="email">
+        <input id="aPass" type="password" placeholder="Teny miafina (6 litera farafahakeliny)" required minlength="6" autocomplete="current-password">
+        <div class="mrow"><button class="btn solid" type="submit" data-mode="in">Hiditra</button><button class="btn ghost2" type="submit" data-mode="up">Hisoratra anarana</button></div>
+      </form>
+      <p class="mnote" id="acctNote"></p>
+    </div>
+    <div id="acctIn" hidden>
+      <h3>Tongasoa, <span id="uName"></span>!</h3>
+      <p class="msub">Afaka manome "tiako", maneho hevitra ary mandefa hafatra ianao izao.</p>
+      <button class="btn ghost2" id="logout" type="button">Hivoaka</button>
+    </div>
+  </div>
+</div>
+<div id="shareMenu" class="smenu" hidden>
+  <a data-s="fb" target="_blank" rel="noopener">Facebook</a>
+  <a data-s="wa" target="_blank" rel="noopener">WhatsApp</a>
+  <button type="button" data-s="copy">Adikao ny rohy</button>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
 <div id="lb" role="dialog" aria-label="Sary"><button class="x" aria-label="Akatona">✕</button><button class="nv pv" aria-label="Teo aloha">‹</button><img alt=""><p></p><button class="nv nx" aria-label="Manaraka">›</button></div>
 <div id="installBar" role="dialog" aria-label="Apetraho ny application">
   <span style="font-size:1.6rem">📲</span>
@@ -938,6 +1098,229 @@ const doInstall = async () => {
 $('#installBtn').addEventListener('click', doInstall);
 $('#installBtn2').addEventListener('click', doInstall);
 $('#installClose').addEventListener('click', () => { $('#installBar').classList.remove('show'); try { localStorage.setItem('fib-install-off', '1'); } catch (x) {} });
+
+
+/* =====================================================================
+   ✏️  VAOVAO sy HORONANTSARY: ampio eto
+   VAOVAO: { date:"2026-11-13", title:"...", text:"...", img:"sary/...jpg" }
+   VIDEO : { youtube:"ID an'ny YouTube", title:"..." }  na  { facebook:"rohy feno", title:"..." }
+   ===================================================================== */
+const VAOVAO = [
+  { date: "2026-11-13", title: "Nisokatra ny tranonkala FIBESAMA", text: "Misokatra ho an'ny rehetra izao ny tranonkalan'ny FIBESAMA. Eto no ahitana ny tantara, ny vakoka ary ny vaovao momba ny Sakalava sy ny fikambanana.", img: "sary/hero.jpg" },
+];
+const VIDEO = [];
+
+/* =====================================================================
+   🔐 KAONTY sy HEVITRA (Firebase). Apetraho eto ny "firebaseConfig"
+   avy amin'ny console.firebase.google.com. Raha null dia tsy mandeha
+   ny fidirana, ny "tiako" ary ny hevitra (fa mandeha ny fizarana).
+   ===================================================================== */
+const FIREBASE = null;
+
+(() => {
+  const $ = q => document.querySelector(q), $$ = q => [...document.querySelectorAll(q)];
+  const esc = t => String(t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const toast = m => { const t = $('#toast'); t.textContent = m; t.classList.add('on'); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('on'), 2600); };
+  const fmtDate = d => { try { return new Date(d).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' }); } catch (e) { return d; } };
+
+  /* ---- news & videos ---- */
+  $('#newsList').innerHTML = VAOVAO.map((n, i) => `<article class="ncard reveal in" id="vaovao-${i}" data-post="vaovao-${i}" data-ptitle="${esc(n.title)}">${n.img ? `<img src="${esc(n.img)}" alt="" loading="lazy">` : ''}<div class="nb"><span class="meta">${fmtDate(n.date)}</span><h3>${esc(n.title)}</h3><p>${esc(n.text)}</p></div></article>`).join('') || '<p class="vempty">Tsy mbola misy vaovao.</p>';
+  $('#videoList').innerHTML = VIDEO.length ? VIDEO.map(v => `<div class="vcard"><div class="vf">${v.youtube ? `<iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.youtube)}" title="${esc(v.title)}" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>` : `<iframe loading="lazy" src="https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(v.facebook)}" title="${esc(v.title)}" allowfullscreen></iframe>`}</div><div class="vt">${esc(v.title)}</div></div>`).join('')
+    : '<div class="vempty"><b>Tsy mbola misy horonantsary.</b><br>Alefaso amin\'ny birao ny rohy YouTube na Facebook an\'ny lanonana sy hetsika, dia hiseho eto.</div>';
+
+  /* ---- search ---- */
+  const norm = t => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/['’]/g, "'");
+  let index = null;
+  const build = () => {
+    index = [];
+    $$('section.pg:not(#sommaire)').forEach(sec => {
+      let head = sec.dataset.title;
+      sec.querySelectorAll('h2,h3,h4,p,li,figcaption').forEach(el => {
+        if (el.closest('.actions,.cmts,.pg-foot,.sec-head')) return;
+        if (/H[234]/.test(el.tagName)) head = el.textContent.trim();
+        const t = el.textContent.replace(/\s+/g, ' ').trim(); if (t.length < 3) return;
+        index.push({ el, t, n: norm(t), sec: sec.dataset.title, head, color: sec.dataset.color });
+      });
+    });
+  };
+  const box = $('#results'), q = $('#q');
+  let hits = [], sel = -1;
+  const snippet = (t, words) => {
+    const n = norm(t); let pos = n.indexOf(words[0]); if (pos < 0) pos = 0;
+    const st = Math.max(0, pos - 50), piece = t.slice(st, st + 160);
+    let out = esc(piece);
+    words.forEach(w => { if (!w) return; const re = new RegExp('(' + w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').split('').join('[\\u0300-\\u036f]*') + ')', 'gi'); out = out.replace(re, '<mark>$1</mark>'); });
+    return (st > 0 ? '… ' : '') + out + (st + 160 < t.length ? ' …' : '');
+  };
+  const run = () => {
+    const v = norm(q.value.trim()); if (!index) build();
+    if (v.length < 2) { box.hidden = true; return; }
+    const words = v.split(/\s+/).filter(Boolean);
+    hits = index.map(x => { let sc = 0; for (const w of words) { const i = x.n.indexOf(w); if (i < 0) return null; sc += (i === 0 ? 3 : 1) + (/H[234]/.test(x.el.tagName) ? 4 : 0); } return { x, sc }; }).filter(Boolean).sort((a, b) => b.sc - a.sc).slice(0, 8).map(h => h.x);
+    sel = -1;
+    box.innerHTML = hits.length ? hits.map((h, i) => `<a href="#" data-i="${i}"><small style="color:${h.color}">${esc(h.sec)}${h.head && h.head !== h.sec ? ' · ' + esc(h.head) : ''}</small><p>${snippet(h.t, words)}</p></a>`).join('') : `<div class="none">Tsy nisy hita ho an'ny « ${esc(q.value)} ».</div>`;
+    box.hidden = false;
+  };
+  const jump = i => { const h = hits[i]; if (!h) return; box.hidden = true; $('#searchForm').classList.remove('open'); q.blur(); h.el.scrollIntoView({ behavior: 'smooth', block: 'center' }); h.el.classList.remove('flash'); void h.el.offsetWidth; h.el.classList.add('flash'); };
+  q.addEventListener('input', run);
+  q.addEventListener('focus', () => { if (q.value.trim().length > 1) run(); });
+  q.addEventListener('keydown', e => {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); if (!hits.length) return; sel = (sel + (e.key === 'ArrowDown' ? 1 : -1) + hits.length) % hits.length; $$('#results a').forEach((a, i) => a.classList.toggle('sel', i === sel)); }
+    if (e.key === 'Escape') { box.hidden = true; q.blur(); }
+  });
+  $('#searchForm').addEventListener('submit', e => { e.preventDefault(); jump(sel < 0 ? 0 : sel); });
+  box.addEventListener('click', e => { const a = e.target.closest('a[data-i]'); if (a) { e.preventDefault(); jump(+a.dataset.i); } });
+  document.addEventListener('click', e => { if (!e.target.closest('#results,#searchForm,#searchToggle')) box.hidden = true; });
+  $('#searchToggle').addEventListener('click', () => { const f = $('#searchForm'); f.classList.toggle('open'); if (f.classList.contains('open')) q.focus(); });
+
+  /* ---- regions dropdown ---- */
+  const ddb = $('.ddb'), ddm = $('.ddm');
+  ddb.addEventListener('click', e => { e.stopPropagation(); const r = ddb.getBoundingClientRect(); ddm.style.left = Math.min(r.left, innerWidth - 256) + 'px'; ddm.style.top = (r.bottom + 6) + 'px'; ddm.classList.toggle('open'); ddb.setAttribute('aria-expanded', ddm.classList.contains('open')); });
+  document.addEventListener('click', () => ddm.classList.remove('open'));
+  addEventListener('scroll', () => ddm.classList.remove('open'), { passive: true });
+  ddm.addEventListener('click', e => { const a = e.target.closest('a'); if (!a) return; e.preventDefault(); ddm.classList.remove('open'); const el = document.getElementById(a.dataset.region); el.scrollIntoView({ behavior: 'smooth', block: 'center' }); el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash'); });
+
+  /* ---- action bars ---- */
+  const ic = {
+    like: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M12 21s-7.5-4.6-9.5-9.3C1.1 8.3 3.4 4.5 7.2 4.5c2 0 3.6 1.1 4.8 2.8 1.2-1.7 2.8-2.8 4.8-2.8 3.8 0 6.1 3.8 4.7 7.2C19.5 16.4 12 21 12 21z"/></svg>',
+    cmt: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12z"/></svg>',
+    share: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>',
+    bell: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 8 3 8H3s3-1 3-8M10 21h4"/></svg>'
+  };
+  const targets = [];
+  $$('section.pg:not(#sommaire):not(#vaovao):not(#video)').forEach(sec => { const w = [...sec.querySelectorAll(':scope > .wrap')].pop(); if (w) targets.push([w, sec.id, sec.dataset.title]); });
+  $$('.article[id]').forEach(a => targets.push([a.querySelector('.body') || a, a.id, a.querySelector('h3')?.textContent || a.id]));
+  $$('.ncard[data-post]').forEach(c => targets.push([c.querySelector('.nb'), c.dataset.post, c.dataset.ptitle]));
+  targets.forEach(([host, id, title]) => {
+    host.insertAdjacentHTML('beforeend', `<div class="actions" data-post="${esc(id)}" data-ptitle="${esc(title)}">
+      <button type="button" data-a="like" aria-label="Tiako">${ic.like}<span>Tiako</span> <b class="n"></b></button>
+      <button type="button" data-a="cmt" aria-label="Hevitra">${ic.cmt}<span>Hevitra</span> <b class="n"></b></button>
+      <button type="button" data-a="share" aria-label="Zarao">${ic.share}<span>Zarao</span></button>
+      <span class="sp"></span>
+      <button type="button" data-a="sub" aria-label="Manaraka">${ic.bell}<span>Manaraka</span></button>
+    </div>`);
+  });
+
+  /* ---- share ---- */
+  const sm = $('#shareMenu');
+  const shareUrl = id => location.href.split('#')[0] + '#' + id;
+  const openShare = (btn, id, title) => {
+    const url = shareUrl(id), text = 'FIBESAMA · ' + title;
+    if (navigator.share && matchMedia('(pointer:coarse)').matches) { navigator.share({ title: text, url }).catch(() => {}); return; }
+    sm.querySelector('[data-s=fb]').href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url);
+    sm.querySelector('[data-s=wa]').href = 'https://wa.me/?text=' + encodeURIComponent(text + ' ' + url);
+    sm.dataset.url = url;
+    const r = btn.getBoundingClientRect(); sm.hidden = false;
+    sm.style.left = Math.max(8, Math.min(r.left, innerWidth - sm.offsetWidth - 8)) + 'px';
+    sm.style.top = (r.top - sm.offsetHeight - 8 > 8 ? r.top - sm.offsetHeight - 8 : r.bottom + 8) + 'px';
+  };
+  sm.querySelector('[data-s=copy]').addEventListener('click', () => { navigator.clipboard?.writeText(sm.dataset.url).then(() => toast('Voadika ny rohy ✓'), () => toast(sm.dataset.url)); sm.hidden = true; });
+  document.addEventListener('click', e => { if (!e.target.closest('#shareMenu,[data-a=share]')) sm.hidden = true; });
+  addEventListener('scroll', () => { sm.hidden = true; }, { passive: true });
+
+  /* ---- account / backend ---- */
+  const acct = $('#acct');
+  const openAcct = msg => { $('#acctNote').textContent = msg || (FIREBASE ? '' : "Mbola amboarina ny fidirana amin'ny kaonty. Ho vonona tsy ho ela."); acct.hidden = false; };
+  acct.querySelector('.mx').onclick = () => acct.hidden = true;
+  acct.addEventListener('click', e => { if (e.target === acct) acct.hidden = true; });
+  addEventListener('keydown', e => { if (e.key === 'Escape') acct.hidden = true; });
+  $('#loginBtn').onclick = () => openAcct();
+
+  let fb = null, user = null;
+  const needLogin = what => { if (user) return false; openAcct('Midira aloha mba ' + what + '.'); return true; };
+
+  document.addEventListener('click', async e => {
+    const b = e.target.closest('.actions button'); if (!b) return;
+    const bar = b.closest('.actions'), id = bar.dataset.post, title = bar.dataset.ptitle;
+    const a = b.dataset.a;
+    if (a === 'share') return openShare(b, id, title);
+    if (a === 'cmt') return toggleComments(bar);
+    if (!fb) return openAcct();
+    if (a === 'like') { if (needLogin('hanome "tiako"')) return; await toggleLike(id, bar); }
+    if (a === 'sub') { if (needLogin('hanaraka ny vaovao')) return; await toggleSub(bar); }
+  });
+
+  const toggleComments = async bar => {
+    let c = bar.nextElementSibling;
+    if (c && c.classList.contains('cmts')) { c.remove(); return; }
+    bar.insertAdjacentHTML('afterend', `<div class="cmts"><div class="list"><p class="empty">${fb ? 'Mampiditra...' : "Tsy mbola misy hevitra. Ho afaka maneho hevitra ianao rehefa vonona ny kaonty."}</p></div>
+      <form><textarea placeholder="Soraty ny hevitrao..." maxlength="1000" required></textarea><button class="btn solid" type="submit">Alefaso</button></form></div>`);
+    c = bar.nextElementSibling;
+    c.querySelector('form').addEventListener('submit', async ev => {
+      ev.preventDefault(); if (!fb) return openAcct(); if (needLogin('haneho hevitra')) return;
+      const ta = ev.target.querySelector('textarea'), text = ta.value.trim(); if (!text) return;
+      await fb.db.collection('comments').add({ post: bar.dataset.post, uid: user.uid, name: user.displayName || user.email.split('@')[0], text, ts: firebase.firestore.FieldValue.serverTimestamp() });
+      ta.value = ''; toast('Voaray ny hevitrao ✓'); loadComments(bar);
+    });
+    if (fb) loadComments(bar);
+  };
+  const loadComments = async bar => {
+    const c = bar.nextElementSibling; if (!c || !c.classList.contains('cmts')) return;
+    const snap = await fb.db.collection('comments').where('post', '==', bar.dataset.post).orderBy('ts', 'desc').limit(50).get();
+    c.querySelector('.list').innerHTML = snap.empty ? '<p class="empty">Tsy mbola misy hevitra. Ianao no voalohany!</p>' : snap.docs.map(d => { const x = d.data(); return `<div class="c"><b>${esc(x.name)}</b><time>${x.ts ? x.ts.toDate().toLocaleString('fr-FR') : ''}</time><p>${esc(x.text)}</p></div>`; }).join('');
+    bar.querySelector('[data-a=cmt] .n').textContent = snap.size || '';
+  };
+  const toggleLike = async (id, bar) => {
+    const ref = fb.db.collection('likes').doc(id + '_' + user.uid), on = (await ref.get()).exists;
+    if (on) await ref.delete(); else await ref.set({ post: id, uid: user.uid, ts: firebase.firestore.FieldValue.serverTimestamp() });
+    refreshBar(bar);
+  };
+  const toggleSub = async () => {
+    const ref = fb.db.collection('subscribers').doc(user.uid), on = (await ref.get()).exists;
+    if (on) { await ref.delete(); toast('Tsy manaraka intsony ianao'); } else { await ref.set({ uid: user.uid, email: user.email || '', name: user.displayName || '', ts: firebase.firestore.FieldValue.serverTimestamp() }); toast('Hahazo ny vaovao ianao ✓'); }
+    $$('[data-a=sub]').forEach(b => b.classList.toggle('on', !on));
+  };
+  const refreshBar = async bar => {
+    const id = bar.dataset.post;
+    const likes = await fb.db.collection('likes').where('post', '==', id).get();
+    bar.querySelector('[data-a=like] .n').textContent = likes.size || '';
+    bar.querySelector('[data-a=like]').classList.toggle('on', !!user && likes.docs.some(d => d.data().uid === user.uid));
+    const cm = await fb.db.collection('comments').where('post', '==', id).get();
+    bar.querySelector('[data-a=cmt] .n').textContent = cm.size || '';
+  };
+
+  if (FIREBASE) {
+    const load = src => new Promise((ok, ko) => { const s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = ko; document.head.appendChild(s); });
+    const V = 'https://www.gstatic.com/firebasejs/10.12.2/';
+    load(V + 'firebase-app-compat.js').then(() => Promise.all([load(V + 'firebase-auth-compat.js'), load(V + 'firebase-firestore-compat.js')])).then(() => {
+      firebase.initializeApp(FIREBASE);
+      fb = { auth: firebase.auth(), db: firebase.firestore() };
+      $('#gLogin').onclick = () => fb.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()).then(() => acct.hidden = true).catch(er => $('#acctNote').textContent = er.message);
+      $('#emailForm').addEventListener('submit', async e => {
+        e.preventDefault(); const mode = e.submitter?.dataset.mode || 'in';
+        const m = $('#aMail').value.trim(), pw = $('#aPass').value, nm = $('#aName').value.trim();
+        try {
+          if (mode === 'up') { const r = await fb.auth.createUserWithEmailAndPassword(m, pw); if (nm) await r.user.updateProfile({ displayName: nm }); }
+          else await fb.auth.signInWithEmailAndPassword(m, pw);
+          acct.hidden = true;
+        } catch (er) { $('#acctNote').textContent = er.code === 'auth/invalid-credential' ? 'Diso ny mailaka na ny teny miafina.' : er.message; }
+      });
+      $('#logout').onclick = () => fb.auth.signOut().then(() => acct.hidden = true);
+      fb.auth.onAuthStateChanged(async u => {
+        user = u;
+        $('#acctOut').hidden = !!u; $('#acctIn').hidden = !u;
+        $('#loginLbl').textContent = u ? (u.displayName || u.email || '').split(' ')[0] : 'Hiditra';
+        $('#loginBtn').classList.toggle('on', !!u);
+        if (u) $('#uName').textContent = u.displayName || u.email;
+        const sub = u ? (await fb.db.collection('subscribers').doc(u.uid).get()).exists : false;
+        $$('[data-a=sub]').forEach(b => b.classList.toggle('on', sub));
+        $$('.actions').forEach(refreshBar);
+      });
+      /* contact form -> messages collection when logged in */
+      $('#contactForm').addEventListener('submit', async e => {
+        if (!user) return;
+        e.preventDefault(); e.stopImmediatePropagation();
+        const d = new FormData(e.target);
+        await fb.db.collection('messages').add({ uid: user.uid, name: d.get('anarana'), contact: d.get('fifandraisana'), text: d.get('hafatra'), ts: firebase.firestore.FieldValue.serverTimestamp() });
+        e.target.reset(); toast('Voaray ny hafatrao ✓ Hamaly anao ny birao.');
+      }, true);
+    }).catch(() => toast('Tsy tafiditra ny fifandraisana amin\'ny kaonty.'));
+  } else {
+    $('#gLogin').onclick = () => openAcct();
+    $('#emailForm').addEventListener('submit', e => { e.preventDefault(); openAcct(); });
+  }
+  build();
+})();
 
 /* ===== PRO PRESENTATION LAYER =====
    Hanampiana fizarana vaovao: <section id="..." class="pg" data-title="Lohateny" data-sub="Lohateny kely" data-color="#hex">
