@@ -449,6 +449,11 @@ header.nav .brand,header.nav .iconbtn{color:var(--text)}
 .lineage li::before{content:counter(gen);position:absolute;left:-16px;top:9px;width:28px;height:28px;border-radius:50%;background:var(--sec,var(--mena));color:#fff;font:700 .8rem/28px Inter,sans-serif;text-align:center}
 .lineage .who{font-weight:600}.lineage .kid{color:var(--muted)}.lineage .kid b{color:var(--volamena)}.lineage i{font-style:normal;font-size:.85em;color:var(--muted)}
 .lineage li:last-child .kid{color:var(--text);font-weight:700}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.cardx{background:var(--chip);border-radius:16px;padding:18px 20px}.cardx h4{margin:0 0 .4em;font-size:1.08rem}.cardx p{margin:0;color:var(--muted);font-size:.95rem}
+.versions>div.zm{border-top-color:#b3261e}.versions>div.zf{border-top-color:#d8d2c4}
+.article .phgrid{margin:20px 0 24px}
+@media (max-width:640px){.article .phgrid{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.article .phgrid .w2{grid-column:span 2}}
 </style>
 </head>
 <body>
@@ -823,7 +828,7 @@ header.nav .brand,header.nav .iconbtn{color:var(--text)}
       </article>
       <article class="royal">
         <div class="imgs one"><figure class="ph "><img src="sary/ampanjaka-lahy.jpg" alt="Ampanjaka Issa Tsimiaro III, Ampanjaka antakarana" loading="lazy"><figcaption>Ampanjaka Issa Tsimiaro III, Ampanjaka antakarana</figcaption></figure></div>
-        <div class="tx"><small>Ampanjaka antakarana</small><h4 data-royal="lahy">Ampanjaka Issa Tsimiaro III</h4><p>Mitondra ny satroka sy ny fitafiana fanao amin'ny lanonana.</p></div>
+        <div class="tx"><small>Ampanjaka antakarana</small><h4 data-royal="lahy">Ampanjaka Issa Tsimiaro III</h4><p>Mitondra ny satroka sy ny fitafiana fanao amin'ny lanonana.</p><p><a href="#antakarana">Vakio ny tantaran'ny Antakarana →</a></p></div>
       </article>
     </div>
 
@@ -876,6 +881,51 @@ header.nav .brand,header.nav .iconbtn{color:var(--text)}
           <li><span class="who">Amina Said</span><span class="kid"><b>→</b> Salima Binty Said Yahaya</span></li>
         </ol>
         <p class="credit">Loharano: Jeannot, DLCC Mitsinjo (Jolay 2023); tantara fohy momba ny Ampanjaka Amina Said; Zafi-Dorian'i Dadilahy Ndranikendraza (Doany Bezavo).</p>
+      </div>
+    </article>
+
+    <article class="article reveal" id="antakarana">
+      <div class="head">
+        <span class="eyebrow" style="color:var(--volamena)">Foko Antakarana · Ankarana, Ambilobe</span>
+        <h3>Ny Antakarana, mpiambina ny tsingy</h3>
+        <p>Ny fiaviany, ny tantarany, ny fomban-drazany, ary ny Fisehana lehibe notarihin'ny Ampanjaka Issa Tsimiaro III tao Ampasinantenina.</p>
+      </div>
+      <div class="body">
+        <figure class="portrait"><img src="sary/issa-seza.jpg" alt="Ampanjaka Issa Tsimiaro III" loading="lazy" width="1080" height="810"><figcaption>Ampanjaka Issa Tsimiaro III, Ampanjaka antakarana</figcaption></figure>
+        <h4 style="font-size:1.25rem">Iza ny Antakarana?</h4>
+        <p>Anisan'ireo foko 18 eto Madagasikara ny Antakarana (na Antankarana). Ny anarany dia midika hoe "ireo avy any amin'ny harana", satria feno vato maranitra, na tsingy, ny tany nentim-paharazana onenany: ny faritra Ankarana.</p>
+        <p>Any amin'ny faritra avaratra indrindra amin'ny Nosy no onenan'izy ireo, manodidina an'i Antsiranana (Diego-Suarez), Ambilobe ary Vohémar. Eo akaikin'ny valan-javaboarin'ny Ankarana izy ireo, izay feno tsingy sy zohy mirakitra tantara. Toerana masina ho an'ny Antakarana ny Tsingy ao Ankarana.</p>
+        <h4 style="font-size:1.25rem">Ny tantarany</h4>
+        <p>Mifamatotra akaiky amin'ny Mpanjaka Andriantsirotso, nanorina ny fanjakana tamin'ny taonjato faha-17, ny tantaran'ny Antakarana. Tamin'ny taonjato faha-19, nandritra ny ady tamin'ny fanjakana merina tamin'ny andron'i Radama I sy Ranavalona I, dia nialokaloka tany amin'ireo zohy ao Ankarana ny vahoaka Antakarana sy ny mpanjakany Tsimiaro mba tsy ho voasambotra.</p>
+        <p>Nifanaiky izy ireo tamin'izay fa raha tafavoaka velona, dia hiditra amin'ny finoana silamo. Noho io tantara io, ny ankamaroan'ny Antakarana ankehitriny dia manaraka ny finoana silamo, miaraka amin'ny finoana nentim-paharazana.</p>
+        <h4 style="font-size:1.25rem">🔴 Zafiny Mena sy ⚪ Zafiny Fotsy</h4>
+        <p>Avy amin'ny taranaka Maroserana, izay ambara fa nentin'Andriamisara avy any Menabe, ny razambe fototry ny fanjakana sakalava. Niely izy ireo ary namorona fanjakana maro: Menabe, Boina, Bemazava, Antakarana sy ny sisa. Tao anatin'io fianakaviana lehibe io no nisy fizarana roa:</p>
+        <div class="versions">
+          <div class="zm"><h4>🔴 Zafiny Mena</h4><p>Zanaky ny mena: mifandray amin'ny hery, ny masoandro, ny hasin'ny mpanjaka ary ny fahefana ara-politika. Tandindon'ny fiainana, ny ady ary ny fitondrana ny mena.</p></div>
+          <div class="zf"><h4>⚪ Zafiny Fotsy</h4><p>Zanaky ny fotsy: mifandray amin'ny fahadiovana, ny volana, ny razana ary ny hasina ara-panahy. Tandindon'ny fahamasinana, ny fomban-drazana ary ny fifandraisana amin'ny razana ny fotsy.</p></div>
+        </div>
+        <p>Tsy fifandrafiana io fizarana io tamin'ny voalohany, fa rafitra ara-tsoatoavina nifameno teo amin'ny fahefana sy ny fomban-drazana. Rehefa nifindra nianavaratra ireo taranaka sakalava (Boina, Nosy Be, Nosy Komba, Antakarana), dia nentiny niaraka taminy io rafitra io. Mandraka ankehitriny, mbola hita amin'ny fombafomba any Nosy Komba sy any amin'ny faritra Antakarana ny andraikitra voazara araka izany.</p>
+        <h4 style="font-size:1.25rem">Fomban-drazana mampiavaka azy</h4>
+        <div class="grid3" style="margin:18px 0 26px">
+          <div class="cardx"><h4>🎌 Tsangantsainy</h4><p>Fomba lehibe indrindra ao amin'ny fanjakana antakarana, atao isaky ny dimy taona eo ho eo. Manangana hazo lava be (fara) ny vahoaka hanomezana voninahitra ny razana sy ny mpanjaka. Telo ny toerana anaovana azy: manomboka any Ankiabe, mandalo any Ampasibe, ary mifarana any Ambatoharanana.</p></div>
+          <div class="cardx"><h4>🚫 Fady</h4><p>Hentitra ny fady ao amin'ny faritra Ankarana, indrindra momba ny zohy. Fady, ohatra, ny mitondra henan-kisoa, ny firaisana ara-nofo alohan'ny hidirana ao, ary ny fidiran'ny vehivavy mandeha fotoana amin'ny zohy sasany.</p></div>
+          <div class="cardx"><h4>👑 Fanajana ny Ampanjaka</h4><p>Manaja fatratra ny rafitra nentim-paharazana sy ny Ampanjaka ny Antakarana. Mbola hajaina ny mpanjaka ankehitriny ary manana fahefana ara-panahy.</p></div>
+          <div class="cardx"><h4>💃 Rebiky</h4><p>Dihy nentim-paharazana mirakitra tantara maro momba ny foko Antakarana. Mila fianarana manokana izy satria maro ny fady amin'ny fandihizana azy, ary tsy amin'ny asan-drazana rehetra no anaovana azy. Mila fitaovana manokana toy ny "hazolahy" sy fitafiana voatokana izy, ary vitsy sisa no mahafantatra ireo fombany rehetra.</p></div>
+          <div class="cardx"><h4>🕯️ Joro</h4><p>Mandraka ankehitriny, mbola toerana anaovana sorona sy fangatahana tsodrano amin'ny razana (joro) ho an'ny Antakarana ny zohy ao Ankarana.</p></div>
+        </div>
+        <h4 style="font-size:1.25rem">Fivelomana</h4>
+        <p>Faritra amoron-dranomasina sy manana tany lonaka ny avaratra, ka mivelona indrindra amin'ny jono, ny fambolena fary (indrindra manodidina an'Ambilobe), vary ary lavanila, ary ny fiompiana omby ny Antakarana.</p>
+        <h4 style="font-size:1.25rem">Fisehana any Ampasinantenina</h4>
+        <p>Ny Fisehana no fanatanterahana ny famindrana ny Ampanjaka, fomba lehibe ho an'ny foko Antakarana. Ny Ampanjaka Issa Tsimiaro III no nitarika izany tao Ampasinantenina, ary vahoaka manodidina ny 15 000 no tonga nanome voninahitra azy.</p>
+        <p>Tonga nanatrika koa ny Préfet Hermine Tsirinary, solontenan'ny fitondram-panjakana, niaraka tamin'ireo tompon'andraikitra avy amin'ny Distrikan'Ambilobe sy ny Faritra DIANA. Fotoana nampiraisana ny vahoaka sy nanehoana ny kolontsaina antakarana izany.</p>
+        <div class="phgrid">
+          <figure class="ph w2 h2"><img src="sary/issa-filaharana.jpg" alt="Ampanjaka Issa Tsimiaro III mitarika ny filaharana, mitana sabatra" loading="lazy"><figcaption>Ampanjaka Issa Tsimiaro III mitarika ny filaharana, mitana sabatra</figcaption></figure>
+          <figure class="ph h2"><img src="sary/antakarana-vehivavy.jpg" alt="Vehivavy mitafy lamba fanao amin'ny lanonana" loading="lazy"><figcaption>Vehivavy mitafy lamba fanao amin'ny lanonana</figcaption></figure>
+          <figure class="ph h2"><img src="sary/fisehana-lefona.jpg" alt="Filaharana misy lefona sy lamba mena" loading="lazy"><figcaption>Filaharana misy lefona sy lamba mena</figcaption></figure>
+          <figure class="ph w2"><img src="sary/fisehana-filaharana.jpg" alt="Ny filaharana lehibe nandritra ny Fisehana" loading="lazy"><figcaption>Ny filaharana lehibe nandritra ny Fisehana</figcaption></figure>
+          <figure class="ph w2"><img src="sary/fisehana-vahoaka.jpg" alt="Vahoaka marobe tonga nanatrika ny Fisehana tao Ampasinantenina" loading="lazy"><figcaption>Vahoaka marobe tonga nanatrika ny Fisehana tao Ampasinantenina</figcaption></figure>
+        </div>
+        <p class="credit">Loharano: Gasykanto Project (#fokomalagasy); Vohemar Antique (Zafiny Fotsy sy Zafiny Mena); Aleva Honogno, Ambilobe, 30 Oktobra 2014 (Rebiky); Bebel Betombo, mpanao gazety (Tsangantsainy); sary: Fisehana Ampasinantenina.</p>
       </div>
     </article>
     <div class="phgrid reveal">

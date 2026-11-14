@@ -1,5 +1,5 @@
 // FIBESAMA public site cache. Never touches the private /app/ area.
-const CACHE = 'fibesama-site-v12';
+const CACHE = 'fibesama-site-v13';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './favicon-48.png', './logo.png', './i18n.js', './sary/hero.jpg'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('fibesama-site-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

@@ -1609,6 +1609,150 @@
 "Ampanjaka antakarana": [
 "Roi antakarana",
 "Antakarana king"
+],
+"Ampanjaka Issa Tsimiaro III mitarika ny filaharana, mitana sabatra": [
+"Le roi Issa Tsimiaro III mène la procession, sabre en main",
+"King Issa Tsimiaro III leading the procession, sword in hand"
+],
+"Vehivavy mitafy lamba fanao amin'ny lanonana": [
+"Femmes vêtues des étoffes de la cérémonie",
+"Women wearing ceremonial cloth"
+],
+"Filaharana misy lefona sy lamba mena": [
+"Procession avec lances et étoffes rouges",
+"Procession with spears and red cloth"
+],
+"Ny filaharana lehibe nandritra ny Fisehana": [
+"La grande procession pendant le Fisehana",
+"The great procession during the Fisehana"
+],
+"Vahoaka marobe tonga nanatrika ny Fisehana tao Ampasinantenina": [
+"Une foule nombreuse venue assister au Fisehana à Ampasinantenina",
+"Large crowds attending the Fisehana at Ampasinantenina"
+],
+"Iza ny Antakarana?": [
+"Qui sont les Antakarana ?",
+"Who are the Antakarana?"
+],
+"Anisan'ireo foko 18 eto Madagasikara ny Antakarana (na Antankarana). Ny anarany dia midika hoe \"ireo avy any amin'ny harana\", satria feno vato maranitra, na tsingy, ny tany nentim-paharazana onenany: ny faritra Ankarana.": [
+"Les Antakarana (ou Antankarana) font partie des 18 ethnies de Madagascar. Leur nom signifie « ceux des rochers », car leur terre ancestrale, la région de l'Ankarana, est couverte de roches acérées, les tsingy.",
+"The Antakarana (or Antankarana) are one of the 18 ethnic groups of Madagascar. Their name means \"those of the rocks\", because their ancestral land, the Ankarana region, is covered in sharp rock formations called tsingy."
+],
+"Any amin'ny faritra avaratra indrindra amin'ny Nosy no onenan'izy ireo, manodidina an'i Antsiranana (Diego-Suarez), Ambilobe ary Vohémar. Eo akaikin'ny valan-javaboarin'ny Ankarana izy ireo, izay feno tsingy sy zohy mirakitra tantara. Toerana masina ho an'ny Antakarana ny Tsingy ao Ankarana.": [
+"Ils vivent à l'extrême nord de l'île, autour d'Antsiranana (Diego-Suarez), d'Ambilobe et de Vohémar, à proximité du parc de l'Ankarana, plein de tsingy et de grottes chargées d'histoire. Les tsingy de l'Ankarana sont un lieu sacré pour les Antakarana.",
+"They live in the far north of the island, around Antsiranana (Diego-Suarez), Ambilobe and Vohémar, close to the Ankarana park with its tsingy and caves full of history. The tsingy of Ankarana are a sacred place for the Antakarana."
+],
+"Ny tantarany": [
+"Leur histoire",
+"Their history"
+],
+"Mifamatotra akaiky amin'ny Mpanjaka Andriantsirotso, nanorina ny fanjakana tamin'ny taonjato faha-17, ny tantaran'ny Antakarana. Tamin'ny taonjato faha-19, nandritra ny ady tamin'ny fanjakana merina tamin'ny andron'i Radama I sy Ranavalona I, dia nialokaloka tany amin'ireo zohy ao Ankarana ny vahoaka Antakarana sy ny mpanjakany Tsimiaro mba tsy ho voasambotra.": [
+"L'histoire des Antakarana est étroitement liée au roi Andriantsirotso, qui fonda le royaume au XVIIe siècle. Au XIXe siècle, pendant la guerre contre le royaume merina sous Radama Ier et Ranavalona Ire, le peuple antakarana et son roi Tsimiaro se réfugièrent dans les grottes de l'Ankarana pour échapper à la capture.",
+"Antakarana history is closely tied to King Andriantsirotso, who founded the kingdom in the 17th century. In the 19th century, during the war with the Merina kingdom under Radama I and Ranavalona I, the Antakarana people and their king Tsimiaro took refuge in the caves of Ankarana to avoid capture."
+],
+"Nifanaiky izy ireo tamin'izay fa raha tafavoaka velona, dia hiditra amin'ny finoana silamo. Noho io tantara io, ny ankamaroan'ny Antakarana ankehitriny dia manaraka ny finoana silamo, miaraka amin'ny finoana nentim-paharazana.": [
+"Ils firent alors le vœu, s'ils survivaient, d'embrasser l'islam. C'est pourquoi la plupart des Antakarana sont aujourd'hui musulmans, tout en gardant leurs croyances ancestrales.",
+"They vowed then that if they survived, they would embrace Islam. Because of this story, most Antakarana today are Muslim, alongside their ancestral beliefs."
+],
+"🔴 Zafiny Mena sy ⚪ Zafiny Fotsy": [
+"🔴 Zafiny Mena et ⚪ Zafiny Fotsy",
+"🔴 Zafiny Mena and ⚪ Zafiny Fotsy"
+],
+"Avy amin'ny taranaka Maroserana, izay ambara fa nentin'Andriamisara avy any Menabe, ny razambe fototry ny fanjakana sakalava. Niely izy ireo ary namorona fanjakana maro: Menabe, Boina, Bemazava, Antakarana sy ny sisa. Tao anatin'io fianakaviana lehibe io no nisy fizarana roa:": [
+"Les ancêtres fondateurs des royaumes sakalava sont issus de la dynastie Maroserana, que l'on dit amenée du Menabe par Andriamisara. Elle s'est répandue et a fondé de nombreux royaumes : Menabe, Boina, Bemazava, Antakarana, etc. Au sein de cette grande famille sont apparues deux branches :",
+"The founding ancestors of the Sakalava kingdoms come from the Maroserana dynasty, said to have been brought from Menabe by Andriamisara. It spread and founded many kingdoms: Menabe, Boina, Bemazava, Antakarana and others. Within this great family two branches emerged:"
+],
+"🔴 Zafiny Mena": [
+"🔴 Zafiny Mena",
+"🔴 Zafiny Mena"
+],
+"Zanaky ny mena: mifandray amin'ny hery, ny masoandro, ny hasin'ny mpanjaka ary ny fahefana ara-politika. Tandindon'ny fiainana, ny ady ary ny fitondrana ny mena.": [
+"Enfants du rouge : liés à la force, au soleil, au caractère sacré du roi et au pouvoir politique. Le rouge symbolise la vie, la guerre et le gouvernement.",
+"Children of red: linked to strength, the sun, the sacredness of the king and political power. Red stands for life, war and rule."
+],
+"⚪ Zafiny Fotsy": [
+"⚪ Zafiny Fotsy",
+"⚪ Zafiny Fotsy"
+],
+"Zanaky ny fotsy: mifandray amin'ny fahadiovana, ny volana, ny razana ary ny hasina ara-panahy. Tandindon'ny fahamasinana, ny fomban-drazana ary ny fifandraisana amin'ny razana ny fotsy.": [
+"Enfants du blanc : liés à la pureté, à la lune, aux ancêtres et au sacré spirituel. Le blanc symbolise la sainteté, les coutumes et le lien avec les ancêtres.",
+"Children of white: linked to purity, the moon, the ancestors and spiritual sacredness. White stands for holiness, ancestral custom and the bond with the ancestors."
+],
+"Tsy fifandrafiana io fizarana io tamin'ny voalohany, fa rafitra ara-tsoatoavina nifameno teo amin'ny fahefana sy ny fomban-drazana. Rehefa nifindra nianavaratra ireo taranaka sakalava (Boina, Nosy Be, Nosy Komba, Antakarana), dia nentiny niaraka taminy io rafitra io. Mandraka ankehitriny, mbola hita amin'ny fombafomba any Nosy Komba sy any amin'ny faritra Antakarana ny andraikitra voazara araka izany.": [
+"Cette division n'était pas, à l'origine, une rivalité, mais un système de valeurs où pouvoir et tradition se complétaient. Lorsque les lignées sakalava migrèrent vers le nord (Boina, Nosy Be, Nosy Komba, Antakarana), elles emportèrent ce système avec elles. Aujourd'hui encore, les rôles répartis selon ce principe se retrouvent dans les rites de Nosy Komba et du pays antakarana.",
+"At first this division was not a rivalry, but a value system in which power and tradition complemented each other. When the Sakalava lines moved north (Boina, Nosy Be, Nosy Komba, Antakarana), they carried this system with them. To this day, roles shared out this way can still be seen in the rites of Nosy Komba and the Antakarana region."
+],
+"Fomban-drazana mampiavaka azy": [
+"Des coutumes qui les distinguent",
+"Distinctive customs"
+],
+"Fomba lehibe indrindra ao amin'ny fanjakana antakarana, atao isaky ny dimy taona eo ho eo. Manangana hazo lava be (fara) ny vahoaka hanomezana voninahitra ny razana sy ny mpanjaka. Telo ny toerana anaovana azy: manomboka any Ankiabe, mandalo any Ampasibe, ary mifarana any Ambatoharanana.": [
+"Le plus grand rite du royaume antakarana, célébré environ tous les cinq ans. Le peuple dresse un très grand mât (fara) pour honorer les ancêtres et le roi. Il se déroule en trois lieux : il commence à Ankiabe, passe par Ampasibe et s'achève à Ambatoharanana.",
+"The greatest rite of the Antakarana kingdom, held about every five years. The people raise a very tall mast (fara) to honour the ancestors and the king. It takes place in three places: it starts at Ankiabe, passes through Ampasibe and ends at Ambatoharanana."
+],
+"Hentitra ny fady ao amin'ny faritra Ankarana, indrindra momba ny zohy. Fady, ohatra, ny mitondra henan-kisoa, ny firaisana ara-nofo alohan'ny hidirana ao, ary ny fidiran'ny vehivavy mandeha fotoana amin'ny zohy sasany.": [
+"Les fady sont stricts dans la région de l'Ankarana, surtout concernant les grottes. Il est interdit par exemple d'y apporter du porc, d'avoir des rapports sexuels avant d'y entrer, et certaines grottes sont interdites aux femmes pendant leurs règles.",
+"The fady (taboos) are strict in the Ankarana region, especially around the caves. For example, it is forbidden to bring pork, to have sexual relations before entering, and some caves are closed to menstruating women."
+],
+"Manaja fatratra ny rafitra nentim-paharazana sy ny Ampanjaka ny Antakarana. Mbola hajaina ny mpanjaka ankehitriny ary manana fahefana ara-panahy.": [
+"Les Antakarana respectent profondément l'organisation traditionnelle et le roi, qui reste aujourd'hui honoré et détient une autorité spirituelle.",
+"The Antakarana deeply respect the traditional order and the king, who is still honoured today and holds spiritual authority."
+],
+"Dihy nentim-paharazana mirakitra tantara maro momba ny foko Antakarana. Mila fianarana manokana izy satria maro ny fady amin'ny fandihizana azy, ary tsy amin'ny asan-drazana rehetra no anaovana azy. Mila fitaovana manokana toy ny \"hazolahy\" sy fitafiana voatokana izy, ary vitsy sisa no mahafantatra ireo fombany rehetra.": [
+"Danse traditionnelle porteuse de nombreuses histoires du peuple antakarana. Elle demande un apprentissage particulier, car sa pratique est entourée de nombreux fady, et elle n'est pas exécutée à toutes les cérémonies. Elle nécessite des objets spécifiques comme le « hazolahy » et une tenue dédiée, et peu de gens en connaissent encore tous les rites.",
+"A traditional dance that carries many stories of the Antakarana people. It must be specially learned, as it is surrounded by many fady, and it is not performed at every ceremony. It requires special items such as the \"hazolahy\" and dedicated dress, and few people still know all its rites."
+],
+"Mandraka ankehitriny, mbola toerana anaovana sorona sy fangatahana tsodrano amin'ny razana (joro) ho an'ny Antakarana ny zohy ao Ankarana.": [
+"Aujourd'hui encore, les grottes de l'Ankarana restent pour les Antakarana un lieu de sacrifices et de demande de bénédiction aux ancêtres (joro).",
+"To this day the caves of Ankarana remain a place where the Antakarana make offerings and ask the ancestors for blessings (joro)."
+],
+"🎌 Tsangantsainy": [
+"🎌 Tsangantsainy",
+"🎌 Tsangantsainy"
+],
+"👑 Fanajana ny Ampanjaka": [
+"👑 Respect du roi",
+"👑 Respect for the king"
+],
+"Fivelomana": [
+"Activités",
+"Livelihood"
+],
+"Faritra amoron-dranomasina sy manana tany lonaka ny avaratra, ka mivelona indrindra amin'ny jono, ny fambolena fary (indrindra manodidina an'Ambilobe), vary ary lavanila, ary ny fiompiana omby ny Antakarana.": [
+"Le nord étant une région côtière aux terres fertiles, les Antakarana vivent surtout de la pêche, de la culture de la canne à sucre (notamment autour d'Ambilobe), du riz et de la vanille, ainsi que de l'élevage de zébus.",
+"The north is a coastal region with fertile land, so the Antakarana live mainly from fishing, growing sugar cane (especially around Ambilobe), rice and vanilla, and raising zebu."
+],
+"Fisehana any Ampasinantenina": [
+"Le Fisehana à Ampasinantenina",
+"The Fisehana at Ampasinantenina"
+],
+"Ny Fisehana no fanatanterahana ny famindrana ny Ampanjaka, fomba lehibe ho an'ny foko Antakarana. Ny Ampanjaka Issa Tsimiaro III no nitarika izany tao Ampasinantenina, ary vahoaka manodidina ny 15 000 no tonga nanome voninahitra azy.": [
+"Le Fisehana est l'accomplissement du transfert (famindrana) du roi, un grand rite pour le peuple antakarana. Il a été conduit par le roi Issa Tsimiaro III à Ampasinantenina, et quelque 15 000 personnes sont venues l'honorer.",
+"The Fisehana is the carrying out of the king's famindrana (transfer), a major rite for the Antakarana people. It was led by King Issa Tsimiaro III at Ampasinantenina, and some 15,000 people came to honour it."
+],
+"Tonga nanatrika koa ny Préfet Hermine Tsirinary, solontenan'ny fitondram-panjakana, niaraka tamin'ireo tompon'andraikitra avy amin'ny Distrikan'Ambilobe sy ny Faritra DIANA. Fotoana nampiraisana ny vahoaka sy nanehoana ny kolontsaina antakarana izany.": [
+"La préfète Hermine Tsirinary, représentant l'État, y a également assisté, accompagnée de responsables du district d'Ambilobe et de la région DIANA. Ce fut un moment d'unité et de mise en valeur de la culture antakarana.",
+"Prefect Hermine Tsirinary, representing the state, also attended, together with officials from the Ambilobe district and the DIANA region. It was a moment of unity and a showcase of Antakarana culture."
+],
+"Loharano: Gasykanto Project (#fokomalagasy); Vohemar Antique (Zafiny Fotsy sy Zafiny Mena); Aleva Honogno, Ambilobe, 30 Oktobra 2014 (Rebiky); Bebel Betombo, mpanao gazety (Tsangantsainy); sary: Fisehana Ampasinantenina.": [
+"Sources : Gasykanto Project (#fokomalagasy) ; Vohemar Antique (Zafiny Fotsy et Zafiny Mena) ; Aleva Honogno, Ambilobe, 30 octobre 2014 (Rebiky) ; Bebel Betombo, journaliste (Tsangantsainy) ; photos : Fisehana d'Ampasinantenina.",
+"Sources: Gasykanto Project (#fokomalagasy); Vohemar Antique (Zafiny Fotsy and Zafiny Mena); Aleva Honogno, Ambilobe, 30 October 2014 (Rebiky); Bebel Betombo, journalist (Tsangantsainy); photos: Fisehana at Ampasinantenina."
+],
+"Foko Antakarana · Ankarana, Ambilobe": [
+"Peuple antakarana · Ankarana, Ambilobe",
+"Antakarana people · Ankarana, Ambilobe"
+],
+"Ny Antakarana, mpiambina ny tsingy": [
+"Les Antakarana, gardiens des tsingy",
+"The Antakarana, guardians of the tsingy"
+],
+"Ny fiaviany, ny tantarany, ny fomban-drazany, ary ny Fisehana lehibe notarihin'ny Ampanjaka Issa Tsimiaro III tao Ampasinantenina.": [
+"Leurs origines, leur histoire, leurs coutumes, et le grand Fisehana conduit par le roi Issa Tsimiaro III à Ampasinantenina.",
+"Their origins, history and customs, and the great Fisehana led by King Issa Tsimiaro III at Ampasinantenina."
+],
+"Vakio ny tantaran'ny Antakarana →": [
+"Lire l'histoire des Antakarana →",
+"Read the history of the Antakarana →"
 ]
 };
   var I = L === 'fr' ? 0 : 1;
