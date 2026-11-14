@@ -1993,6 +1993,58 @@
 "Vakio ny tantaran'ny Bemihisatra →": [
 "Lire l'histoire des Bemihisatra →",
 "Read the history of the Bemihisatra →"
+],
+"Andriantsoly, Sultan'i Mayotte: sary famoronana nozaraina tamin'ny tambajotra, tsy sary nalaina tamin'ny fiainany": [
+"Andriantsoly, sultan de Mayotte : image de création partagée sur les réseaux, pas une photo d'époque",
+"Andriantsoly, Sultan of Mayotte: an artistic image shared online, not a photograph from his lifetime"
+],
+"Ilay mpanjaka farany nitondra tao Boeny": [
+"Le dernier roi à régner sur le Boeny",
+"The last king to rule Boeny"
+],
+"I Andriantsoly, na Dadilahy Andriamanavakarivo, no mpanjaka farany nitondra tao Boeny. Rehefa nobodoin'ny fanjakana merina notarihin'i Radama, niaraka tamin'ny miaramila britanika, ny fanjakany, dia nalainy ireo dady (reliques) an'ny Andriamisara Efadahy Manankasina, tao amin'ny Doany Andriamisara Mitsinjoarivo any Marovoay Kelimaizina.": [
+"Andriantsoly, ou Dadilahy Andriamanavakarivo, fut le dernier roi à régner sur le Boeny. Lorsque son royaume fut pris par le royaume merina de Radama, avec l'appui de soldats britanniques, ces derniers s'emparèrent des dady (reliques) des Andriamisara Efadahy Manankasina, au Doany Andriamisara Mitsinjoarivo de Marovoay Kelimaizina.",
+"Andriantsoly, or Dadilahy Andriamanavakarivo, was the last king to rule Boeny. When his kingdom was taken by Radama's Merina kingdom, with the help of British soldiers, they seized the dady (relics) of the Andriamisara Efadahy Manankasina at the Doany Andriamisara Mitsinjoarivo in Marovoay Kelimaizina."
+],
+"Nodoran'ny miaramila merina ny tranony, nandritra ny andron'i Ramanetaka, governora napetrak'i Radama tao Boeny. Tafavoaka velona anefa i Andriantsoly ka nandositra nianavaratra, ary tonga tany amin'ny nosy Mayotte tamin'ny farany. Natsangana ho Sultan'i Mayotte izy tany, ary tany Petite Terre no nahafatesany. Ao amin'ny Mahabo, any Grande Terre (Mamoudzou), no nametrahana azy.": [
+"Sa maison fut incendiée par les soldats merina, à l'époque de Ramanetaka, gouverneur placé par Radama au Boeny. Andriantsoly survécut pourtant et s'enfuit vers le nord, pour arriver finalement sur l'île de Mayotte. Il y fut proclamé sultan de Mayotte, et c'est à Petite Terre qu'il mourut. Il repose au Mahabo, en Grande Terre (Mamoudzou).",
+"His house was burned by Merina soldiers in the time of Ramanetaka, the governor Radama had placed in Boeny. Andriantsoly survived, however, and fled north, finally reaching the island of Mayotte. There he was made Sultan of Mayotte, and he died at Petite Terre. He was laid to rest at the Mahabo in Grande Terre (Mamoudzou)."
+],
+"Ny Fitompoa ao amin'ny Mahabo any Mayotte": [
+"Le Fitompoa au Mahabo de Mayotte",
+"The Fitompoa at the Mahabo in Mayotte"
+],
+"Isan-taona no atao ny Fitompoa ao amin'ny Mahabon'i Dadilahy Andriamanavakarivo any Mayotte. Tamin'ny 2026, ny Alahady 31 Mey ny alina no natao ny Tsimandrimandry, ary ny Alatsinainy 1 Jona maraina ny Fitompoa.": [
+"Le Fitompoa a lieu chaque année au Mahabo de Dadilahy Andriamanavakarivo à Mayotte. En 2026, le Tsimandrimandry s'est tenu dans la nuit du dimanche 31 mai, et le Fitompoa le lundi 1er juin au matin.",
+"The Fitompoa is held every year at the Mahabo of Dadilahy Andriamanavakarivo in Mayotte. In 2026 the Tsimandrimandry took place on the night of Sunday 31 May, and the Fitompoa on the morning of Monday 1 June."
+],
+"Araka ny loharano, tsy misy Ampanjaka Sakalava Zafinimena, taranak'i Andriantsoly avy any Boeny na Nosy Be, mitondra io Mahabo io amin'izao fotoana izao, ary tsy misy koa ny razan'olo, ny ben'ny varavara, ny fahatelo ary ny manantany. Hoy ny mpanoratra, ireo zanak'Ampanjaka taranany avy any Maroambitsy, Boeny, no tokony hitondra azy.": [
+"Selon la source, aucun roi sakalava zafinimena descendant d'Andriantsoly, venu du Boeny ou de Nosy Be, ne dirige aujourd'hui ce Mahabo, et il n'y a pas non plus de razan'olo, de ben'ny varavara, de fahatelo ni de manantany. D'après l'auteur, ce sont les descendants royaux du Maroambitsy, au Boeny, qui devraient en avoir la charge.",
+"According to the source, no Zafinimena Sakalava royal descended from Andriantsoly, from Boeny or Nosy Be, currently leads this Mahabo, nor are there razan'olo, ben'ny varavara, fahatelo or manantany. In the author's view, the royal descendants from Maroambitsy, in Boeny, should be the ones to lead it."
+],
+"Andriamanavakarivo koa no hita ao amin'ny tetiarana nipoiran'ny Ampanjaka Salima, voalaza fa \"(Mayotte)\".": [
+"Andriamanavakarivo figure d'ailleurs dans la lignée dont descend la reine Salima, avec la mention « (Mayotte) ».",
+"Andriamanavakarivo also appears in the lineage of Queen Salima, marked \"(Mayotte)\"."
+],
+"Ny Doany Ndramanavaka (Mahabo) any Mayotte": [
+"Le Doany Ndramanavaka (Mahabo) à Mayotte",
+"The Doany Ndramanavaka (Mahabo) in Mayotte"
+],
+"Loharano: \"Fitompoa Dadilahy Andriamanavakarivo na i Andriantsoly Mayotte\" (Mazahoa ny maeva antsika jiaby).": [
+"Source : « Fitompoa Dadilahy Andriamanavakarivo na i Andriantsoly Mayotte » (Mazahoa ny maeva antsika jiaby).",
+"Source: \"Fitompoa Dadilahy Andriamanavakarivo na i Andriantsoly Mayotte\" (Mazahoa ny maeva antsika jiaby)."
+],
+"Boeny · Mayotte · taonjato faha-19": [
+"Boeny · Mayotte · XIXe siècle",
+"Boeny · Mayotte · 19th century"
+],
+"Andriantsoly, Dadilahy Andriamanavakarivo": [
+"Andriantsoly, Dadilahy Andriamanavakarivo",
+"Andriantsoly, Dadilahy Andriamanavakarivo"
+],
+"Ny mpanjaka farany tao Boeny, nandositra nankany Mayotte ary lasa Sultan tany, sy ny Fitompoa atao ao amin'ny Mahabony.": [
+"Le dernier roi du Boeny, réfugié à Mayotte où il devint sultan, et le Fitompoa célébré à son Mahabo.",
+"The last king of Boeny, who fled to Mayotte and became Sultan there, and the Fitompoa held at his Mahabo."
 ]
 };
   var I = L === 'fr' ? 0 : 1;
