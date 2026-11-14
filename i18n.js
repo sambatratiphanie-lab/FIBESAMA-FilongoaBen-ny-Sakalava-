@@ -1833,6 +1833,166 @@
 "Ireto ny sarin'ny fankalazana ny Tsangantsainy: ny fananganana ny tsangantsainy, ny dihy, ny Ampanjaka ary ny vahoaka marobe tonga nanatrika.": [
 "Voici des images de la célébration du Tsangantsainy : l'érection du mât, les danses, le roi et la foule nombreuse venue y assister.",
 "Here are pictures of the Tsangantsainy celebration: raising the mast, the dances, the king and the large crowds who came to attend."
+],
+"Soazara, Ampanjakavavin'ny Sakalava Bemihisatra any Analalava": [
+"Soazara, reine des Sakalava Bemihisatra d'Analalava",
+"Soazara, queen of the Sakalava Bemihisatra of Analalava"
+],
+"Analalava, \"Boeny hely\"": [
+"Analalava, le « petit Boeny »",
+"Analalava, \"little Boeny\""
+],
+"Ao amin'ny Faritra Sofia i Analalava, tanàna miorina eo amin'ny seranana voaaro tsara, voahodidin'ny nosy telo: Nosy Lava, Nosy Lango ary Nosy Valiha. Ny Antalaotra sy ny Soahily no nanorina azy voalohany, tany am-piandohan'ny taonjato faha-18. Taty aoriana dia niara-nonina tao ny Sakalava, ny Makoa, ny Soahily ary ny Tsimihety, ary avy amin'izany fifangaroan'olona izany no niorenan'ny fanjakana Sakalava Bemihisatra.": [
+"Analalava, dans la région Sofia, est une ville bâtie sur une baie bien abritée, entourée de trois îles : Nosy Lava, Nosy Lango et Nosy Valiha. Elle fut d'abord fondée par les Antalaotra et les Swahilis, au début du XVIIIe siècle. Plus tard, Sakalava, Makoa, Swahilis et Tsimihety s'y installèrent ensemble, et c'est de ce brassage qu'est né le royaume sakalava Bemihisatra.",
+"Analalava, in the Sofia region, is a town on a well-sheltered bay surrounded by three islands: Nosy Lava, Nosy Lango and Nosy Valiha. It was first founded by the Antalaotra and Swahili, at the start of the 18th century. Later, Sakalava, Makoa, Swahili and Tsimihety settled there together, and from this mix the Sakalava Bemihisatra kingdom arose."
+],
+"\"Tsimontimontirana\" no anarana taloha nomen'ny Antalaotra (mpitety ranomasina sy mpivarotra arabo) azy. Avy amin'ny teny vezo io anarana io, ary midika hoe \"voarara ny miditra, satria toerana masina\". Toerana masina tokoa i Analalava fahiny, ary mbola misy hatramin'izao ireo fomba mitahiry sy manaja izany hasiny izany.": [
+"Son ancien nom, « Tsimontimontirana », lui fut donné par les Antalaotra (navigateurs et marchands arabes). Ce nom vient du vezo et signifie « interdit d'entrer, car c'est un lieu sacré ». Analalava était en effet jadis un lieu sacré, et des coutumes qui préservent et honorent ce caractère sacré existent encore aujourd'hui.",
+"Its old name, \"Tsimontimontirana\", was given by the Antalaotra (Arab seafarers and traders). The name comes from Vezo and means \"entry forbidden, because it is a sacred place\". Analalava was indeed a sacred place in the past, and customs that preserve and honour this sacredness still exist today."
+],
+"Toerana ara-barotra sy fihaonan'ny kolontsaina maro ity tanàna ity. Nanomboka tamin'ny 1824 dia nantsoin'ny Sakalava hoe \"Boeny hely\", izany hoe Boeny any avaratra.": [
+"Cette ville était un lieu de commerce et un carrefour de nombreuses cultures. À partir de 1824, les Sakalava l'appelèrent « Boeny hely », c'est-à-dire le Boeny du nord.",
+"The town was a trading place and a crossroads of many cultures. From 1824 the Sakalava called it \"Boeny hely\", meaning the northern Boeny."
+],
+"Sampana zafinimena roa: Bemihisatra sy Bemazava": [
+"Deux branches zafinimena : Bemihisatra et Bemazava",
+"Two Zafinimena branches: Bemihisatra and Bemazava"
+],
+"Foko Sakalava Zafinimena roa no nizara ny faritra avaratra andrefan'i Madagasikara, manamorona ny Lakandranon'i Mozambika. Teraka tamin'ny 1732 ireo sampana roa ireo, rehefa nisy ady teo amin'ireo zafikelin'i Andriamandisoarivo roa: Andriamahatindriarivo (Bemazava) sy Andriamanilitriarivo (Bemihisatra).": [
+"Deux branches sakalava zafinimena se sont partagé le nord-ouest de Madagascar, le long du canal du Mozambique. Elles sont nées en 1732 d'un conflit entre deux petits-fils d'Andriamandisoarivo : Andriamahatindriarivo (Bemazava) et Andriamanilitriarivo (Bemihisatra).",
+"Two Sakalava Zafinimena branches shared the north-west of Madagascar, along the Mozambique Channel. They arose in 1732 from a conflict between two grandsons of Andriamandisoarivo: Andriamahatindriarivo (Bemazava) and Andriamanilitriarivo (Bemihisatra)."
+],
+"Niitatra hatrany amin'ny distrikan'i Marovoay ny fanjakany, ary nahatratra an'i Soalala, Ambato-Boeni, Mahajanga ary Analalava.": [
+"Son royaume s'étendait jusqu'au district de Marovoay, et atteignait Soalala, Ambato-Boeni, Mahajanga et Analalava.",
+"Its kingdom stretched as far as the Marovoay district, reaching Soalala, Ambato-Boeni, Mahajanga and Analalava."
+],
+"Ny tanin'i Ambanja (Sambirano) sy ampahany amin'ny faritra Boeny (distrikan'i Mahajanga) ihany no nofehezin'izy ireo. Roa ny renivohiny: Ankify any Sambirano, ary Boeny (Mahajanga).": [
+"Ils ne régnaient que sur la terre d'Ambanja (Sambirano) et une partie du Boeny (district de Mahajanga). Ils avaient deux capitales : Ankify au Sambirano, et Boeny (Mahajanga).",
+"They ruled only the land of Ambanja (Sambirano) and part of Boeny (Mahajanga district). They had two capitals: Ankify in the Sambirano, and Boeny (Mahajanga)."
+],
+"Ny Sakalava Bemihisatra any Analalava kosa dia niorina tamin'ny alalan'ny fifanekena teo amin'ny Zafinifotsy sy ny Zafinimena, samy zafiafin'ny mpanjaka mpanorina, Andriandahifotsy.": [
+"Les Sakalava Bemihisatra d'Analalava, eux, sont issus d'une alliance entre Zafinifotsy et Zafinimena, tous deux descendants du roi fondateur Andriandahifotsy.",
+"The Sakalava Bemihisatra of Analalava, for their part, were founded through an agreement between the Zafinifotsy and the Zafinimena, both descendants of the founding king Andriandahifotsy."
+],
+"Ny fanjakana Bemihisatra any Analalava": [
+"Le royaume Bemihisatra d'Analalava",
+"The Bemihisatra kingdom of Analalava"
+],
+"Tamin'ny 1851 no niorina ny fanjakana Bemihisatra tao Analalava, tany avaratr'i Boina, teo ambany fitondran'ny Mpanjaka Andriamanitranarivo. Ny dikan'io anarana io dia \"ilay mpanjaka nanaiky ny fifanarahana\".": [
+"Le royaume Bemihisatra d'Analalava fut fondé en 1851, au nord du Boina, sous le règne du roi Andriamanitranarivo, dont le nom signifie littéralement « le roi qui accepta l'accord ».",
+"The Bemihisatra kingdom of Analalava was founded in 1851, in northern Boina, under King Andriamanitranarivo, whose name literally means \"the king who accepted the agreement\"."
+],
+"Ny reniranon'i Sofia no fetrany any atsimo, ary ny saikinosin'i Ampasindava (Grande Terre) any avaratra. Ny faritra avaratra dia nanana fifandraisana akaiky tamin'i Frantsa, raha ny faritra atsimo kosa, izay i Antonibe no renivohiny, dia nanaiky ny fiandrianan'ny Fanjakan'i Madagasikara tamin'ny andron'i Ranavalona I, talohan'ny 1896.": [
+"Le royaume était bordé au sud par le fleuve Sofia et au nord par la presqu'île d'Ampasindava (Grande Terre). La partie nord entretenait des liens étroits avec la France, tandis que la partie sud, dont Antonibe était la capitale, reconnut la souveraineté du Royaume de Madagascar sous Ranavalona Ire, avant 1896.",
+"The kingdom was bounded in the south by the Sofia river and in the north by the Ampasindava peninsula (Grande Terre). The northern part kept close ties with France, while the southern part, with Antonibe as its capital, accepted the sovereignty of the Kingdom of Madagascar under Ranavalona I, before 1896."
+],
+"Tamin'ny Jolay 1898 dia nipoaka tany ny fikomiana nanohitra ny fanjanahantany. Tamin'io taona io ihany no nafindra tany amin'ny toerana tsy miandany, tao an-tanànan'i Analalava, ny renivohitry ny fanjakana.": [
+"En juillet 1898 éclata une révolte contre la colonisation. La même année, la capitale du royaume fut transférée en un lieu neutre : la ville d'Analalava.",
+"In July 1898 a revolt against colonial rule broke out. That same year the kingdom's capital was moved to a neutral place: the town of Analalava."
+],
+"Nosy Lava, nosy masina": [
+"Nosy Lava, l'île sacrée",
+"Nosy Lava, the sacred island"
+],
+"Talohan'ny fanjanahantany, toerana masina lehibe ho an'ny Sakalava i Nosy Lava, satria tao no nisy ny fasana masin'ny fianakaviana mpanjaka Bemihisatra. Isan-taona dia natao tao ny Fanjavamitsaka, fombafomba hanajana ny razana, indrindra ireo mpanjaka teo aloha.": [
+"Avant la colonisation, Nosy Lava était un grand lieu sacré pour les Sakalava, car s'y trouvaient les tombeaux sacrés de la famille royale Bemihisatra. Chaque année s'y tenait le Fanjavamitsaka, un rite en l'honneur des ancêtres, surtout des anciens rois.",
+"Before colonial rule, Nosy Lava was a great sacred place for the Sakalava, as it held the sacred tombs of the Bemihisatra royal family. Every year the Fanjavamitsaka was held there, a rite honouring the ancestors, especially former kings."
+],
+"Ninoan'ny Sakalava fa mitahy sy miaro ny taranany ny razana, ka toerana nanomezam-boninahitra sy nangatahana fitahiana i Nosy Lava. Nanamafy ny fahefan'ny mpanjaka sy ny maha-ara-dalàna ny fitondrany teo imason'ny vahoaka koa ireo fombafomba natao teo.": [
+"Les Sakalava croyaient que les ancêtres bénissent et protègent leurs descendants : Nosy Lava était donc un lieu pour les honorer et demander leur bénédiction. Les rites qui s'y déroulaient renforçaient aussi le pouvoir du roi et la légitimité de son règne aux yeux du peuple.",
+"The Sakalava believed that the ancestors bless and protect their descendants, so Nosy Lava was a place to honour them and ask for blessings. The rites held there also reinforced the king's power and the legitimacy of his rule in the eyes of the people."
+],
+"Tamin'ny vanim-potoanan'ny mpanjaka sakalava, toerana fandosirana sy fiarovana nandritra ny ady teo amin'ny taranaka samihafa i Nosy Lava. Toerana nifanakalozana tamin'ny sambo vahiny koa izy, indrindra tamin'ny taonjato faha-17 sy faha-18, toy ny tamin'ny Portogey: nivarotra hazo sarobidy (palissandre sy hazomainty), vatosoa, ary indraindray andevo ny Sakalava, ka nahazo fitaovam-piadiana, lamba ary entana hafa avy any ivelany ho takalony.": [
+"À l'époque des rois sakalava, Nosy Lava servit de refuge et de protection lors des guerres entre lignées. C'était aussi un lieu d'échange avec les navires étrangers, surtout aux XVIIe et XVIIIe siècles, notamment avec les Portugais : les Sakalava y vendaient des bois précieux (palissandre et ébène), des pierres précieuses, et parfois des esclaves, en échange d'armes, de tissus et d'autres marchandises venues de l'étranger.",
+"In the era of the Sakalava kings, Nosy Lava served as a refuge and protection during wars between lineages. It was also a place of exchange with foreign ships, especially in the 17th and 18th centuries, for example with the Portuguese: the Sakalava sold precious woods (rosewood and ebony), gemstones and sometimes slaves, receiving weapons, cloth and other foreign goods in return."
+],
+"Toerana niantsonan'ny sambo vahiny izy, sady fialofan'ny mpanjono sy ny mpanamory rehefa misy tafio-drivotra. Taty aoriana, ity nosy masina ity dia lasa fonja.": [
+"C'était un mouillage pour les navires étrangers et un abri pour les pêcheurs et les marins lors des tempêtes. Plus tard, cette île sacrée devint une prison.",
+"It was an anchorage for foreign ships and a shelter for fishermen and sailors during storms. Later, this sacred island became a prison."
+],
+"Ampanjaka Soazara Augustine (1925 – 2017)": [
+"La reine Soazara Augustine (1925 – 2017)",
+"Queen Soazara Augustine (1925 – 2017)"
+],
+"Ny 25 Oktobra 1925 no teraka ny Ampanjaka Soazara Augustine, tsy ela taorian'ny nodimandrin'ny rainy, ny Mpanjaka Ndramamahagna, tamin'ny Septambra 1925. Zazakely vao teraka izy dia efa natao Ampanjaka. Tovovavy tsara tarehy sy sariaka izy tamin'ny fahatanorany. Noho ny fahaizany sy ny fahefana teny aminy, dia notendren'ny fanjakana mpanjanatany ho \"sous-gouverneur\" izy teo amin'ny faha-25 taonany.": [
+"La reine Soazara Augustine est née le 25 octobre 1925, peu après la mort de son père, le roi Ndramamahagna, en septembre 1925. Elle fut faite reine dès sa naissance. Jeune femme belle et enjouée, elle fut nommée « sous-gouverneur » par l'administration coloniale vers l'âge de 25 ans, en raison de ses compétences et de son autorité.",
+"Queen Soazara Augustine was born on 25 October 1925, shortly after the death of her father, King Ndramamahagna, in September 1925. She was made queen as a newborn. A beautiful and lively young woman, she was appointed \"sous-gouverneur\" by the colonial administration at about 25, thanks to her abilities and authority."
+],
+"Nanjaka tamin'ny fanjakana Sakalava Bemihisatra tao Analalava izy nanomboka tamin'ny 1925 ka hatramin'ny nodimandriany ny Zoma 3 Febroary 2017. Zanakavavy roa mirahavavy no naterany. Vehivavy nahita fianarana sy maoderina koa izy: nirotsaka tamin'ny politika ary voafidy ho solombavambahoaka indroa, tamin'ny 1998 sy 2007.": [
+"Elle a régné sur le royaume sakalava Bemihisatra d'Analalava de 1925 jusqu'à sa mort, le vendredi 3 février 2017. Elle a eu deux filles. Femme instruite et moderne, elle s'est aussi engagée en politique et a été élue députée deux fois, en 1998 et en 2007.",
+"She reigned over the Sakalava Bemihisatra kingdom of Analalava from 1925 until her death on Friday 3 February 2017. She had two daughters. An educated, modern woman, she also went into politics and was twice elected to parliament, in 1998 and 2007."
+],
+"Ampanjaka Zalifa Bente Salim": [
+"La reine Zalifa Bente Salim",
+"Queen Zalifa Bente Salim"
+],
+"Ny zanany vavy, Ampanjaka Zalifa Bente Salim, no nandimby azy teo amin'ny seza fiandrianana. Ny 26 Oktobra 2018 no niseho voalohany teo imason'ny vahoaka izy amin'ny maha-Mpanjakaben'ny Sakalava Bemihisatra any Analalava azy.": [
+"Sa fille, la reine Zalifa Bente Salim, lui a succédé sur le trône. Elle est apparue pour la première fois devant le peuple en tant que souveraine des Sakalava Bemihisatra d'Analalava le 26 octobre 2018.",
+"Her daughter, Queen Zalifa Bente Salim, succeeded her on the throne. She first appeared before the people as sovereign of the Sakalava Bemihisatra of Analalava on 26 October 2018."
+],
+"Talohan'izay, efa voafidy ho solombavambahoaka tao Analalava izy, ary anisan'ireo mpikambana 33 ao amin'ny Filankevitry ny Fampihavanana Malagasy (CFM). Rehefa nahazo ny baccalauréat izy, dia nanatanteraka ny fanompoam-pirenena tao amin'ny CEG Mandromena Andoharanofotsy, Antananarivo, tamin'ny taom-pianarana 1980/81.": [
+"Auparavant, elle avait été élue députée d'Analalava et était l'un des 33 membres du Conseil du Fampihavanana Malagasy (CFM). Après son baccalauréat, elle a effectué son service national au CEG Mandromena d'Andoharanofotsy, à Antananarivo, durant l'année scolaire 1980/81.",
+"Before that, she had been elected member of parliament for Analalava and was one of the 33 members of the Malagasy Reconciliation Council (CFM). After her baccalauréat, she did her national service at the CEG Mandromena in Andoharanofotsy, Antananarivo, in the 1980/81 school year."
+],
+"Princesse Soazara Augustine, tamin'ny fahatanorany": [
+"La princesse Soazara Augustine dans sa jeunesse",
+"Princess Soazara Augustine in her youth"
+],
+"Ampanjaka Zalifa eo anilan'ny sarin-dreniny, tao amin'ny fampirantiana tao amin'ny Musée de la Photographie, Antananarivo": [
+"La reine Zalifa près du portrait de sa mère, à l'exposition du Musée de la Photographie d'Antananarivo",
+"Queen Zalifa beside her mother's portrait at the Musée de la Photographie exhibition, Antananarivo"
+],
+"Ampanjaka Zalifa Bente Salim, mitafy akanjo fanao amin'ny lanonana": [
+"La reine Zalifa Bente Salim en tenue de cérémonie",
+"Queen Zalifa Bente Salim in ceremonial dress"
+],
+"Sary tranainy: ampanjaka vavy sy ireo mpanaraka azy (Musée de la Photo Madagascar)": [
+"Photo ancienne : une reine et sa suite (Musée de la Photo Madagascar)",
+"Old photo: a queen and her attendants (Musée de la Photo Madagascar)"
+],
+"Fanomezam-boninahitra (medaly), sary tranainy": [
+"Remise d'une médaille, photo ancienne",
+"Award of a medal, old photo"
+],
+"Sary hosodoko tranainy avy amin'ny fanangonana momba ny Ampanjaka Soazara": [
+"Ancien tableau issu de la collection consacrée à la reine Soazara",
+"Old painting from the collection about Queen Soazara"
+],
+"Ampanjaka Zalifa miaraka amin'ny raiamandreny iray": [
+"La reine Zalifa avec une aînée",
+"Queen Zalifa with an elder"
+],
+"Ampanjaka Zalifa Bente Salim mandatsa-bato": [
+"La reine Zalifa Bente Salim vote",
+"Queen Zalifa Bente Salim casting her vote"
+],
+"Loharano: Lovantsofina fohifohy hifampizarana (Sakalava Bemihisatra sy Bemazava); Aboaho Ankiaka (#REINE_SOAZARA); Wikipedia (Analalava); Abraham Ralainony, Nosy Be Manonga Laza (2 Novambra 2018); Radio Mangarahara. Sary: Analalava-Royaume Sakalava Bemihisatra, Musée de la Photo Madagascar.": [
+"Sources : Lovantsofina fohifohy hifampizarana (Sakalava Bemihisatra et Bemazava) ; Aboaho Ankiaka (#REINE_SOAZARA) ; Wikipédia (Analalava) ; Abraham Ralainony, Nosy Be Manonga Laza (2 novembre 2018) ; Radio Mangarahara. Photos : Analalava-Royaume Sakalava Bemihisatra, Musée de la Photo Madagascar.",
+"Sources: Lovantsofina fohifohy hifampizarana (Sakalava Bemihisatra and Bemazava); Aboaho Ankiaka (#REINE_SOAZARA); Wikipedia (Analalava); Abraham Ralainony, Nosy Be Manonga Laza (2 November 2018); Radio Mangarahara. Photos: Analalava-Royaume Sakalava Bemihisatra, Musée de la Photo Madagascar."
+],
+"Bemihisatra · Bemazava · Analalava": [
+"Bemihisatra · Bemazava · Analalava",
+"Bemihisatra · Bemazava · Analalava"
+],
+"Sakalava Bemihisatra sy Bemazava": [
+"Les Sakalava Bemihisatra et Bemazava",
+"The Sakalava Bemihisatra and Bemazava"
+],
+"Fanjakana iray sy fihaonan'ny kolontsaina: Analalava sy Nosy Lava, ny sampana zafinimena roa, ary ny Ampanjaka Soazara Augustine sy ny zanany vavy Ampanjaka Zalifa Bente Salim.": [
+"Un royaume et un carrefour de cultures : Analalava et Nosy Lava, les deux branches zafinimena, la reine Soazara Augustine et sa fille, la reine Zalifa Bente Salim.",
+"A kingdom and a crossroads of cultures: Analalava and Nosy Lava, the two Zafinimena branches, and Queen Soazara Augustine and her daughter, Queen Zalifa Bente Salim."
+],
+"Mpanjakaben'ny Sakalava Bemihisatra, Analalava": [
+"Souveraine des Sakalava Bemihisatra, Analalava",
+"Sovereign of the Sakalava Bemihisatra, Analalava"
+],
+"Nandimby ny reniny, Ampanjaka Soazara Augustine, tamin'ny 2018.": [
+"A succédé à sa mère, la reine Soazara Augustine, en 2018.",
+"Succeeded her mother, Queen Soazara Augustine, in 2018."
+],
+"Vakio ny tantaran'ny Bemihisatra →": [
+"Lire l'histoire des Bemihisatra →",
+"Read the history of the Bemihisatra →"
 ]
 };
   var I = L === 'fr' ? 0 : 1;
