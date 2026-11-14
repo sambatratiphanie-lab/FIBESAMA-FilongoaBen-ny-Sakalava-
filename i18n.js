@@ -1646,9 +1646,9 @@
 "Leur histoire",
 "Their history"
 ],
-"Mifamatotra akaiky amin'ny Mpanjaka Andriantsirotso, nanorina ny fanjakana tamin'ny taonjato faha-17, ny tantaran'ny Antakarana. Tamin'ny taonjato faha-19, nandritra ny ady tamin'ny fanjakana merina tamin'ny andron'i Radama I sy Ranavalona I, dia nialokaloka tany amin'ireo zohy ao Ankarana ny vahoaka Antakarana sy ny mpanjakany Tsimiaro mba tsy ho voasambotra.": [
-"L'histoire des Antakarana est étroitement liée au roi Andriantsirotso, qui fonda le royaume au XVIIe siècle. Au XIXe siècle, pendant la guerre contre le royaume merina sous Radama Ier et Ranavalona Ire, le peuple antakarana et son roi Tsimiaro se réfugièrent dans les grottes de l'Ankarana pour échapper à la capture.",
-"Antakarana history is closely tied to King Andriantsirotso, who founded the kingdom in the 17th century. In the 19th century, during the war with the Merina kingdom under Radama I and Ranavalona I, the Antakarana people and their king Tsimiaro took refuge in the caves of Ankarana to avoid capture."
+"Mifamatotra akaiky amin'ny Mpanjaka Andriantsirototra, nanorina ny fanjakana tamin'ny taonjato faha-17, ny tantaran'ny Antakarana. Tamin'ny taonjato faha-19, nandritra ny ady tamin'ny fanjakana merina tamin'ny andron'i Radama I sy Ranavalona I, dia nialokaloka tany amin'ireo zohy ao Ankarana ny vahoaka Antakarana sy ny mpanjakany Tsimiaro mba tsy ho voasambotra.": [
+"L'histoire des Antakarana est étroitement liée au roi Andriantsirototra, qui fonda le royaume au XVIIe siècle. Au XIXe siècle, pendant la guerre contre le royaume merina sous Radama Ier et Ranavalona Ire, le peuple antakarana et son roi Tsimiaro se réfugièrent dans les grottes de l'Ankarana pour échapper à la capture.",
+"Antakarana history is closely tied to King Andriantsirototra, who founded the kingdom in the 17th century. In the 19th century, during the war with the Merina kingdom under Radama I and Ranavalona I, the Antakarana people and their king Tsimiaro took refuge in the caves of Ankarana to avoid capture."
 ],
 "Nifanaiky izy ireo tamin'izay fa raha tafavoaka velona, dia hiditra amin'ny finoana silamo. Noho io tantara io, ny ankamaroan'ny Antakarana ankehitriny dia manaraka ny finoana silamo, miaraka amin'ny finoana nentim-paharazana.": [
 "Ils firent alors le vœu, s'ils survivaient, d'embrasser l'islam. C'est pourquoi la plupart des Antakarana sont aujourd'hui musulmans, tout en gardant leurs croyances ancestrales.",
@@ -1753,6 +1753,86 @@
 "Vakio ny tantaran'ny Antakarana →": [
 "Lire l'histoire des Antakarana →",
 "Read the history of the Antakarana →"
+],
+"Ampanjaka Issa Tsimiaro III, mitafy satroka volamena sy mitana sabatra, entin'ny vahoaka": [
+"Le roi Issa Tsimiaro III, coiffé d'or et sabre en main, porté par le peuple",
+"King Issa Tsimiaro III, in a gold hat and holding a sword, carried by the people"
+],
+"Vahoaka an'arivony manodidina ny tsangantsainy": [
+"Des milliers de personnes autour du mât",
+"Thousands of people around the mast"
+],
+"Ny sainam-pirenena sy ny saina misy volana sy kintana mena eo amin'ny tsangantsainy": [
+"Le drapeau national et le drapeau au croissant et à l'étoile rouges sur le mât",
+"The national flag and the flag with the red crescent and star on the mast"
+],
+"Mpandihy mitafy satroka misy kintana ary mitana basy hazo": [
+"Danseur coiffé d'un chapeau à étoile, fusil de bois en main",
+"Dancer in a star hat, holding a wooden rifle"
+],
+"Lehilahy miakatra amin'ny tsangantsainy": [
+"Un homme grimpe au mât",
+"A man climbing the mast"
+],
+"Tovolahy miakatra eo akaikin'ny tsangantsainy": [
+"Des jeunes hommes montent près du mât",
+"Young men climbing up near the mast"
+],
+"Mpandihy mitafy mena mitana basy hazo": [
+"Danseur en rouge avec un fusil de bois",
+"Dancer in red with a wooden rifle"
+],
+"Vahoaka maro manatrika ny lanonana": [
+"Une foule nombreuse assiste à la cérémonie",
+"Large crowds attend the ceremony"
+],
+"Mpandihy mitafy mena eo anivon'ny vahoaka": [
+"Danseur en rouge au milieu de la foule",
+"Dancer in red among the crowd"
+],
+"Mpandihy vehivavy mitafy satroka misy kintana": [
+"Danseuse coiffée d'un chapeau à étoile",
+"Woman dancer in a star hat"
+],
+"Mpandihy sy vehivavy mandritra ny lanonana": [
+"Danseur et femme pendant la cérémonie",
+"Dancer and woman during the ceremony"
+],
+"Lehilahy roa mandeha eo amin'ny kianja fanaovana ny lanonana": [
+"Deux hommes marchent sur le lieu de la cérémonie",
+"Two men walking across the ceremony ground"
+],
+"Fiarahabana ireo vahiny eo ambanin'ny tranolay": [
+"Salutation des invités sous la tente",
+"Greeting the guests under the tent"
+],
+"Vahoaka marobe eo akaikin'ny hazo lehibe": [
+"Une grande foule près du grand arbre",
+"Large crowds by the great tree"
+],
+"Vahoaka sy mpitandro filaminana manodidina ny kianja": [
+"La foule et les forces de l'ordre autour de l'esplanade",
+"Crowds and security forces around the ground"
+],
+"Vahiny nasaina eo ambanin'ny tranolay": [
+"Invités sous la tente",
+"Invited guests under the tent"
+],
+"Vahiny maro nanatrika ny lanonana": [
+"De nombreux invités à la cérémonie",
+"Many guests at the ceremony"
+],
+"Raiamandreny sy vahoaka eo akaikin'ny tranolay": [
+"Anciens et habitants près de la tente",
+"Elders and people near the tent"
+],
+"Sarin'ny Tsangantsainy": [
+"Photos du Tsangantsainy",
+"Photos of the Tsangantsainy"
+],
+"Ireto ny sarin'ny fankalazana ny Tsangantsainy: ny fananganana ny tsangantsainy, ny dihy, ny Ampanjaka ary ny vahoaka marobe tonga nanatrika.": [
+"Voici des images de la célébration du Tsangantsainy : l'érection du mât, les danses, le roi et la foule nombreuse venue y assister.",
+"Here are pictures of the Tsangantsainy celebration: raising the mast, the dances, the king and the large crowds who came to attend."
 ]
 };
   var I = L === 'fr' ? 0 : 1;
